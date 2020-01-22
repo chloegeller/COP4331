@@ -24,11 +24,11 @@ With the largest number of undergrads in the country you would think it would be
 
 #### Jon's Proposal:
 
-
+- (under construction)
 
 #### Andrew's Proposal:
 
-
+- (under construction)
 
 
 
