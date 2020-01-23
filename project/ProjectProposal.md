@@ -28,7 +28,7 @@ With the largest number of undergrads in the country you would think it would be
 
 #### Andrew's Proposal:
 
-- (under construction)
+- For students at UCF who either struggle to get connected to or involved with the community, or want to do so more deeply and with greater ease, igKnight will make an easy way for students to connect with classmates, form study groups with like minded others, find student organizations and events, and even find deals on or near campus, all together in one place. This leads, then, to the student body on average becoming more involved with the community, as it greatly lowers the effort required to accomplish the same tasks as it is now. Unlike the existing functionality in webcourses, knightconnect, and various business' websites, the igKnight service would collect all of these functions and information in one easy to use android that brings all the tools to involve yourself right to your fingertips.
 
 
 
