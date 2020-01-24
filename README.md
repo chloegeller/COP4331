@@ -13,17 +13,17 @@
 
 # **Sprint 1**
 
-* [Product Backlog] (https://docs.google.com/spreadsheets/d/1ty2KTlg2fVRDivqIOmgyekV0uBfa7Tp6JKKFlXk8cF0/edit?usp=sharing)
+* [Product Backlog](https://docs.google.com/spreadsheets/d/1ty2KTlg2fVRDivqIOmgyekV0uBfa7Tp6JKKFlXk8cF0/edit?usp=sharing)
 * [Sprint Backlog]
 * [Requirements]
-* [Trello Board] (https://trello.com/b/0AVoSEkM)
+* [Trello Board](https://trello.com/b/0AVoSEkM)
 * [Burndown Chart]
 * [Velocity Chart]
 * Design Documents
-*  System Architecture
-*  Class Diagrams
-*  Sequence Diagrams
-*  etc.
+  * System Architecture
+  * Class Diagrams
+  * Sequence Diagrams
+  * etc.
 * Source Code
 * Automated Tests
 * Product Demonstration
