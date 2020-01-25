@@ -1,4 +1,5 @@
-# Processes of Object Oriented Systems (POOS) - COP 4331
+# Processes of Object Oriented Systems (POOS)
+## COP 4331C
 ### UCF - Spring 2020
 
 
