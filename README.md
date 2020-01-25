@@ -1,6 +1,6 @@
-# COP4331
-#### UCF - Spring 2020
-#### Processes of Object Oriented Systems (POOS) - COP 4331C
+# Processes of Object Oriented Systems (POOS) - COP 4331
+### UCF - Spring 2020
+
 
 # **Product Vision**
 ### [Project Proposal](https://github.com/h3rmi0n3/COP4331/blob/master/project/ProjectProposal.md)
