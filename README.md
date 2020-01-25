@@ -1,4 +1,4 @@
-# Processes of Object Oriented Systems (POOS)
+# **Processes of Object Oriented Systems (POOS)**
 ### **UCF - Spring 2020**
 
 
@@ -15,9 +15,11 @@ Between all of the different UCF websites, various information platforms, and ev
 
 Our team is aiming to spark the **igKnight** platform in order to solve these problems that plague the lives for many of our peers. **igKnight** is a mobile (_Android only at this time_) student companion/lite social media application that aims to help students during their undergraduate journey. 
 
-With our application, students will be capable of finding and collaborating with students that share similar characteristics, can easily find some of the most requested information geared towards students (_ie. student discounts, academic forms, etc._), and find a calendar with upcoming UCF-related events which will be tailored towards each individuals major and preferences. **igKnight** will give students the fuel needed to excel through their academic career and connect, not only to information, but to people, which is what every aspiring student's goal should be.
+With our application, students will be capable of finding and collaborating with students that share similar characteristics, can easily find some of the most requested information geared towards students (_ie. student discounts, academic forms, etc._), and find a calendar with upcoming UCF-related events which will be tailored towards each individuals major and preferences.
 
 Although a lot of what we provide is already available to students on the internet, **it is very spread out and can be difficult to find**, especially for students unfamiliar with the sites. Unlike the existing functionalities in WebCourses, KnightConnect, and various business' websites, the **igKnight** platform would collect _all of this information and these functions in one easy to use Android application_, bringing all the tools to involve yourself, _right to your fingertips_.
+
+**igKnight** will give students the fuel needed to excel through their academic career and connect, not only to information, but to people, which is what every aspiring student's goal should be.
 
 
 # **Team Members**
