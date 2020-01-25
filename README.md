@@ -3,7 +3,6 @@
 
 
 # **Product Vision**
-### [Project Proposal](https://github.com/h3rmi0n3/COP4331/blob/master/project/ProjectProposal.md)
 
 With UCF having the _largest population of undergraduate students in the nation_ and _more than 600 registered student-run organizations_, it **_should be easy_** to find a group of like-minded students to make college life easier and more fun. 
 
