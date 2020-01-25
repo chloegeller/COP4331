@@ -5,7 +5,8 @@
 # **Product Vision**
 ### [Project Proposal](https://github.com/h3rmi0n3/COP4331/blob/master/project/ProjectProposal.md)
 
-With UCF having the _largest population of undergraduate students in the nation_ and _more than 600 registered student-run organizations_, it **_should be easy_** to find a group of like-minded students to make college life easier and more fun. However, with our team consisting _stricly of UCF students_, **_we know that this is far from the truth_**. 
+With UCF having the _largest population of undergraduate students in the nation_ and _more than 600 registered student-run organizations_, it **_should be easy_** to find a group of like-minded students to make college life easier and more fun. 
+However, with our team consisting _stricly of UCF students_, **_we know that this is far from the truth_**. 
 
 Between all of the different UCF websites, various information platforms, and even their own mobile app, _it can be problematic_ for freshmen, and even for seniors, to make the most of their time at this university. 
 
