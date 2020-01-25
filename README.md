@@ -8,7 +8,7 @@
 ### Team Members
 * Jonathan Rohrback
 * Blake Barr
-* Chloe Geller
+* Chloë Geller
 * Andrew Borg
 
 # **Sprint 1**
