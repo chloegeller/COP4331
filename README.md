@@ -25,10 +25,10 @@ Generally, a keen observation is that all the information we aim to provide alre
 The university experience is one that is often enhanced by forming connections over shared coursework, interests, and goals – yet many of the tools UCF "provides" to achieve these appear to fail a significant number of students. **UKnight**'s goal is to help build these connections and cultivate student's experience at UCF, for the better.
 
 ## **Team Members**
-* Jonathan Rohrback
-* Blake Barr
+* Jonathan Rohrback ([@JRohrback13][JRohrback13-github])
+* Blake Barr ([@BlakelyBarr][BlakelyBarr-github])
 * Chloë Geller ([@h3rmi0n3][h3rmi0n3-github])
-* Andrew Borg
+* Andrew Borg ([@Andrew-borg][Andrew-borg-github])
 
 [h3rmi0n3-github]: https://github.com/h3rmi0n3
 
