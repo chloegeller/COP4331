@@ -29,8 +29,11 @@ The university experience is one that is often enhanced by forming connections o
 * Blake Barr ([@BlakelyBarr][BlakelyBarr-github])
 * Chloë Geller ([@h3rmi0n3][h3rmi0n3-github])
 * Andrew Borg ([@Andrew-borg][Andrew-borg-github])
-
+[JRohrback13-github]: https://github.com/JRohrback13
+[BlakelyBarr-github]: https://github.com/BlakelyBarr
 [h3rmi0n3-github]: https://github.com/h3rmi0n3
+[Andrew-borg-github]: https://github.com/Andrew-borg
+
 
 ## **Sprint 1**
 * [Product Backlog](https://docs.google.com/spreadsheets/d/1ty2KTlg2fVRDivqIOmgyekV0uBfa7Tp6JKKFlXk8cF0/edit?usp=sharing)
