@@ -1,36 +1,38 @@
 # **Processes of Object Oriented Systems (POOS)**
-### **UCF - Spring 2020**
+**UCF - Spring 2020**
 
 
-# **Product Vision**
+## **Product Vision**
 
-With UCF having the _largest population of undergraduate students in the nation_ and _more than 600 registered student-run organizations_, it **_should be easy_** to find a group of like-minded students to make college life easier and more fun. 
+UCF has _one of the largest student populations in the nation_. With more than _600 Registered Student Organizations (RSOs)_, it **should be trivial** to find a group of like-minded students to make college easier and more fun. **However, as UCF students, _we know this to be far from the truth_.**
 
-However, with our team consisting _stricly of UCF students_, **_we know that this is far from the truth_**. 
+Between UCF's host of websites, information platforms, and mobile app &ndash; learning the who-what-when-where of RSOs, classes, professors, and ideas can be challenging to freshman and veteran students alike.
 
-Between all of the different UCF websites, various information platforms, and even their own mobile app, _it can be problematic_ for freshmen, and even for seniors, to make the most of their time at this university. 
+In our time at UCF, we (and many others) have had difficulty discovering "study-buddies," clubs, and information. To address these challenges, we're developing **UKnight**, an Android application.
 
-- Collaborating with students that share similar classes, professors, and even ideas, can be _extremely challenging_. 
-- Searching for and joining a club is a long set of tasks in itself, with no guarantee of finding that one organization that can change your life. 
-- Simply looking for the correct information to a wide range of problems that students have every day is troublesome and disheartening when it's no where to be found. 
+Specifically, **UKnight** will help students:
+1. Find other students that share similar classes and professors. 
+1. Discover like-minded students in courses and RSOs.
+1. Uncover seemingly hidden-away information.
 
-Our team is aiming to spark the **igKnight** platform in order to solve these problems that plague the lives for many of our peers. **igKnight** is a mobile (_Android only at this time_) student companion/lite social media application that aims to help students during their undergraduate journey. 
+**UKnight** will achieve this by being a student companion with mild social media components to help students during their university journey. We aim to do this by:
+1. Finding and connecting students who share similar courses, interests, and goals through their semesterly course schedule, expressed degree program, and interests.
+1. Connecting the UCF calendar and other known calendar sources into a centralized location that recommends events to attend.
+1. Integrating somewhat known information, like locations that apply student discounts, have periodic markdowns, needed academic forms, and the like.
 
-With our application, students will be capable of finding and collaborating with students that share similar characteristics, can easily find some of the most requested information geared towards students (_ie. student discounts, academic forms, etc._), and find a calendar with upcoming UCF-related events which will be tailored towards each individuals major and preferences.
+Generally, a keen observation is that all the information we aim to provide already exists and _can be found_, but oftentimes is rather dispersed. While this doesn't make it impossible to find, it can be rather challenging to discover without pointed searching and queries. **UKnight** strives to aggregate and present this information in a manner that requires minimal exertion on behalf of the student. 
 
-Although a lot of what we provide is already available to students on the internet, **it is very spread out and can be difficult to find**, especially for students unfamiliar with the sites. Unlike the existing functionalities in WebCourses, KnightConnect, and various business' websites, the **igKnight** platform would collect _all of this information and these functions in one easy to use Android application_, bringing all the tools to involve yourself, _right to your fingertips_.
+The university experience is one that is often enhanced by forming connections over shared coursework, interests, and goals – yet many of the tools UCF "provides" to achieve these appear to fail a significant number of students. **UKnight**'s goal is to help build these connections and cultivate student's experience at UCF, for the better.
 
-**igKnight** will give students the fuel needed to excel through their academic career and connect, not only to information, but to people, which is what every aspiring student's goal should be.
+## **Team Members**
+* Jonathan Rohrback 
+* Blake Barr 
+* Chloë Geller ([@h3mi0n3][chloe-git])
+* Andrew Borg 
 
+[chloe-git]: https://github.com/h3rmi0n3
 
-# **Team Members**
-* Jonathan Rohrback
-* Blake Barr
-* Chloë Geller
-* Andrew Borg
-
-# **Sprint 1**
-
+## **Sprint 1**
 * [Product Backlog](https://docs.google.com/spreadsheets/d/1ty2KTlg2fVRDivqIOmgyekV0uBfa7Tp6JKKFlXk8cF0/edit?usp=sharing)
 * [Sprint Backlog]()
 * [Requirements]()
