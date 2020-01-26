@@ -26,10 +26,11 @@ The university experience is one that is often enhanced by forming connections o
 
 ## **Team Members**
 * Jonathan Rohrback 
-* Blake Barr 
+* Blake Barr ([@BlakelyBarr][blake-git])
 * Chloë Geller ([@h3mi0n3][chloe-git])
 * Andrew Borg 
 
+[blake-git]: https://github.com/BlakelyBarr
 [chloe-git]: https://github.com/h3rmi0n3
 
 ## **Sprint 1**
