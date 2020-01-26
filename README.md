@@ -29,6 +29,7 @@ The university experience is one that is often enhanced by forming connections o
 * Blake Barr ([@BlakelyBarr][blake-git])
 * Chloë Geller ([@h3mi0n3][chloe-git])
 * Andrew Borg 
+
 [jon-git]: https://github.com/JRohrback13
 [blake-git]: https://github.com/BlakelyBarr
 [chloe-git]: https://github.com/h3rmi0n3
