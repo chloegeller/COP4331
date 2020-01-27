@@ -37,11 +37,11 @@ The university experience is one that is often enhanced by forming connections o
 
 ## **Sprint 1**
 * [Product Backlog](https://docs.google.com/spreadsheets/d/1ty2KTlg2fVRDivqIOmgyekV0uBfa7Tp6JKKFlXk8cF0/edit?usp=sharing)
-* [Sprint Backlog]()
-* [Requirements]()
+* [Sprint Backlog](https://docs.google.com/spreadsheets/d/1ty2KTlg2fVRDivqIOmgyekV0uBfa7Tp6JKKFlXk8cF0/edit#gid=2018194878)
+* [Requirements](https://docs.google.com/spreadsheets/d/17U_F77YVL3Ne2HB2xrh9r0S08Z46s3N6_FlgJUkfKUk/edit#gid=0)
 * [Trello Board](https://trello.com/b/0AVoSEkM)
-* [Burndown Chart]()
-* [Velocity Chart]()
+* [Burndown Chart](https://docs.google.com/spreadsheets/d/12On34TDtX6gxP50VLROF6SGmXyAc6XU4MDFyL9zMs58/edit#gid=0)
+* [Velocity Chart](https://docs.google.com/spreadsheets/d/1_AqfbOIqxZAjTpneNAChJZhdoJvLUG33TOi2flyygAg/edit#gid=0)
 * Design Documents
   * System Architecture
   * Class Diagrams
