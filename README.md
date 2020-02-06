@@ -66,3 +66,4 @@ The university experience is one that is often enhanced by forming connections o
 * Source Code
 * Automated Tests
 * Product Demonstration
+ * [Sprint 2 Demo](https://www.youtube.com/watch?v=ZEup3SZxTF0)
