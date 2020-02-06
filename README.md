@@ -59,7 +59,7 @@ The university experience is one that is often enhanced by forming connections o
 * [Burndown Chart](https://docs.google.com/spreadsheets/d/1zwahSmUY-3R21hBwLCkIKBjjwmYpbecaBfOpZOSGjz4/edit#gid=0)
 * [Velocity Chart](https://docs.google.com/spreadsheets/d/1zwahSmUY-3R21hBwLCkIKBjjwmYpbecaBfOpZOSGjz4/edit#gid=1007609748)
 * Design Documents
-  * [System Architecture]()
+  * [System Architecture](https://docs.google.com/document/d/13AM1wraI3I2YHV3a2C8bGOFe1ZFaOeHBh7AbH6kYp0o/edit?usp=sharing)
   * [Class Diagrams]()
   * [Sequence Diagrams]()
   * etc.
