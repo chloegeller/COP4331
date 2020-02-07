@@ -53,7 +53,7 @@ The university experience is one that is often enhanced by forming connections o
 
 ## **Sprint 2**
 * [Product Backlog](https://docs.google.com/spreadsheets/d/1ty2KTlg2fVRDivqIOmgyekV0uBfa7Tp6JKKFlXk8cF0/edit?usp=sharing)
-* [Sprint Backlog](https://docs.google.com/spreadsheets/d/1ty2KTlg2fVRDivqIOmgyekV0uBfa7Tp6JKKFlXk8cF0/edit#gid=2018194878)
+* [Sprint Backlog](https://docs.google.com/spreadsheets/d/1ty2KTlg2fVRDivqIOmgyekV0uBfa7Tp6JKKFlXk8cF0/edit?usp=sharing)
 * [Requirements](https://docs.google.com/spreadsheets/d/17U_F77YVL3Ne2HB2xrh9r0S08Z46s3N6_FlgJUkfKUk/edit?usp=sharing)
 * [Trello Board](https://trello.com/b/0AVoSEkM)
 * [Burndown Chart](https://docs.google.com/spreadsheets/d/1zwahSmUY-3R21hBwLCkIKBjjwmYpbecaBfOpZOSGjz4/edit#gid=0)
