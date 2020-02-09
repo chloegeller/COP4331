@@ -2,7 +2,7 @@
 **UCF - Spring 2020**
 
 
-## **Product Vision**
+## [Product Vision](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995)
 
 UCF has _one of the largest student populations in the nation_. With more than _600 Registered Student Organizations (RSOs)_, it **should be trivial** to find a group of like-minded students to make college easier and more fun. **However, as UCF students, _we know this to be far from the truth_.**
 
@@ -35,7 +35,7 @@ The university experience is one that is often enhanced by forming connections o
 [chloe-git]: https://github.com/h3rmi0n3
 [andrew-git]: https://github.com/Andrew-borg
 
-## **Sprint 1**
+## [Sprint 1](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#8d6245a7da4c4ac4a396e6b0d466280a)
 * [Product Backlog](https://docs.google.com/spreadsheets/d/1ty2KTlg2fVRDivqIOmgyekV0uBfa7Tp6JKKFlXk8cF0/edit?usp=sharing)
 * [Sprint Backlog](https://www.notion.so/cxg/7336033225f34b5e9a22d6e36a26d0a8?v=d24afd69410f4838bfc24c87881f5f0b)
 * [Requirements](https://docs.google.com/spreadsheets/d/17U_F77YVL3Ne2HB2xrh9r0S08Z46s3N6_FlgJUkfKUk/edit?usp=sharing)
@@ -51,7 +51,7 @@ The university experience is one that is often enhanced by forming connections o
 * Automated Tests
 * Product Demonstration
 
-## **Sprint 2**
+## [Sprint 2](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#31f326edb24e4229aa1f719da218c259)
 * [Product Backlog](https://docs.google.com/spreadsheets/d/1ty2KTlg2fVRDivqIOmgyekV0uBfa7Tp6JKKFlXk8cF0/edit?usp=sharing)
 * [Sprint Backlog](https://www.notion.so/cxg/651513baed7e4fe8a1cc21f6cf78e34f?v=2fee84dcb78b462baaf93f7897886df8)
 * [Requirements](https://docs.google.com/spreadsheets/d/17U_F77YVL3Ne2HB2xrh9r0S08Z46s3N6_FlgJUkfKUk/edit?usp=sharing)
