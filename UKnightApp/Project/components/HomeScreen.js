@@ -14,7 +14,8 @@ class HomeScreen extends React.Component {
         title="Log in"
         color="#808080"
       />
-    ),
+    )
+    // headerLeft: 
   };
 
   render() {
@@ -53,6 +54,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: 'white'
   }
+  // container: {
+  //   flex: 1
+  // }
 });
 
 export default HomeScreen;
