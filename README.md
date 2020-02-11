@@ -56,11 +56,11 @@ The university experience is one that is often enhanced by forming connections o
 * [Sprint Backlog](https://www.notion.so/cxg/651513baed7e4fe8a1cc21f6cf78e34f?v=2fee84dcb78b462baaf93f7897886df8)
 * [Requirements](https://docs.google.com/spreadsheets/d/17U_F77YVL3Ne2HB2xrh9r0S08Z46s3N6_FlgJUkfKUk/edit?usp=sharing)
 * [Trello Board](https://trello.com/b/0AVoSEkM)
-* [Burndown Chart](https://docs.google.com/spreadsheets/d/1zwahSmUY-3R21hBwLCkIKBjjwmYpbecaBfOpZOSGjz4/edit#gid=0)
+* [Burndown Chart](https://docs.google.com/spreadsheets/d/1zwahSmUY-3R21hBwLCkIKBjjwmYpbecaBfOpZOSGjz4/edit#gid=281425712)
 * [Velocity Chart](https://docs.google.com/spreadsheets/d/1zwahSmUY-3R21hBwLCkIKBjjwmYpbecaBfOpZOSGjz4/edit#gid=1007609748)
 * Design Documents
   * [System Architecture](https://www.notion.so/cxg/System-Architecture-fbbc5cda7a7c4024bc92bda745b5a8f6)
-  * [Class Diagrams]()
+  * [Class Diagrams](https://docs.google.com/drawings/d/1teRyk5o_VNRHxAgn9lKNhCl_MZkw4j6I57DKFnrgEio/edit)
   * [Sequence Diagrams]()
   * etc.
 * Source Code
