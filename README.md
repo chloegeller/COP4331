@@ -80,7 +80,7 @@ The university experience is one that is often enhanced by forming connections o
   * [Class Diagrams](https://docs.google.com/drawings/d/1teRyk5o_VNRHxAgn9lKNhCl_MZkw4j6I57DKFnrgEio/edit)
   * [Sequence Diagrams]()
   * etc.
-* Source Code
+* [Source Code](https://github.com/h3rmi0n3/COP4331/tree/master/UKnightApp/Project)
 * Automated Tests
 * Product Demonstration
-  * [Sprint 2 Demo](https://www.youtube.com/watch?v=ZEup3SZxTF0)
+  * [Sprint 3 Demo](https://www.youtube.com/watch?v=ZEup3SZxTF0)
