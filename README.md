@@ -35,6 +35,8 @@ The university experience is one that is often enhanced by forming connections o
 [chloe-git]: https://github.com/h3rmi0n3
 [andrew-git]: https://github.com/Andrew-borg
 
+## [Responsibilities](https://www.notion.so/cxg/5a022bd5d3ab4555a45bdf9c685e3866?v=a8c8105d996d4e14b79a4d54575f4f72)
+
 ## [Sprint 1](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#8d6245a7da4c4ac4a396e6b0d466280a)
 
 ## [Sprint 2](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#31f326edb24e4229aa1f719da218c259)
