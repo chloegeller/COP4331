@@ -11,11 +11,11 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/UKnight_icon4.png",
+    "icon": "./assets/UKnight_icon5.png",
     "splash": {
-      "image": "./assets/UKnight_icon4.png",
+      "image": "./assets/UKnight_icon5.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#283747"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
