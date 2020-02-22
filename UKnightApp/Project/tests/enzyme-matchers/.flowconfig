@@ -1,9 +1,0 @@
-[ignore]
-
-[include]
-
-[libs]
-
-[options]
-module.name_mapper='^enzyme-matchers$' -> '<PROJECT_ROOT>/packages/enzyme-matchers/src'
-module.name_mapper='^jest-environment-enzyme/lib' -> '<PROJECT_ROOT>/packages/jest-environment-enzyme/src'
