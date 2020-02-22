@@ -44,3 +44,11 @@ The university experience is one that is often enhanced by forming connections o
 ## [Sprint 3](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#8b1653f7bac14c72a1ed0282ff643e8e)
   
 ## [Sprint 4](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#f9460d81aba94ec3bd150f4492313d59)
+
+## [Sprint 5](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#2a17e55b414142b18e40017d68c8d20c)
+
+## [Sprint 6](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#82dd993772594e28b15ef50de1aba5db)
+
+## [Sprint 7](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#c1822db771024024a3678d1e9f694f55)
+
+## [Sprint 8](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#e8ba7968b5c346dfa238cc08d7d83f15)
