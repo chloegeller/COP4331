@@ -5,26 +5,29 @@ import {StyleSheet, Text, View, Button, TouchableOpacity} from 'react-native';
 class HomeScreen extends React.Component {
     static navigationOptions = {
         title: 'Home',
-        headerTintColor: '#ffffff',
+        headerTintColor: '#eeeeee',
         headerStyle: {
-            backgroundColor: '#283747'
+            backgroundColor: '#32333d'
         },
         headerRight: () => (<Button
             onPress={() => alert('This will bring you to a log in screen once we have one.')}
             title="Log in"
-            color="#808080"/>)
+            color="#808080"/>),
+        headerLeft: () => (<Button
+            onPress={() => alert('This will bring you to our nagivation pane once we have one.')}
+            source={require('../assets/drawer.png')}/>)
     };
 
     render() {
         return (
             <View style={styles.container}>
-                <Header
+                {/* <Header
                     leftComponent={< Icon name = "menu" onPress = {
                     () => this
                         .props
                         .navigation
                         .openDrawer()
-                } />}/>
+                } />}/> */}
                 <View
                     style={{
                     flex: 1,
