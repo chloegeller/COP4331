@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
 
-class HomeScreen extends React.Component {
+class HomeScreen_LoggedIn extends React.Component {
   static navigationOptions = {
     title: 'Home',
     headerTintColor: '#ffffff',
@@ -13,27 +13,20 @@ class HomeScreen extends React.Component {
   render() {
     return (
       <View style = {{ flex: 1, flexDirection: 'column', backgroundColor: '#ba9b37'}}>
-        <View style = {{flex: 2, flexDirection: 'row'}}>
-          <View style = {{ flex: 8}}></View>
-          <Button
-            onPress={() => this.props.navigation.navigate('LogIn')}
-            title="     Log in     "
-            color="#808080"
-          />
-          <View style = {{ flex: 1}}></View>
+        <View style = {{ flex: 1}}>
+          <Text> Hey! You're Logged in! </Text>
         </View>
-        <View style = {{ flex: 1}}></View>
         <View style = {{ flex: 3, flexDirection: 'row'}}>
-          <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('Home')}>
+          <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('Home_LI')}>
               <Text style={styles.buttonText}>Button text{"\n\n"}Replace with image</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('Home')}>
+          <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('Home_LI')}>
               <Text style={styles.buttonText}>Button text{"\n\n"}Replace with image</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('Home')}>
+          <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('Home_LI')}>
               <Text style={styles.buttonText}>Button text{"\n\n"}Replace with image</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('Home')}>
+          <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('Home_LI')}>
               <Text style={styles.buttonText}>Button text{"\n\n"}Replace with image</Text>
           </TouchableOpacity>
         </View>
@@ -58,4 +51,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default HomeScreen;
+export default HomeScreen_LoggedIn;

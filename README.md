@@ -2,7 +2,7 @@
 **UCF - Spring 2020**
 
 
-## **Product Vision**
+## [Product Vision](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995)
 
 UCF has _one of the largest student populations in the nation_. With more than _600 Registered Student Organizations (RSOs)_, it **should be trivial** to find a group of like-minded students to make college easier and more fun. **However, as UCF students, _we know this to be far from the truth_.**
 
@@ -35,9 +35,9 @@ The university experience is one that is often enhanced by forming connections o
 [chloe-git]: https://github.com/h3rmi0n3
 [andrew-git]: https://github.com/Andrew-borg
 
-## **Sprint 1**
+## [Sprint 1](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#8d6245a7da4c4ac4a396e6b0d466280a)
 * [Product Backlog](https://docs.google.com/spreadsheets/d/1ty2KTlg2fVRDivqIOmgyekV0uBfa7Tp6JKKFlXk8cF0/edit?usp=sharing)
-* [Sprint Backlog](https://docs.google.com/spreadsheets/d/1ty2KTlg2fVRDivqIOmgyekV0uBfa7Tp6JKKFlXk8cF0/edit#gid=2018194878)
+* [Sprint Backlog](https://www.notion.so/cxg/7336033225f34b5e9a22d6e36a26d0a8?v=d24afd69410f4838bfc24c87881f5f0b)
 * [Requirements](https://docs.google.com/spreadsheets/d/17U_F77YVL3Ne2HB2xrh9r0S08Z46s3N6_FlgJUkfKUk/edit?usp=sharing)
 * [Trello Board](https://trello.com/b/0AVoSEkM)
 * [Burndown Chart](https://docs.google.com/spreadsheets/d/1zwahSmUY-3R21hBwLCkIKBjjwmYpbecaBfOpZOSGjz4/edit#gid=0)
@@ -50,3 +50,37 @@ The university experience is one that is often enhanced by forming connections o
 * Source Code
 * Automated Tests
 * Product Demonstration
+
+## [Sprint 2](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#31f326edb24e4229aa1f719da218c259)
+* [Product Backlog](https://docs.google.com/spreadsheets/d/1ty2KTlg2fVRDivqIOmgyekV0uBfa7Tp6JKKFlXk8cF0/edit?usp=sharing)
+* [Sprint Backlog](https://www.notion.so/cxg/651513baed7e4fe8a1cc21f6cf78e34f?v=2fee84dcb78b462baaf93f7897886df8)
+* [Requirements](https://docs.google.com/spreadsheets/d/17U_F77YVL3Ne2HB2xrh9r0S08Z46s3N6_FlgJUkfKUk/edit?usp=sharing)
+* [Trello Board](https://trello.com/b/0AVoSEkM)
+* [Burndown Chart](https://docs.google.com/spreadsheets/d/1zwahSmUY-3R21hBwLCkIKBjjwmYpbecaBfOpZOSGjz4/edit#gid=281425712)
+* [Velocity Chart](https://docs.google.com/spreadsheets/d/1zwahSmUY-3R21hBwLCkIKBjjwmYpbecaBfOpZOSGjz4/edit#gid=1007609748)
+* Design Documents
+  * [System Architecture](https://www.notion.so/cxg/System-Architecture-fbbc5cda7a7c4024bc92bda745b5a8f6)
+  * [Class Diagrams](https://docs.google.com/drawings/d/1teRyk5o_VNRHxAgn9lKNhCl_MZkw4j6I57DKFnrgEio/edit)
+  * [Sequence Diagrams]()
+  * etc.
+* Source Code
+* Automated Tests
+* Product Demonstration
+  * [Sprint 2 Demo](https://www.youtube.com/watch?v=ZEup3SZxTF0)
+  
+  ## [Sprint 3](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#8b1653f7bac14c72a1ed0282ff643e8e)
+* [Product Backlog](https://docs.google.com/spreadsheets/d/1ty2KTlg2fVRDivqIOmgyekV0uBfa7Tp6JKKFlXk8cF0/edit?usp=sharing)
+* [Sprint Backlog](https://www.notion.so/cxg/651513baed7e4fe8a1cc21f6cf78e34f?v=2fee84dcb78b462baaf93f7897886df8)
+* [Requirements](https://docs.google.com/spreadsheets/d/17U_F77YVL3Ne2HB2xrh9r0S08Z46s3N6_FlgJUkfKUk/edit?usp=sharing)
+* [Trello Board](https://trello.com/b/0AVoSEkM)
+* [Burndown Chart](https://docs.google.com/spreadsheets/d/1zwahSmUY-3R21hBwLCkIKBjjwmYpbecaBfOpZOSGjz4/edit#gid=262033609)
+* [Velocity Chart](https://docs.google.com/spreadsheets/d/1zwahSmUY-3R21hBwLCkIKBjjwmYpbecaBfOpZOSGjz4/edit#gid=1007609748)
+* Design Documents
+  * [System Architecture](https://www.notion.so/cxg/System-Architecture-fbbc5cda7a7c4024bc92bda745b5a8f6)
+  * [Class Diagrams](https://docs.google.com/drawings/d/1teRyk5o_VNRHxAgn9lKNhCl_MZkw4j6I57DKFnrgEio/edit)
+  * [Sequence Diagrams]()
+  * etc.
+* [Source Code](https://github.com/h3rmi0n3/COP4331/tree/master/UKnightApp/Project)
+* Automated Tests
+* Product Demonstration
+  * [Sprint 3 Demo](https://www.youtube.com/watch?v=ZEup3SZxTF0)
