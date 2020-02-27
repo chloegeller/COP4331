@@ -1,4 +1,4 @@
-# **Processes of Object Oriented Systems (POOS)**
+# **[Processes of Object Oriented Systems (POOS)](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995)**
 **UCF - Spring 2020**
 
 
@@ -11,7 +11,7 @@ Between UCF's host of websites, information platforms, and mobile app &ndash; le
 In our time at UCF, we (and many others) have had difficulty discovering "study-buddies," clubs, and information. To address these challenges, we're developing **UKnight**, an Android application.
 
 Specifically, **UKnight** will help students:
-1. Find other students that share similar classes and professors. 
+1. Find other students that share similar classes and professors.
 1. Discover like-minded students in courses and RSOs.
 1. Uncover seemingly hidden-away information.
 
@@ -20,7 +20,7 @@ Specifically, **UKnight** will help students:
 1. Connecting the UCF calendar and other known calendar sources into a centralized location that recommends events to attend.
 1. Integrating somewhat known information, like locations that apply student discounts, have periodic markdowns, needed academic forms, and the like.
 
-Generally, a keen observation is that all the information we aim to provide already exists and _can be found_, but oftentimes is rather dispersed. While this doesn't make it impossible to find, it can be rather challenging to discover without pointed searching and queries. **UKnight** strives to aggregate and present this information in a manner that requires minimal exertion on behalf of the student. 
+Generally, a keen observation is that all the information we aim to provide already exists and _can be found_, but oftentimes is rather dispersed. While this doesn't make it impossible to find, it can be rather challenging to discover without pointed searching and queries. **UKnight** strives to aggregate and present this information in a manner that requires minimal exertion on behalf of the student.
 
 The university experience is one that is often enhanced by forming connections over shared coursework, interests, and goals – yet many of the tools UCF "provides" to achieve these appear to fail a significant number of students. **UKnight**'s goal is to help build these connections and cultivate student's experience at UCF, for the better.
 
@@ -35,52 +35,20 @@ The university experience is one that is often enhanced by forming connections o
 [chloe-git]: https://github.com/h3rmi0n3
 [andrew-git]: https://github.com/Andrew-borg
 
+## [Responsibilities](https://www.notion.so/cxg/5a022bd5d3ab4555a45bdf9c685e3866?v=a8c8105d996d4e14b79a4d54575f4f72)
+
 ## [Sprint 1](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#8d6245a7da4c4ac4a396e6b0d466280a)
-* [Product Backlog](https://docs.google.com/spreadsheets/d/1ty2KTlg2fVRDivqIOmgyekV0uBfa7Tp6JKKFlXk8cF0/edit?usp=sharing)
-* [Sprint Backlog](https://www.notion.so/cxg/7336033225f34b5e9a22d6e36a26d0a8?v=d24afd69410f4838bfc24c87881f5f0b)
-* [Requirements](https://docs.google.com/spreadsheets/d/17U_F77YVL3Ne2HB2xrh9r0S08Z46s3N6_FlgJUkfKUk/edit?usp=sharing)
-* [Trello Board](https://trello.com/b/0AVoSEkM)
-* [Burndown Chart](https://docs.google.com/spreadsheets/d/1zwahSmUY-3R21hBwLCkIKBjjwmYpbecaBfOpZOSGjz4/edit#gid=0)
-* [Velocity Chart](https://docs.google.com/spreadsheets/d/1zwahSmUY-3R21hBwLCkIKBjjwmYpbecaBfOpZOSGjz4/edit#gid=1007609748)
-* Design Documents
-  * System Architecture
-  * Class Diagrams
-  * Sequence Diagrams
-  * etc.
-* Source Code
-* Automated Tests
-* Product Demonstration
 
 ## [Sprint 2](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#31f326edb24e4229aa1f719da218c259)
-* [Product Backlog](https://docs.google.com/spreadsheets/d/1ty2KTlg2fVRDivqIOmgyekV0uBfa7Tp6JKKFlXk8cF0/edit?usp=sharing)
-* [Sprint Backlog](https://www.notion.so/cxg/651513baed7e4fe8a1cc21f6cf78e34f?v=2fee84dcb78b462baaf93f7897886df8)
-* [Requirements](https://docs.google.com/spreadsheets/d/17U_F77YVL3Ne2HB2xrh9r0S08Z46s3N6_FlgJUkfKUk/edit?usp=sharing)
-* [Trello Board](https://trello.com/b/0AVoSEkM)
-* [Burndown Chart](https://docs.google.com/spreadsheets/d/1zwahSmUY-3R21hBwLCkIKBjjwmYpbecaBfOpZOSGjz4/edit#gid=281425712)
-* [Velocity Chart](https://docs.google.com/spreadsheets/d/1zwahSmUY-3R21hBwLCkIKBjjwmYpbecaBfOpZOSGjz4/edit#gid=1007609748)
-* Design Documents
-  * [System Architecture](https://www.notion.so/cxg/System-Architecture-fbbc5cda7a7c4024bc92bda745b5a8f6)
-  * [Class Diagrams](https://docs.google.com/drawings/d/1teRyk5o_VNRHxAgn9lKNhCl_MZkw4j6I57DKFnrgEio/edit)
-  * [Sequence Diagrams]()
-  * etc.
-* Source Code
-* Automated Tests
-* Product Demonstration
-  * [Sprint 2 Demo](https://www.youtube.com/watch?v=ZEup3SZxTF0)
-  
-  ## [Sprint 3](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#8b1653f7bac14c72a1ed0282ff643e8e)
-* [Product Backlog](https://docs.google.com/spreadsheets/d/1ty2KTlg2fVRDivqIOmgyekV0uBfa7Tp6JKKFlXk8cF0/edit?usp=sharing)
-* [Sprint Backlog](https://www.notion.so/cxg/651513baed7e4fe8a1cc21f6cf78e34f?v=2fee84dcb78b462baaf93f7897886df8)
-* [Requirements](https://docs.google.com/spreadsheets/d/17U_F77YVL3Ne2HB2xrh9r0S08Z46s3N6_FlgJUkfKUk/edit?usp=sharing)
-* [Trello Board](https://trello.com/b/0AVoSEkM)
-* [Burndown Chart](https://docs.google.com/spreadsheets/d/1zwahSmUY-3R21hBwLCkIKBjjwmYpbecaBfOpZOSGjz4/edit#gid=262033609)
-* [Velocity Chart](https://docs.google.com/spreadsheets/d/1zwahSmUY-3R21hBwLCkIKBjjwmYpbecaBfOpZOSGjz4/edit#gid=1007609748)
-* Design Documents
-  * [System Architecture](https://www.notion.so/cxg/System-Architecture-fbbc5cda7a7c4024bc92bda745b5a8f6)
-  * [Class Diagrams](https://docs.google.com/drawings/d/1teRyk5o_VNRHxAgn9lKNhCl_MZkw4j6I57DKFnrgEio/edit)
-  * [Sequence Diagrams]()
-  * etc.
-* [Source Code](https://github.com/h3rmi0n3/COP4331/tree/master/UKnightApp/Project)
-* Automated Tests
-* Product Demonstration
-  * [Sprint 3 Demo](https://www.youtube.com/watch?v=ZEup3SZxTF0)
+
+## [Sprint 3](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#8b1653f7bac14c72a1ed0282ff643e8e)
+
+## [Sprint 4](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#f9460d81aba94ec3bd150f4492313d59)
+
+## [Sprint 5](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#2a17e55b414142b18e40017d68c8d20c)
+
+## [Sprint 6](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#82dd993772594e28b15ef50de1aba5db)
+
+## [Sprint 7](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#c1822db771024024a3678d1e9f694f55)
+
+## [Sprint 8](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#e8ba7968b5c346dfa238cc08d7d83f15)
