@@ -17,9 +17,9 @@ class HomeScreen_LoggedIn extends React.Component {
           <Text> Hey! You're Logged in! </Text>
         </View>
         <View style = {{ flex: 3, flexDirection: 'row'}}>
-          <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('Home_LI')}>
-              <Text style={styles.buttonText}>Button text{"\n\n"}Replace with image</Text>
-          </TouchableOpacity>
+         <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.replace('Bus')}>
+                <Text style={styles.buttonText}>Bus Routes{"\n\n"}Replace with image</Text>
+         </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('Home_LI')}>
               <Text style={styles.buttonText}>Button text{"\n\n"}Replace with image</Text>
           </TouchableOpacity>

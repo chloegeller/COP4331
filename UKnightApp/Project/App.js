@@ -7,13 +7,15 @@ import HomeScreen_LoggedIn from './components/HomeScreen_LoggedIn';
 import LandingScreen from './components/LandingScreen';
 import LogIn from './components/LogIn';
 import SignUp from './components/SignUp';
+import BusRoutes from './components/BusRoutes';
 
 const AppNavigator = createStackNavigator({
   Home: HomeScreen,
   Home_LI: HomeScreen_LoggedIn,
   Land: LandingScreen,
   LogIn: LogIn,
-  SignUp: SignUp,
+    SignUp: SignUp,
+    Bus: BusRoutes,
 },{
   initialRouteName: 'Land',
 });
