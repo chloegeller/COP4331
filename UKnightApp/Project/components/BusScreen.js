@@ -21,20 +21,20 @@ class BusScreen extends React.Component {
                         color="#808080"
                     />
                     <View style={{ flex: 15 }}></View>
-                    
+
                 </View>
                 <View style={{ flex: 2 }}></View>
 
                 <View style={{ flex: 4, flexDirection: 'row' }}>
 
-                    <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.replace('BusOn')}>
+                    <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('BusOn')}>
                         <Text style={styles.buttonText}>On Campus{"\n\n"}Bus Routes</Text>
                     </TouchableOpacity>
-                    
+
                     <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('BusOff')}>
                         <Text style={styles.buttonText}> Off Campus{"\n\n"} Bus Routes</Text>
                     </TouchableOpacity>
-                       
+
                 </View>
                 <View style={{ flex: 18 }}>
                     {/*This one stops the buttons from stretching to the bottom of the screen*/}
