@@ -24,8 +24,8 @@ class HomeScreen extends React.Component {
         </View>
         <View style = {{ flex: 1}}></View>
         <View style = {{ flex: 3, flexDirection: 'row'}}>
-            <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.replace('Bus')}>
-                <Text style={styles.buttonText}>Bus Routes{"\n\n"}Replace with image</Text>
+            <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.replace('BusScreen')}>
+                <Text style={styles.buttonText}>Bus Routes</Text>
             </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('Home')}>
               <Text style={styles.buttonText}>Button text{"\n\n"}Replace with image</Text>
