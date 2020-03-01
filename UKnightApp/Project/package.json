@@ -12,7 +12,6 @@
     "@react-native-community/masked-view": "^0.1.5",
     "@react-navigation/native": "^5.0.1",
     "expo": "~36.0.0",
-    "firebase": "^7.9.1",
     "link": "^0.1.5",
     "native-base": "^2.13.8",
     "prop-types": "^15.7.2",

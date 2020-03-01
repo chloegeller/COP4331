@@ -4,12 +4,11 @@ import { StyleSheet, Text, View, Image, TouchableWithoutFeedback } from 'react-n
 class LandingScreen extends React.Component {
   static navigationOptions = {
     title: '',
-    headerShown: false,
   };
 
   render() {
     return (
-      <TouchableWithoutFeedback onPress={() => this.props.navigation.replace('Home')}>
+      <TouchableWithoutFeedback onPress={() => this.props.navigation.navigate('Home')}>
         <View style={styles.container1}>
           {/* <Text style={styles.heading}>UKnight</Text> */}
           {/* <View style={styles.container2}> */}

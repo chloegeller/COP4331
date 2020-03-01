@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
 
 class HomeScreen extends React.Component {
+
   static navigationOptions = {
     title: 'Home',
     headerTintColor: '#ffffff',
@@ -13,7 +14,8 @@ class HomeScreen extends React.Component {
   render() {
     return (
       <View style = {{ flex: 1, flexDirection: 'column', backgroundColor: '#ba9b37'}}>
-        <View style = {{flex: 2, flexDirection: 'row'}}>
+        <View style = {{flex: 1}} />
+        <View style = {{flex: 1, flexDirection: 'row'}}>
           <View style = {{ flex: 8}}></View>
           <Button
             onPress={() => this.props.navigation.navigate('LogIn')}

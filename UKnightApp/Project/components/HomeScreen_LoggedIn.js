@@ -1,7 +1,24 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
+import FireBase from '../config/FireBase'
+import db from '../config/FireBase'
 
 class HomeScreen_LoggedIn extends React.Component {
+
+  componentDidMount = () => {
+    // When the user accesses the loggen in screen, adds their information to the database
+    FireBase.auth().onAuthStateChanged(user => {
+      if (user) {
+        let uid = user.uid;
+        let email = user.email;
+        db.collection("users").add({
+          email: email,
+          uid: uid
+        })
+      }
+    })
+  }
+
   static navigationOptions = {
     title: 'Home',
     headerTintColor: '#ffffff',
@@ -13,6 +30,7 @@ class HomeScreen_LoggedIn extends React.Component {
   render() {
     return (
       <View style = {{ flex: 1, flexDirection: 'column', backgroundColor: '#ba9b37'}}>
+      <View style = {{flex: 1}} />
         <View style = {{ flex: 1}}>
           <Text> Hey! You're Logged in! </Text>
         </View>
