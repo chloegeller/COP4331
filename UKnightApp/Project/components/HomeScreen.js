@@ -32,7 +32,7 @@ class HomeScreen extends React.Component {
                 <Text style={styles.buttonText}>Bus Routes</Text>
               </ImageBackground>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('Home')}>
+            <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('StudyBuddy')}>
               <ImageBackground source={require('../assets/studyImage.jpg')} style={{width: '100%', height: '100%'}}>
                 <Text style={styles.buttonText}>Study Buddy{"\n\n"}</Text>
               </ImageBackground>

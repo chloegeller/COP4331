@@ -17,10 +17,11 @@ const AppNavigator = createSwitchNavigator({
   Home_LI: HomeScreen_LoggedIn,
   Land: LandingScreen,
   LogIn: LogIn,
-    SignUp: SignUp,
-    BusScreen: BusScreen,
-    BusOn: BusRoutesOn,
-    BusOff: BusRoutesOff,
+  SignUp: SignUp,
+  BusScreen: BusScreen,
+  BusOn: BusRoutesOn,
+  BusOff: BusRoutesOff,
+  StudyBuddy: StudyBuddyScreen,
 },{
   initialRouteName: 'Land',
 });
