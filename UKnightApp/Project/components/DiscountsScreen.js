@@ -23,7 +23,7 @@ class BusScreen extends React.Component {
                     <View style={{ flex: 15 }}></View>
 
                 </View>
-                
+
                 <View style={{ flex: 18 }}>
                     {/*This one stops the buttons from stretching to the bottom of the screen*/}
                 </View>

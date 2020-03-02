@@ -11,6 +11,9 @@ import SignUp from './components/SignUp';
 import BusRoutesOff from './components/BusRoutesOff';
 import BusRoutesOn from './components/BusRoutesOn';
 import BusScreen from './components/BusScreen';
+import StudyBuddyScreen from './components/StudyBuddyScreen';
+import DiscountsScreen from './components/DiscountsScreen';
+import CalendarScreen from './components/CalendarScreen';
 
 const AppNavigator = createSwitchNavigator({
   Home: HomeScreen,
@@ -22,6 +25,8 @@ const AppNavigator = createSwitchNavigator({
   BusOn: BusRoutesOn,
   BusOff: BusRoutesOff,
   StudyBuddy: StudyBuddyScreen,
+  Discounts: DiscountsScreen,
+  Calendar: CalendarScreen,
 },{
   initialRouteName: 'Land',
 });

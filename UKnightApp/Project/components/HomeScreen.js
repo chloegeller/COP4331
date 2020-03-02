@@ -39,12 +39,12 @@ class HomeScreen extends React.Component {
             </TouchableOpacity>
           </View>
           <View style={styles.buttonContainer}>
-            <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('Home')}>
+            <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('Discounts')}>
               <ImageBackground source={require('../assets/discountImage.jpeg')} style={{width: '100%', height: '100%'}}>
                 <Text style={styles.buttonText}>Student Discounts{"\n\n"}</Text>
               </ImageBackground>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('Home')}>
+            <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('Calendar')}>
               <ImageBackground source={require('../assets/calendarImage.jpg')} style={{width: '100%', height: '100%'}}>
                 <Text style={styles.buttonText}>Event Calendar{"\n\n"}</Text>
               </ImageBackground>
