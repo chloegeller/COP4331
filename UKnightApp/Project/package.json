@@ -12,7 +12,6 @@
     "@react-native-community/masked-view": "^0.1.5",
     "@react-navigation/native": "^5.0.1",
     "expo": "~36.0.0",
-    "firebase": "^7.9.3",
     "link": "^0.1.5",
     "native-base": "^2.13.8",
     "prop-types": "^15.7.2",
@@ -32,11 +31,8 @@
     "tween-functions": "^1.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
     "babel-preset-expo": "~8.0.0",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.2",
-    "jest": "^25.1.0"
+    "@babel/core": "^7.0.0"
   },
   "private": true
 }
