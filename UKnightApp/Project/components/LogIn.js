@@ -20,6 +20,11 @@ class LogIn extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+      <Button
+          onPress={() => this.props.navigation.navigate('Home')}
+          title="  Back  "
+          color="#808080"
+      />
         <TextInput
           style={styles.inputBox}
           value={this.state.email}

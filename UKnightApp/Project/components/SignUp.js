@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, TextInput, StyleSheet, TouchableOpacity, Text } from 'react-native'
+import { View, TextInput, Button, StyleSheet, TouchableOpacity, Text } from 'react-native'
 import FireBase from '../config/FireBase'
 
 class Signup extends React.Component {
@@ -20,6 +20,11 @@ class Signup extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+        <Button
+            onPress={() => this.props.navigation.navigate('Home')}
+            title="  Back  "
+            color="#808080"
+        />
         <TextInput
           style={styles.inputBox}
           value={this.state.name}
