@@ -14,6 +14,7 @@
     "icon": "./assets/UKnight_icon5.png",
     "splash": {
       "image": "./assets/UKnight_icon5.png",
+
       "resizeMode": "contain",
       "backgroundColor": "#283747"
     },

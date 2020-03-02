@@ -11,7 +11,7 @@ Between UCF's host of websites, information platforms, and mobile app &ndash; le
 In our time at UCF, we (and many others) have had difficulty discovering "study-buddies," clubs, and information. To address these challenges, we're developing **UKnight**, an Android application.
 
 Specifically, **UKnight** will help students:
-1. Find other students that share similar classes and professors. 
+1. Find other students that share similar classes and professors.
 1. Discover like-minded students in courses and RSOs.
 1. Uncover seemingly hidden-away information.
 
@@ -20,7 +20,7 @@ Specifically, **UKnight** will help students:
 1. Connecting the UCF calendar and other known calendar sources into a centralized location that recommends events to attend.
 1. Integrating somewhat known information, like locations that apply student discounts, have periodic markdowns, needed academic forms, and the like.
 
-Generally, a keen observation is that all the information we aim to provide already exists and _can be found_, but oftentimes is rather dispersed. While this doesn't make it impossible to find, it can be rather challenging to discover without pointed searching and queries. **UKnight** strives to aggregate and present this information in a manner that requires minimal exertion on behalf of the student. 
+Generally, a keen observation is that all the information we aim to provide already exists and _can be found_, but oftentimes is rather dispersed. While this doesn't make it impossible to find, it can be rather challenging to discover without pointed searching and queries. **UKnight** strives to aggregate and present this information in a manner that requires minimal exertion on behalf of the student.
 
 The university experience is one that is often enhanced by forming connections over shared coursework, interests, and goals – yet many of the tools UCF "provides" to achieve these appear to fail a significant number of students. **UKnight**'s goal is to help build these connections and cultivate student's experience at UCF, for the better.
 
@@ -40,9 +40,9 @@ The university experience is one that is often enhanced by forming connections o
 ## [Sprint 1](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#8d6245a7da4c4ac4a396e6b0d466280a)
 
 ## [Sprint 2](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#31f326edb24e4229aa1f719da218c259)
-  
+
 ## [Sprint 3](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#8b1653f7bac14c72a1ed0282ff643e8e)
-  
+
 ## [Sprint 4](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#f9460d81aba94ec3bd150f4492313d59)
 
 ## [Sprint 5](https://www.notion.so/cxg/UKnight-72fc9a456cf14e8c96dc2a518170e995#2a17e55b414142b18e40017d68c8d20c)
