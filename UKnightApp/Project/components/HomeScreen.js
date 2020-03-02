@@ -1,5 +1,6 @@
+import 'jest-enzyme';
 import React from 'react';
-import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
+import {StyleSheet, Text, View, Button, TouchableOpacity} from 'react-native';
 
 class HomeScreen extends React.Component {
 
@@ -48,16 +49,19 @@ class HomeScreen extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  button: {
-    flex: 1,
-    margin: 10,
-    alignItems: 'center',
-    backgroundColor: '#505050'
-  },
-  buttonText: {
-    textAlign: 'center',
-    color: 'white'
-  }
+    button: {
+        flex: 1,
+        margin: 10,
+        alignItems: 'center',
+        backgroundColor: '#505050'
+    },
+    buttonText: {
+        textAlign: 'center',
+        color: 'white'
+    },
+    container: {
+        flex: 1
+    }
 });
 
 export default HomeScreen;

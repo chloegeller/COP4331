@@ -1,5 +1,6 @@
+import 'jest-enzyme';
 import React from 'react';
-import { StyleSheet, Text, View, Image, TouchableWithoutFeedback } from 'react-native';
+import {StyleSheet, Text, View, Image, TouchableWithoutFeedback} from 'react-native';
 
 class LandingScreen extends React.Component {
   static navigationOptions = {
