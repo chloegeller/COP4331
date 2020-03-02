@@ -1,4 +1,4 @@
-import 'jest-enzyme';
+
 import React from 'react';
 import { Text, View, Image } from 'react-native';
 import { createAppContainer } from 'react-navigation';
