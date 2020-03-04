@@ -28,25 +28,32 @@ class HomeScreen extends React.Component {
         <View style = {{ flex: 1}}></View>
           <View style={styles.buttonContainer}>
             <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('BusScreen')}>
-              <ImageBackground source={require('../assets/shuttleImage.jpg')} style={{width: '100%', height: '100%'}}>
+              <ImageBackground source={require('../../assets/shuttleImage.jpg')} style={{width: '100%', height: '100%'}}>
                 <Text style={styles.buttonText}>Bus Routes</Text>
               </ImageBackground>
             </TouchableOpacity>
             <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('StudyBuddy')}>
-              <ImageBackground source={require('../assets/studyImage.jpg')} style={{width: '100%', height: '100%'}}>
+              <ImageBackground source={require('../../assets/studyImage.jpg')} style={{width: '100%', height: '100%'}}>
                 <Text style={styles.buttonText}>Study Buddy{"\n\n"}</Text>
               </ImageBackground>
             </TouchableOpacity>
           </View>
           <View style={styles.buttonContainer}>
             <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('Discounts')}>
-              <ImageBackground source={require('../assets/discountImage.jpeg')} style={{width: '100%', height: '100%'}}>
+              <ImageBackground source={require('../../assets/discountImage.jpeg')} style={{width: '100%', height: '100%'}}>
                 <Text style={styles.buttonText}>Student Discounts{"\n\n"}</Text>
               </ImageBackground>
             </TouchableOpacity>
             <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('Calendar')}>
-              <ImageBackground source={require('../assets/calendarImage.jpg')} style={{width: '100%', height: '100%'}}>
+              <ImageBackground source={require('../../assets/calendarImage.jpg')} style={{width: '100%', height: '100%'}}>
                 <Text style={styles.buttonText}>Event Calendar{"\n\n"}</Text>
+              </ImageBackground>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.buttonContainer}>
+            <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('Docs')}>
+              <ImageBackground source={require('../../assets/docsImage.png')} style={{width: '100%', height: '100%'}}>
+                <Text style={styles.buttonText}>Useful Documents</Text>
               </ImageBackground>
             </TouchableOpacity>
           </View>
