@@ -7,6 +7,18 @@ class LandingScreen extends React.Component {
     title: '',
   };
 
+  navToAppropriateHomeScreen = () => {
+    var user = firebase.auth().currentUser;
+
+    if (user) {
+      // User is signed in.
+      this.props.navigation.navigate('Home_LI')
+    } else {
+      // No user is signed in.
+      this.props.navigation.navigate('Home')
+    }
+  }
+
   render() {
     return (
       <TouchableWithoutFeedback onPress={() => this.props.navigation.navigate('Home')}>
