@@ -18,7 +18,7 @@ class HomeScreen extends React.Component {
         <View style = {styles.header}>
           <View style = {styles.menuButton}>
             <Button
-              onPress={() => Alert.alert("Pressed menu button!")}
+              onPress={() => alert("Pressed menu button!")}
               title="     Menu     "
               color="#808080"
             />

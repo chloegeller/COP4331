@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
+import * as WebBrowser from 'expo-web-browser';
 
 class BusScreen extends React.Component {
     static navigationOptions = {
@@ -36,7 +37,17 @@ class BusScreen extends React.Component {
                     </TouchableOpacity>
 
                 </View>
-                <View style={{ flex: 18 }}>
+                <View style={{ flex: 4, flexDirection: 'row' }}>
+
+                    <TouchableOpacity style={styles.button} onPress={() => WebBrowser.openBrowserAsync("https://ucf.crystal-tod.com/rider/")}>
+                        <Text style={styles.buttonText}>Live Shuttle Tracker</Text>
+                    </TouchableOpacity>
+
+                    <View style = {{flex: 1}}>
+                    </View>
+
+                </View>
+                <View style={{ flex: 14 }}>
                     {/*This one stops the buttons from stretching to the bottom of the screen*/}
                 </View>
             </View>
