@@ -1,6 +1,7 @@
-
 import React from 'react';
 import {StyleSheet, Text, View, Button, ImageBackground, TouchableOpacity} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
 class HomeScreen extends React.Component {
 
@@ -109,10 +110,10 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     flexDirection: 'row',
+    height: '33.33%'
   },
   button: {
     width: '50%',
-    height: 250,
   },
   buttonTextBack: {
     backgroundColor: 'black',
