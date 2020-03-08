@@ -141,10 +141,10 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     flexDirection: 'row',
+    height: '33.33%'
   },
   button: {
     width: '50%',
-    height: 250,
   },
   buttonTextBack: {
     backgroundColor: 'black',
