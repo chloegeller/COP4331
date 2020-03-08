@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, View, Button, ImageBackground, TouchableOpacity} from 'react-native';
+import FireBase from '../../config/FireBase'
 
 class HomeScreen extends React.Component {
 

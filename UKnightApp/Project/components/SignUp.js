@@ -10,7 +10,7 @@ class Signup extends React.Component {
   }
 
   navToAppropriateHomeScreen = () => {
-    var user = firebase.auth().currentUser;
+    var user = FireBase.auth().currentUser;
 
     if (user) {
       // User is signed in.

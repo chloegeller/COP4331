@@ -1,6 +1,7 @@
 
 import React from 'react';
 import {StyleSheet, Text, View, Image, TouchableWithoutFeedback} from 'react-native';
+import FireBase from '../config/FireBase'
 
 class LandingScreen extends React.Component {
   static navigationOptions = {
@@ -8,7 +9,7 @@ class LandingScreen extends React.Component {
   };
 
   navToAppropriateHomeScreen = () => {
-    var user = firebase.auth().currentUser;
+    var user = FireBase.auth().currentUser;
 
     if (user) {
       // User is signed in.
