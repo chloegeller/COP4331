@@ -28,7 +28,7 @@ class BusScreen extends React.Component {
                 <View style={{ flex: 1.75, flexDirection: 'row' }}>
                     <View style={{ flex: 1 }}></View>
                     <Button
-                        onPress={() => this.props.navigation.navigate('Home_LI')}
+                        onPress={this.navToAppropriateHomeScreen()}
                         title="  Back  "
                         color="#808080"
                     />

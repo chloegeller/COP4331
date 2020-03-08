@@ -33,7 +33,7 @@ class Signup extends React.Component {
     return (
       <View style={styles.container}>
         <Button
-            onPress={() => this.props.navigation.navigate('Home')}
+            onPress={this.navToAppropriateHomeScreen()}
             title="  Back  "
             color="#808080"
         />

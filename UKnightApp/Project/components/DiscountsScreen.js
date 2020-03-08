@@ -9,7 +9,7 @@ class BusScreen extends React.Component {
             backgroundColor: '#000000',
         }
     };
-    
+
     navToAppropriateHomeScreen = () => {
       var user = firebase.auth().currentUser;
 
@@ -28,7 +28,7 @@ class BusScreen extends React.Component {
                 <View style={{ flex: 1.75, flexDirection: 'row' }}>
                     <View style={{ flex: 1 }}></View>
                     <Button
-                        onPress={() => this.props.navigation.navigate('Home')}
+                        onPress={this.navToAppropriateHomeScreen()}
                         title="  Back  "
                         color="#808080"
                     />
