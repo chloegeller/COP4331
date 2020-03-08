@@ -8,12 +8,12 @@ class BusRoutesOn extends React.Component {
         headerStyle: {
             backgroundColor: '#000000',
         },
-        
+
     };
 
     render() {
         return (
-            
+
                 <View style={{ flex: 1, flexDirection: 'column', backgroundColor: '#ba9b37' }}>
                     <View style={{ flex: 2, flexDirection: 'row' }}>
                         <View style={{ flex: 1 }}></View>
@@ -23,7 +23,7 @@ class BusRoutesOn extends React.Component {
                             color="#808080"
                         />
 
-                    
+
                     <View style={{ flex: 15 }}>
                     </View>
 
@@ -53,15 +53,15 @@ class BusRoutesOn extends React.Component {
                     .11: Lynx Transit Center
                     {"\n"}
                 </Text>
-                <Image style={styles.logo} source={require('../assets/shuttlemaps18.png')} />
+                <Image style={styles.logo} source={require('../../assets/shuttlemaps18.png')} />
                 <View style={{ flex: 1 }}>
                 </View>
 
 
 
-                
-                    
-                
+
+
+
                 </View>
 
         );
@@ -69,7 +69,7 @@ class BusRoutesOn extends React.Component {
 }
 
 const styles = StyleSheet.create({
-    
+
     logo: {
         height: 340,
         width: 360,
