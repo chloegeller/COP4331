@@ -9,6 +9,18 @@ class BusScreen extends React.Component {
             backgroundColor: '#000000',
         }
     };
+    
+    navToAppropriateHomeScreen = () => {
+      var user = firebase.auth().currentUser;
+
+      if (user) {
+        // User is signed in.
+        this.props.navigation.navigate('Home_LI')
+      } else {
+        // No user is signed in.
+        this.props.navigation.navigate('Home')
+      }
+    }
 
     render() {
         return (

@@ -9,6 +9,18 @@ class Signup extends React.Component {
     password: ''
   }
 
+  navToAppropriateHomeScreen = () => {
+    var user = firebase.auth().currentUser;
+
+    if (user) {
+      // User is signed in.
+      this.props.navigation.navigate('Home_LI')
+    } else {
+      // No user is signed in.
+      this.props.navigation.navigate('Home')
+    }
+  }
+
   handleSignUp = () => {
     const { email, password } = this.state
     FireBase.auth()

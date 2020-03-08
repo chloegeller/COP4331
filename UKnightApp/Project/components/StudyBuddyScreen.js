@@ -10,6 +10,18 @@ class BusScreen extends React.Component {
         }
     };
 
+    navToAppropriateHomeScreen = () => {
+      var user = firebase.auth().currentUser;
+
+      if (user) {
+        // User is signed in.
+        this.props.navigation.navigate('Home_LI')
+      } else {
+        // No user is signed in.
+        this.props.navigation.navigate('Home')
+      }
+    }
+
     render() {
         return (
             <View style={{ flex: 1, flexDirection: 'column', backgroundColor: '#ba9b37' }}>
@@ -23,7 +35,7 @@ class BusScreen extends React.Component {
                     <View style={{ flex: 15 }}></View>
 
                 </View>
-                
+
                 <View style={{ flex: 18 }}>
                     {/*This one stops the buttons from stretching to the bottom of the screen*/}
                 </View>
