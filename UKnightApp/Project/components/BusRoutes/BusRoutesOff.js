@@ -39,18 +39,18 @@ class BusRoutesOff extends React.Component {
                 </Text>
                 <Text style={{ fontSize: 20, color: 'black', textAlign: 'left' }}>
                     Hours: 6:30am - 10pm
-                    
+
 
                 </Text>
                 <Text style={{ fontSize: 15, color: 'black', textAlign: 'left' }}>
-                   
+
                     Shuttles conclude at 8pm on Fridays{"\n"}
 
                 </Text>
 
                 <Text style={{ fontSize: 15, color: 'black', textAlign: 'left' }}>
                     Student Union Routes{"\n"}
-                   
+
                     .   1: Knights Circle {"\n"}
                     {"\n"}
 
@@ -78,9 +78,9 @@ class BusRoutesOff extends React.Component {
                     .   6: Northgate Lates/Tivoli{"\n"}
                     .   8: Riverwind at Alafaya/The Station{"\n"}
                     . 13: NorthView{"\n"}
-                    
+
                 </Text>
-                
+
                 <View style={{ flex: 1 }}>
                 </View>
 
