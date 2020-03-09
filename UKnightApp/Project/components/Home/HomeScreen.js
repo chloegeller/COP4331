@@ -75,7 +75,14 @@ class HomeScreen extends React.Component {
                   <Text style={styles.buttonText}>Documents</Text>
                 </View>
               </ImageBackground>
-            </TouchableOpacity>
+                 </TouchableOpacity>
+                <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('Messaging')}>
+                       <ImageBackground source={require('../../assets/chatimg.png')} style={{ width: '100%', height: '100%' }}>
+                        <View style={styles.buttonTextBack}>
+                            <Text style={styles.buttonText}>Messaging{"\n\n"}</Text>
+                       </View>
+                </ImageBackground>
+             </TouchableOpacity>
           </View>
         </View>
       </View>

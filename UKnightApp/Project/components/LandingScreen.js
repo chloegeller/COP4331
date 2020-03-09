@@ -21,7 +21,7 @@ class LandingScreen extends React.Component {
 
   render() {
     return (
-      <TouchableWithoutFeedback onPress={this.navToAppropriateHomeScreen()}>
+      <TouchableWithoutFeedback onPress={() => this.props.navigation.navigate('Home')}>
         <View style={styles.container1}>
           {/* <Text style={styles.heading}>UKnight</Text> */}
           {/* <View style={styles.container2}> */}

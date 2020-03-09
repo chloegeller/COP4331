@@ -11,25 +11,13 @@ class BusScreen extends React.Component {
         }
     };
 
-    navToAppropriateHomeScreen = () => {
-      var user = firebase.auth().currentUser;
-
-      if (user) {
-        // User is signed in.
-        this.props.navigation.navigate('Home_LI')
-      } else {
-        // No user is signed in.
-        this.props.navigation.navigate('Home')
-      }
-    }
-
     render() {
         return (
             <View style={{ flex: 1, flexDirection: 'column', backgroundColor: '#ba9b37' }}>
                 <View style={{ flex: 1.75, flexDirection: 'row' }}>
                     <View style={{ flex: 1 }}></View>
                     <Button
-                        onPress={this.navToAppropriateHomeScreen()}
+                        onPress={() => this.props.navigation.navigate('Home')}
                         title="  Back  "
                         color="#808080"
                     />

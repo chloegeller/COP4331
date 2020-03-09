@@ -17,6 +17,7 @@ import CalendarScreen from './components/CalendarScreen';
 import DocScreen from './components/DocumentsScreen';
 import SetScreen from './components/SettingsScreen';
 import ProfileScreen from './components/ProfileScreen';
+import MessagingScreen from './components/MessagingScreen';
 
 const AppNavigator = createSwitchNavigator({
   Home: HomeScreen,
@@ -33,6 +34,7 @@ const AppNavigator = createSwitchNavigator({
   Docs: DocScreen,
   Settings: SetScreen,
   Profile: ProfileScreen,
+  Messaging: MessagingScreen,
 },{
   initialRouteName: 'Land',
 });
