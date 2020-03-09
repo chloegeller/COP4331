@@ -12,7 +12,6 @@ class BusScreen extends React.Component {
 
     render() {
         return (
-<<<<<<< HEAD
           <View style = {{flex: 1, flexDirection: 'column'}}>
             <View style = {styles.header}>
               <View style = {styles.menuButton}>
@@ -24,7 +23,7 @@ class BusScreen extends React.Component {
               </View>
               <View style = {{flex:0.5}}>
               </View>
-              <Text style = {styles.headerText}>  Events  </Text>
+              <Text style = {styles.headerText}>Study Buddy</Text>
               <View style = {{flex:0.5}}>
               </View>
               <View style = {styles.loginButton}>
@@ -36,19 +35,6 @@ class BusScreen extends React.Component {
               </View>
             </View>
             <View style = {styles.body}>
-=======
-            <View style={{ flex: 1, flexDirection: 'column', backgroundColor: '#ba9b37' }}>
-                <View style={{ flex: 1.75, flexDirection: 'row' }}>
-                    <View style={{ flex: 1 }}></View>
-                    <Button
-                        onPress={() => this.props.navigation.navigate('Home')}
-                        title="  Back  "
-                        color="#808080"
-                    />
-                    <View style={{ flex: 15 }}></View>
-
-                </View>
->>>>>>> c9bcfa37ff717f13c0b1646b5c3449716de86b70
 
             </View>
           </View>
