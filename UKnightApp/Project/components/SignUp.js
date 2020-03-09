@@ -9,18 +9,6 @@ class Signup extends React.Component {
     password: ''
   }
 
-  navToAppropriateHomeScreen = () => {
-    var user = FireBase.auth().currentUser;
-
-    if (user) {
-      // User is signed in.
-      this.props.navigation.navigate('Home_LI')
-    } else {
-      // No user is signed in.
-      this.props.navigation.navigate('Home')
-    }
-  }
-
   handleSignUp = () => {
     const { email, password } = this.state
     FireBase.auth()
@@ -33,7 +21,7 @@ class Signup extends React.Component {
     return (
       <View style={styles.container}>
         <Button
-            onPress={this.navToAppropriateHomeScreen()}
+            onPress={() => this.props.navigation.navigate('Home')}
             title="  Back  "
             color="#808080"
         />

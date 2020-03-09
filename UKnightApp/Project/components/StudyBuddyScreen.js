@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
-import FireBase from '../config/FireBase'
 
 class BusScreen extends React.Component {
     static navigationOptions = {
@@ -11,32 +10,20 @@ class BusScreen extends React.Component {
         }
     };
 
-    navToAppropriateHomeScreen = () => {
-      var user = FireBase.auth().currentUser;
-
-      if (user) {
-        // User is signed in.
-        this.props.navigation.navigate('Home_LI')
-      } else {
-        // No user is signed in.
-        this.props.navigation.navigate('Home')
-      }
-    }
-
     render() {
         return (
             <View style={{ flex: 1, flexDirection: 'column', backgroundColor: '#ba9b37' }}>
                 <View style={{ flex: 1.75, flexDirection: 'row' }}>
                     <View style={{ flex: 1 }}></View>
                     <Button
-                        onPress={this.navToAppropriateHomeScreen()}
+                        onPress={() => this.props.navigation.navigate('Home')}
                         title="  Back  "
                         color="#808080"
                     />
                     <View style={{ flex: 15 }}></View>
 
                 </View>
-
+                
                 <View style={{ flex: 18 }}>
                     {/*This one stops the buttons from stretching to the bottom of the screen*/}
                 </View>

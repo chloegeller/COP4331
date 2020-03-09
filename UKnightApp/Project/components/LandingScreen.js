@@ -1,7 +1,6 @@
 
 import React from 'react';
 import {StyleSheet, Text, View, Image, TouchableWithoutFeedback} from 'react-native';
-import FireBase from '../config/FireBase'
 
 class LandingScreen extends React.Component {
   static navigationOptions = {
@@ -9,7 +8,7 @@ class LandingScreen extends React.Component {
   };
 
   navToAppropriateHomeScreen = () => {
-    var user = FireBase.auth().currentUser;
+    var user = firebase.auth().currentUser;
 
     if (user) {
       // User is signed in.
@@ -22,7 +21,7 @@ class LandingScreen extends React.Component {
 
   render() {
     return (
-      <TouchableWithoutFeedback onPress={this.navToAppropriateHomeScreen()}>
+      <TouchableWithoutFeedback onPress={() => this.props.navigation.navigate('Home')}>
         <View style={styles.container1}>
           {/* <Text style={styles.heading}>UKnight</Text> */}
           {/* <View style={styles.container2}> */}

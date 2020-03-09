@@ -10,8 +10,8 @@ class HomeScreen_LoggedIn extends React.Component {
 
     FireBase.auth().onAuthStateChanged((user) => {
       if (user != null) {
-        //alert("We are authenticated now!")
-        //alert("About to write email to UserId: " + user.uid + " in the database")
+        alert("We are authenticated now!")
+        alert("About to write email to UserId: " + user.uid + " in the database")
 
         // This is exactly the syntax used in every tutorial I have found. Expo's, google's, random internet guy's, all of them.
         // It still doesn't actually work.
