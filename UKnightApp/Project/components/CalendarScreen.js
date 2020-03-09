@@ -23,7 +23,7 @@ class BusScreen extends React.Component {
               </View>
               <View style = {{flex:0.5}}>
               </View>
-              <Text style = {styles.headerText}>  Events  </Text>
+              <Text style = {styles.headerText}>Study Buddy</Text>
               <View style = {{flex:0.5}}>
               </View>
               <View style = {styles.loginButton}>

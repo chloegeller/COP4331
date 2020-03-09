@@ -13,13 +13,26 @@ class BusScreen extends React.Component {
     render() {
         return (
           <View style = {{flex: 1, flexDirection: 'column'}}>
-          <View style = {styles.header}>
-            <View style = {styles.menuButton}>
-              <Button
-                onPress={() => this.props.navigation.navigate('Home')}
-                title="     Back     "
-                color="#808080"
-              />
+            <View style = {styles.header}>
+              <View style = {styles.menuButton}>
+                <Button
+                  onPress={() => this.props.navigation.navigate('Home')}
+                  title="     Back     "
+                  color="#808080"
+                />
+              </View>
+              <View style = {{flex:0.5}}>
+              </View>
+              <Text style = {styles.headerText}>Study Buddy</Text>
+              <View style = {{flex:0.5}}>
+              </View>
+              <View style = {styles.loginButton}>
+                <Button
+                  onPress={() => this.props.navigation.navigate('LogIn')}
+                  title="     Log in     "
+                  color="#808080"
+                />
+              </View>
             </View>
             <View style = {{flex:0.5}}>
             </View>
@@ -34,12 +47,8 @@ class BusScreen extends React.Component {
               />
             </View>
           </View>
-          <View style = {styles.body}>
-
-          </View>
-        </View>
-      );
-  }
+        );
+    }
 }
 
 const styles = StyleSheet.create({
