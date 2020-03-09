@@ -1,7 +1,5 @@
 import React from 'react';
 import {StyleSheet, Text, View, Button, ImageBackground, TouchableOpacity} from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
 
 class HomeScreen extends React.Component {
 
@@ -19,7 +17,7 @@ class HomeScreen extends React.Component {
         <View style = {styles.header}>
           <View style = {styles.menuButton}>
             <Button
-              onPress={() => Alert.alert("Pressed menu button!")}
+              onPress={() => alert("Pressed menu button!")}
               title="     Menu     "
               color="#808080"
             />

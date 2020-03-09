@@ -6,15 +6,25 @@ import db from '../../config/FireBase'
 class HomeScreen_LoggedIn extends React.Component {
 
   componentDidMount = () => {
-    // When the user accesses the loggen in screen, adds their information to the database
-    FireBase.auth().onAuthStateChanged(user => {
-      if (user) {
-        let uid = user.uid;
-        let email = user.email;
-        db.collection("users").add({
-          email: email,
-          uid: uid
-        })
+    // When the user accesses the logged in screen, adds their information to the database
+
+    FireBase.auth().onAuthStateChanged((user) => {
+      if (user != null) {
+        alert("We are authenticated now!")
+        alert("About to write email to UserId: " + user.uid + " in the database")
+
+        // This is exactly the syntax used in every tutorial I have found. Expo's, google's, random internet guy's, all of them.
+        // It still doesn't actually work.
+        db.ref('users/' + user.uid).set({
+          email: user.email
+        }), function(error) {
+          // The Promise was rejected.
+          // Before including this it would sometimes yell at me for not handling it,
+          // but usually it would just not do anything at all, silently not doing what I tell it to do.
+          // The authentication works great, I don't understand why the database using the same package, logged in with itself, won't work.
+          console.error(error);
+        };
+        alert("Right after database call. I wish it would get here, sigh...")
       }
     })
   }
@@ -33,7 +43,7 @@ class HomeScreen_LoggedIn extends React.Component {
         <View style = {styles.header}>
           <View style = {styles.menuButton}>
             <Button
-              onPress={() => Alert.alert("Pressed menu button!")}
+              onPress={() => alert("Pressed menu button!")}
               title="     Menu     "
               color="#808080"
             />

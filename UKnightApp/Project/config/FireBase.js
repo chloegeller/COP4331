@@ -1,5 +1,5 @@
 import firebase from 'firebase';
-import 'firebase/firestore'
+import 'firebase/database'
 import {
     API_KEY,
     AUTH_DOMAIN,
@@ -15,14 +15,14 @@ const firebaseConfig = {
   authDomain: AUTH_DOMAIN,
   databaseURL: DATABASE_URL,
   projectId: PROJECT_ID,
-  storageBucket: "uknight.appspot.com",
+  storageBucket: "uknight-g17.appspot.com",
   messagingSenderId: MESSAGE_SENDER_ID,
   appId: APP_ID,
-  measurementId: "G-BM05JR5QE9"
+  measurementId: "G-SSLDJ6CE1Y"
 };
 
 const FireBase = firebase.initializeApp(firebaseConfig);
 
-export const db = firebase.firestore();
+export const db = firebase.database();
 
 export default FireBase;

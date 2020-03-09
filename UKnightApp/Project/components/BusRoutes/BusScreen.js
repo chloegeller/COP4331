@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
+import * as WebBrowser from 'expo-web-browser';
 
 class BusScreen extends React.Component {
     static navigationOptions = {
@@ -10,13 +11,25 @@ class BusScreen extends React.Component {
         }
     };
 
+    navToAppropriateHomeScreen = () => {
+      var user = firebase.auth().currentUser;
+
+      if (user) {
+        // User is signed in.
+        this.props.navigation.navigate('Home_LI')
+      } else {
+        // No user is signed in.
+        this.props.navigation.navigate('Home')
+      }
+    }
+
     render() {
         return (
             <View style={{ flex: 1, flexDirection: 'column', backgroundColor: '#ba9b37' }}>
                 <View style={{ flex: 1.75, flexDirection: 'row' }}>
                     <View style={{ flex: 1 }}></View>
                     <Button
-                        onPress={() => this.props.navigation.navigate('Home')}
+                        onPress={this.navToAppropriateHomeScreen()}
                         title="  Back  "
                         color="#808080"
                     />
@@ -36,7 +49,17 @@ class BusScreen extends React.Component {
                     </TouchableOpacity>
 
                 </View>
-                <View style={{ flex: 18 }}>
+                <View style={{ flex: 4, flexDirection: 'row' }}>
+
+                    <TouchableOpacity style={styles.button} onPress={() => WebBrowser.openBrowserAsync("https://ucf.crystal-tod.com/rider/")}>
+                        <Text style={styles.buttonText}>Live Shuttle Tracker</Text>
+                    </TouchableOpacity>
+
+                    <View style = {{flex: 1}}>
+                    </View>
+
+                </View>
+                <View style={{ flex: 14 }}>
                     {/*This one stops the buttons from stretching to the bottom of the screen*/}
                 </View>
             </View>
