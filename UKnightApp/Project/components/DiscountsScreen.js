@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
-
+import { StyleSheet, Text, View, Button, TouchableOpacity} from 'react-native';
+import { WebView } from 'react-native-webview';
 class DiscountsScreen extends React.Component {
     static navigationOptions = {
         title: 'Discounts',
@@ -35,9 +35,9 @@ class DiscountsScreen extends React.Component {
               </View>
             </View>
             <View style = {styles.body}>
-
+            <WebView source={{ uri: 'https://knightsdiscounts.wixsite.com/home/restaurants' }} />
             </View>
-          </View>
+            </View>
       );
   }
 }
