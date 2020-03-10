@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
 
-class BusScreen extends React.Component {
+class StudyBuddyScreen extends React.Component {
     static navigationOptions = {
         title: 'Study Buddy',
         headerTintColor: '#ffffff',
@@ -67,4 +67,4 @@ body: {
 },
 });
 
-export default BusScreen;
+export default StudyBuddyScreen;
