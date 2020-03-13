@@ -20,7 +20,7 @@ class HomeScreen extends React.Component {
           <View style = {{ flex: 15}}></View>
           <Button style={styles.loginButton}
             onPress={() => this.props.navigation.navigate('LogIn')}
-            title="     Log in     "
+            title="Login"
             color="#808080"
           />
           <View style = {{ flex: 1}}></View>

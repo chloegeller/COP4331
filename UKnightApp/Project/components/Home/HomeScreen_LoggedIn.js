@@ -1,7 +1,8 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button, ImageBackground, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Button, ImageBackground, TouchableOpacity, StatusBar } from 'react-native';
 import FireBase from '../../config/FireBase'
 import db from '../../config/FireBase'
+import Constants from 'expo-constants';
 
 class HomeScreen_LoggedIn extends React.Component {
 
@@ -50,7 +51,7 @@ class HomeScreen_LoggedIn extends React.Component {
           </View>
           <View style = {{flex:0.5}}>
           </View>
-          <Text style = {styles.headerText}>UKnight</Text>
+          <Text style = {styles.headerText}>uKnight</Text>
           <View style = {{flex:0.5}}>
           </View>
           <View style = {styles.loginButton}>
@@ -117,18 +118,30 @@ class HomeScreen_LoggedIn extends React.Component {
 }
 
 const styles = StyleSheet.create({
+  statusBar: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    flex: 1,
+  },
   header: {
     flex: 1,
+    marginTop: Constants.statusBarHeight,
+    flexDirection: 'column',
+    justifyContent: 'space-around',
+    backgroundColor: '#32333d',
+    // alignItems: 'center',
+  },
+  headerVerticalCenter: {
     flexDirection: 'row',
-    backgroundColor: 'black',
-    alignItems: 'center',
+    height: '100%',
+    alignItems: 'center'
   },
   menuButton: {
     flex: 1,
   },
   headerText: {
-    color: '#ffc904',
-    fontSize: 48,
+    color: '#f8c700',
+    fontSize: 40,
     fontWeight: 'bold',
   },
   loginButton: {
@@ -137,23 +150,34 @@ const styles = StyleSheet.create({
   body: {
     flex: 8,
     flexDirection: 'column',
-    backgroundColor: '#ba9b37'
+    justifyContent: 'space-around',
+    backgroundColor: '#ba9b37',
+    paddingBottom: 24,
   },
   buttonContainer: {
     flexDirection: 'row',
-    height: '33.33%'
+    justifyContent: 'space-around',
+    // alignItems: 'center',
+    height: '33.33%',
   },
   button: {
+    // marginTop: 30,
+    // marginBottom: 30,
+    paddingVertical: 5,
+    paddingHorizontal: 5,
+    borderWidth: 0,
+    borderRadius: 5,
     width: '50%',
+    //alignItems: 'center',
   },
   buttonTextBack: {
-    backgroundColor: 'black',
+    backgroundColor: '#586d78',
     alignItems: 'center',
-    top: '40%',
+    top: '60%',
     height: 40,
   },
   buttonText: {
-    color: 'white',
+    color: '#eeeeee',
     fontSize: 30,
     fontWeight: 'bold',
   },

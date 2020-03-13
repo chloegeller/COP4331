@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, TextInput, Button, StyleSheet, TouchableOpacity, Text } from 'react-native'
 import FireBase from '../config/FireBase'
-
+import Constants from 'expo-constants';
 class Signup extends React.Component {
   state = {
     name: '',
@@ -22,7 +22,7 @@ class Signup extends React.Component {
       <View style={styles.container}>
         <Button
             onPress={() => this.props.navigation.navigate('Home')}
-            title="  Back  "
+            title="Back"
             color="#808080"
         />
         <TextInput

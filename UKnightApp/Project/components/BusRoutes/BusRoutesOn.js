@@ -19,7 +19,7 @@ class BusRoutesOn extends React.Component {
                     <View style = {styles.menuButton}>
                       <Button
                         onPress={() => this.props.navigation.navigate('Home')}
-                        title="     Back     "
+                        title="Back"
                         color="#808080"
                       />
                     </View>
@@ -31,7 +31,7 @@ class BusRoutesOn extends React.Component {
                     <View style = {styles.loginButton}>
                       <Button
                         onPress={() => this.props.navigation.navigate('LogIn')}
-                        title="     Log in     "
+                        title="Login"
                         color="#808080"
                       />
                     </View>

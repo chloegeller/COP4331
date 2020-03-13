@@ -19,7 +19,7 @@ class BusRoutesOff extends React.Component {
                     <View style={{ flex: 1 }}></View>
                     <Button
                         onPress={() => this.props.navigation.navigate('BusScreen')}
-                        title="  Back  "
+                        title="Back"
                         color="#808080"
                     />
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
-
+import Constants from 'expo-constants';
 class DocumentsScreen extends React.Component {
     static navigationOptions = {
         title: 'Documents',
@@ -17,7 +17,7 @@ class DocumentsScreen extends React.Component {
               <View style = {styles.menuButton}>
                 <Button
                   onPress={() => this.props.navigation.navigate('Home')}
-                  title="     Back     "
+                  title="Back"
                   color="#808080"
                 />
               </View>
@@ -29,7 +29,7 @@ class DocumentsScreen extends React.Component {
               <View style = {styles.loginButton}>
                 <Button
                   onPress={() => this.props.navigation.navigate('LogIn')}
-                  title="     Log in     "
+                  title="Login"
                   color="#808080"
                 />
               </View>
@@ -45,17 +45,25 @@ class DocumentsScreen extends React.Component {
 const styles = StyleSheet.create({
   header: {
     flex: 1,
+    marginTop: Constants.statusBarHeight,
     flexDirection: 'row',
-    backgroundColor: 'black',
+    justifyContent: 'space-around',
+    backgroundColor: '#32333d',
     alignItems: 'center',
+  },
+  headerVerticalCenter: {
+    flexDirection: 'row',
+    height: '100%',
+    alignItems: 'center'
   },
   menuButton: {
     flex: 1,
   },
   headerText: {
-    color: '#ffc904',
-    fontSize: 32,
+    color: '#f8c700',
+    fontSize: 40,
     fontWeight: 'bold',
+    
   },
   loginButton: {
     flex: 1,
@@ -63,7 +71,15 @@ const styles = StyleSheet.create({
   body: {
     flex: 8,
     flexDirection: 'column',
-    backgroundColor: '#ba9b37'
+    justifyContent: 'space-around',
+    backgroundColor: '#ba9b37',
+    paddingBottom: 24,
+  },
+  buttonTextBack: {
+    backgroundColor: '#586d78',
+    alignItems: 'center',
+    top: '60%',
+    height: 40,
   },
 });
 

@@ -1,5 +1,6 @@
 import React from 'react';
-import {StyleSheet, Text, View, Button, ImageBackground, TouchableOpacity} from 'react-native';
+import {StyleSheet, Text, View, Button, ImageBackground, TouchableOpacity, StatusBar} from 'react-native';
+import Constants from 'expo-constants';
 
 class HomeScreen extends React.Component {
 
@@ -13,26 +14,31 @@ class HomeScreen extends React.Component {
 
   render() {
     return (
+      // <View style={styles.statusBar}>
+      // <StatusBar barStyle = "dark-content"
+      // backgroundColor="#32333d"></StatusBar>
       <View style = {{flex: 1, flexDirection: 'column'}}>
         <View style = {styles.header}>
-          <View style = {styles.menuButton}>
-            <Button
-              onPress={() => alert("Pressed menu button!")}
-              title="     Menu     "
-              color="#808080"
-            />
-          </View>
-          <View style = {{flex:0.5}}>
-          </View>
-          <Text style = {styles.headerText}>UKnight</Text>
-          <View style = {{flex:0.5}}>
-          </View>
-          <View style = {styles.loginButton}>
-            <Button
-              onPress={() => this.props.navigation.navigate('LogIn')}
-              title="     Log in     "
-              color="#808080"
-            />
+          <View style = {styles.headerVerticalCenter}>
+            <View style = {styles.menuButton}>
+              <Button
+                onPress={() => alert("Pressed menu button!")}
+                title="   Menu   "
+                color="#eeeeee"
+              />
+            </View>
+            <View style = {{flex:0.5}}>
+            </View>
+            <Text style = {styles.headerText}>uKnight</Text>
+            <View style = {{flex:0.5}}>
+            </View>
+            <View style = {styles.loginButton}>
+              <Button
+                onPress={() => this.props.navigation.navigate('LogIn')}
+                title="Login"
+                color="#eeeeee"
+              />
+            </View>
           </View>
         </View>
         <View style = {styles.body}>
@@ -86,24 +92,38 @@ class HomeScreen extends React.Component {
           </View>
         </View>
       </View>
+      // </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
+  statusBar: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    flex: 1,
+  },
   header: {
     flex: 1,
+    marginTop: Constants.statusBarHeight,
+    flexDirection: 'column',
+    justifyContent: 'space-around',
+    backgroundColor: '#32333d',
+    // alignItems: 'center',
+  },
+  headerVerticalCenter: {
     flexDirection: 'row',
-    backgroundColor: 'black',
-    alignItems: 'center',
+    height: '100%',
+    alignItems: 'center'
   },
   menuButton: {
     flex: 1,
   },
   headerText: {
-    color: '#ffc904',
-    fontSize: 48,
+    color: '#f8c700',
+    fontSize: 40,
     fontWeight: 'bold',
+    alignItems: 'center',
   },
   loginButton: {
     flex: 1,
@@ -111,23 +131,34 @@ const styles = StyleSheet.create({
   body: {
     flex: 8,
     flexDirection: 'column',
-    backgroundColor: '#ba9b37'
+    justifyContent: 'space-around',
+    backgroundColor: '#ba9b37',
+    paddingBottom: 24,
   },
   buttonContainer: {
     flexDirection: 'row',
-    height: '33.33%'
+    justifyContent: 'space-around',
+    // alignItems: 'center',
+    height: '33.33%',
   },
   button: {
+    // marginTop: 30,
+    // marginBottom: 30,
+    paddingVertical: 5,
+    paddingHorizontal: 5,
+    borderWidth: 0,
+    borderRadius: 5,
     width: '50%',
+    //alignItems: 'center',
   },
   buttonTextBack: {
-    backgroundColor: 'black',
+    backgroundColor: '#586d78',
     alignItems: 'center',
-    top: '40%',
+    top: '60%',
     height: 40,
   },
   buttonText: {
-    color: 'white',
+    color: '#eeeeee',
     fontSize: 30,
     fontWeight: 'bold',
   },

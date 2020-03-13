@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, TextInput, StyleSheet, TouchableOpacity, Text, Button } from 'react-native'
 import FireBase from '../config/FireBase'
+import Constants from 'expo-constants';
 
 class LogIn extends React.Component {
   state = {
@@ -22,21 +23,24 @@ class LogIn extends React.Component {
       <View style={styles.container}>
       <Button
           onPress={() => this.props.navigation.navigate('Home')}
-          title="  Back  "
-          color="#808080"
+          title="Back"
+          color="#eeeeee"
       />
         <TextInput
           style={styles.inputBox}
           value={this.state.email}
           onChangeText={email => this.setState({ email })}
           placeholder='Email'
+          placeholderTextColor="#eeeeee"
           autoCapitalize='none'
+          
         />
         <TextInput
           style={styles.inputBox}
           value={this.state.password}
           onChangeText={password => this.setState({ password })}
           placeholder='Password'
+          placeholderTextColor="#eeeeee"
           secureTextEntry={true}
         />
         <TouchableOpacity style={styles.button} onPress={this.handleLogIn}>
@@ -53,7 +57,7 @@ class LogIn extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#2e3a41',
     alignItems: 'center',
     justifyContent: 'center'
   },
@@ -64,7 +68,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     borderColor: '#d3d3d3',
     borderBottomWidth: 1,
-    textAlign: 'center'
+    textAlign: 'center',
   },
   button: {
     marginTop: 30,
@@ -80,7 +84,7 @@ const styles = StyleSheet.create({
   buttonText: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#fff'
+    color: '#eeeeee'
   },
   buttonSignup: {
     fontSize: 12
