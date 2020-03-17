@@ -28,31 +28,38 @@ class LogIn extends React.Component {
 
     render() {
         return (
-            <View style={styles.container}>
-                <Button
-                    onPress={() => this.props.navigation.navigate('Home')}
-                    title="Back"
-                    color="#eeeeee"/>
-                <TextInput
-                    style={styles.inputBox}
-                    value={this.state.email}
-                    onChangeText={email => this.setState({email})}
-                    placeholder='Email'
-                    placeholderTextColor="#eeeeee"
-                    autoCapitalize='none'/>
-                <TextInput
-                    style={styles.inputBox}
-                    value={this.state.password}
-                    onChangeText={password => this.setState({password})}
-                    placeholder='Password'
-                    placeholderTextColor="#eeeeee"
-                    secureTextEntry={true}/>
-                <TouchableOpacity style={styles.button} onPress={this.handleLogIn}>
-                    <Text style={styles.buttonText}>Login</Text>
-                </TouchableOpacity>
-                <Button
-                    title="Don't have an account yet? Sign up"
-                    onPress={() => this.props.navigation.navigate('SignUp')}/>
+            <View
+                style={{
+                flex: 1,
+                flexDirection: 'column',
+                backgroundColor: '#32333d'
+            }}>
+                <View style={styles.container}>
+                    <Button
+                        onPress={() => this.props.navigation.navigate('Home')}
+                        title="Back"
+                        color="#eeeeee"/>
+                    <TextInput
+                        style={styles.inputBox}
+                        value={this.state.email}
+                        onChangeText={email => this.setState({email})}
+                        placeholder='Email'
+                        placeholderTextColor="#eeeeee"
+                        autoCapitalize='none'/>
+                    <TextInput
+                        style={styles.inputBox}
+                        value={this.state.password}
+                        onChangeText={password => this.setState({password})}
+                        placeholder='Password'
+                        placeholderTextColor="#eeeeee"
+                        secureTextEntry={true}/>
+                    <TouchableOpacity style={styles.button} onPress={this.handleLogIn}>
+                        <Text style={styles.buttonText}>Login</Text>
+                    </TouchableOpacity>
+                    <Button
+                        title="Don't have an account yet? Sign up"
+                        onPress={() => this.props.navigation.navigate('SignUp')}/>
+                </View>
             </View>
         )
     }
@@ -70,7 +77,7 @@ const styles = StyleSheet.create({
         margin: 10,
         padding: 15,
         fontSize: 16,
-        borderColor: '#d3d3d3',
+        borderColor: '#eeeeee',
         borderBottomWidth: 1,
         textAlign: 'center'
     },

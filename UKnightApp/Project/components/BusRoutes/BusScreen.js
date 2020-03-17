@@ -57,15 +57,15 @@ class BusScreen extends React.Component {
                         <TouchableOpacity
                             style={styles.button}
                             onPress={() => this.props.navigation.navigate('BusOn')}>
-                            <Text style={styles.buttonText}>On Campus{"\n\n"}Bus Routes</Text>
+                            <Text style={styles.buttonText}>On-Campus:{"\n\n"}Pegasus Express</Text>
                         </TouchableOpacity>
 
                         <TouchableOpacity
                             style={styles.button}
                             onPress={() => this.props.navigation.navigate('BusOff')}>
                             <Text style={styles.buttonText}>
-                                Off Campus{"\n\n"}
-                                Bus Routes</Text>
+                                Off-Campus:{"\n\n"}
+                                Shuttle Routes</Text>
                         </TouchableOpacity>
 
                     </View>
@@ -140,7 +140,7 @@ const styles = StyleSheet.create({
         margin: 10,
         alignItems: 'center',
         backgroundColor: '#505050',
-        borderColor: '#eeeeee',
+        borderColor: '#f8c700',
         borderWidth: 1,
         borderRadius: 5
     },

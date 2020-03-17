@@ -16,36 +16,43 @@ class DiscountsScreen extends React.Component {
             <View
                 style={{
                 flex: 1,
-                flexDirection: 'column'
+                flexDirection: 'column',
+                backgroundColor: '#32333d'
             }}>
-                <View style={styles.header}>
-                    <View style={styles.menuButton}>
-                        <Button
-                            onPress={() => this.props.navigation.navigate('Home')}
-                            title="Back"
-                            color="#808080"/>
+                <View
+                    style={{
+                    flex: 1,
+                    flexDirection: 'column'
+                }}>
+                    <View style={styles.header}>
+                        <View style={styles.menuButton}>
+                            <Button
+                                onPress={() => this.props.navigation.navigate('Home')}
+                                title="Back"
+                                color="#eeeeee"/>
+                        </View>
+                        <View style={{
+                            flex: 0.5
+                        }}></View>
+                        <Text style={styles.headerText}>
+                            Discounts
+                        </Text>
+                        <View style={{
+                            flex: 0.5
+                        }}></View>
+                        <View style={styles.loginButton}>
+                            <Button
+                                onPress={() => this.props.navigation.navigate('LogIn')}
+                                title="Login"
+                                color="#eeeeee"/>
+                        </View>
                     </View>
-                    <View style={{
-                        flex: 0.5
-                    }}></View>
-                    <Text style={styles.headerText}>
-                        Discounts
-                    </Text>
-                    <View style={{
-                        flex: 0.5
-                    }}></View>
-                    <View style={styles.loginButton}>
-                        <Button
-                            onPress={() => this.props.navigation.navigate('LogIn')}
-                            title="Login"
-                            color="#808080"/>
+                    <View style={styles.body}>
+                        <WebView
+                            source={{
+                            uri: 'https://knightsdiscounts.wixsite.com/home/restaurants'
+                        }}/>
                     </View>
-                </View>
-                <View style={styles.body}>
-                    <WebView
-                        source={{
-                        uri: 'https://knightsdiscounts.wixsite.com/home/restaurants'
-                    }}/>
                 </View>
             </View>
         );

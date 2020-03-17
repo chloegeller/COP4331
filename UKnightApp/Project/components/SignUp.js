@@ -27,36 +27,43 @@ class Signup extends React.Component {
 
     render() {
         return (
-            <View style={styles.container}>
-                <Button
-                    onPress={() => this.props.navigation.navigate('Home')}
-                    title="Back"
-                    color="#eeeeee"/>
-                <TextInput
-                    style={styles.inputBox}
-                    value={this.state.name}
-                    onChangeText={name => this.setState({name})}
-                    placeholder='Full Name'
-                    placeholderTextColor="#eeeeee"/>
-                <TextInput
-                    style={styles.inputBox}
-                    value={this.state.email}
-                    onChangeText={email => this.setState({email})}
-                    placeholder='Email'
-                    placeholderTextColor="#eeeeee"
-                    autoCapitalize='none'/>
-                <TextInput
-                    style={styles.inputBox}
-                    value={this.state.password}
-                    onChangeText={password => this.setState({password})}
-                    placeholder='Password'
-                    placeholderTextColor="#eeeeee"
-                    secureTextEntry={true}/>
-                <TouchableOpacity style={styles.button} onPress={this.handleSignUp}>
-                    <Text style={styles.buttonText}>Signup</Text>
-                </TouchableOpacity>
+            <View
+                style={{
+                flex: 1,
+                flexDirection: 'column',
+                backgroundColor: '#32333d'
+            }}>
+                <View style={styles.container}>
+                    <Button
+                        onPress={() => this.props.navigation.navigate('Home')}
+                        title="Back"
+                        color="#eeeeee"/>
+                    <TextInput
+                        style={styles.inputBox}
+                        value={this.state.name}
+                        onChangeText={name => this.setState({name})}
+                        placeholder='Full Name'
+                        placeholderTextColor="#eeeeee"/>
+                    <TextInput
+                        style={styles.inputBox}
+                        value={this.state.email}
+                        onChangeText={email => this.setState({email})}
+                        placeholder='Email'
+                        placeholderTextColor="#eeeeee"
+                        autoCapitalize='none'/>
+                    <TextInput
+                        style={styles.inputBox}
+                        value={this.state.password}
+                        onChangeText={password => this.setState({password})}
+                        placeholder='Password'
+                        placeholderTextColor="#eeeeee"
+                        secureTextEntry={true}/>
+                    <TouchableOpacity style={styles.button} onPress={this.handleSignUp}>
+                        <Text style={styles.buttonText}>Signup</Text>
+                    </TouchableOpacity>
+                </View>
             </View>
-        )
+        );
     }
 }
 

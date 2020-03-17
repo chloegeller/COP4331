@@ -56,119 +56,126 @@ class HomeScreen_LoggedIn extends React.Component {
             <View
                 style={{
                 flex: 1,
-                flexDirection: 'column'
+                flexDirection: 'column',
+                backgroundColor: '#32333d'
             }}>
-                <View style={styles.header}>
-                    <View style={styles.menuButton}>
-                        <Button
-                            onPress={() => alert("Pressed menu button!")}
-                            title="     Menu     "
-                            color="#808080"/>
+                <View
+                    style={{
+                    flex: 1,
+                    flexDirection: 'column'
+                }}>
+                    <View style={styles.header}>
+                        <View style={styles.menuButton}>
+                            <Button
+                                onPress={() => alert("Pressed menu button!")}
+                                title="Menu"
+                                color="#eeeeee"/>
+                        </View>
+                        <View style={{
+                            flex: 0.5
+                        }}></View>
+                        <Text style={styles.headerText}>uKnight</Text>
+                        <View style={{
+                            flex: 0.5
+                        }}></View>
+                        <View style={styles.loginButton}>
+                            <Button
+                                onPress={() => this.props.navigation.navigate('Profile')}
+                                title="Profile"
+                                color="#eeeeee"/>
+                        </View>
                     </View>
-                    <View style={{
-                        flex: 0.5
-                    }}></View>
-                    <Text style={styles.headerText}>uKnight</Text>
-                    <View style={{
-                        flex: 0.5
-                    }}></View>
-                    <View style={styles.loginButton}>
-                        <Button
-                            onPress={() => this.props.navigation.navigate('Profile')}
-                            title="Profile"
-                            color="#808080"/>
-                    </View>
-                </View>
-                <View style={styles.body}>
-                    <View style={styles.buttonContainer}>
-                        <TouchableOpacity
-                            style={styles.button}
-                            onPress={() => this.props.navigation.navigate('BusScreen')}>
-                            <ImageBackground
-                                source={require('../../assets/shuttleImage.jpg')}
-                                style={{
-                                width: '100%',
-                                height: '100%'
-                            }}>
-                                <View style={styles.buttonTextBack}>
-                                    <Text style={styles.buttonText}>Bus Routes</Text>
-                                </View>
-                            </ImageBackground>
-                        </TouchableOpacity>
-                        <TouchableOpacity
-                            style={styles.button}
-                            onPress={() => this.props.navigation.navigate('StudyBuddy')}>
-                            <ImageBackground
-                                source={require('../../assets/studyImage.jpg')}
-                                style={{
-                                width: '100%',
-                                height: '100%'
-                            }}>
-                                <View style={styles.buttonTextBack}>
-                                    <Text style={styles.buttonText}>Study Buddy{"\n\n"}</Text>
-                                </View>
-                            </ImageBackground>
-                        </TouchableOpacity>
-                    </View>
-                    <View style={styles.buttonContainer}>
-                        <TouchableOpacity
-                            style={styles.button}
-                            onPress={() => this.props.navigation.navigate('Discounts')}>
-                            <ImageBackground
-                                source={require('../../assets/discountImage.jpeg')}
-                                style={{
-                                width: '100%',
-                                height: '100%'
-                            }}>
-                                <View style={styles.buttonTextBack}>
-                                    <Text style={styles.buttonText}>Discounts{"\n\n"}</Text>
-                                </View>
-                            </ImageBackground>
-                        </TouchableOpacity>
-                        <TouchableOpacity
-                            style={styles.button}
-                            onPress={() => this.props.navigation.navigate('Calendar')}>
-                            <ImageBackground
-                                source={require('../../assets/calendarImage.jpg')}
-                                style={{
-                                width: '100%',
-                                height: '100%'
-                            }}>
-                                <View style={styles.buttonTextBack}>
-                                    <Text style={styles.buttonText}>Events{"\n\n"}</Text>
-                                </View>
-                            </ImageBackground>
-                        </TouchableOpacity>
-                    </View>
-                    <View style={styles.buttonContainer}>
-                        <TouchableOpacity
-                            style={styles.button}
-                            onPress={() => this.props.navigation.navigate('Docs')}>
-                            <ImageBackground
-                                source={require('../../assets/docsImage.png')}
-                                style={{
-                                width: '100%',
-                                height: '100%'
-                            }}>
-                                <View style={styles.buttonTextBack}>
-                                    <Text style={styles.buttonText}>Documents</Text>
-                                </View>
-                            </ImageBackground>
-                        </TouchableOpacity>
-                        <TouchableOpacity
-                            style={styles.button}
-                            onPress={() => this.props.navigation.navigate('Settings')}>
-                            <ImageBackground
-                                source={require('../../assets/settingsImage.png')}
-                                style={{
-                                width: '100%',
-                                height: '100%'
-                            }}>
-                                <View style={styles.buttonTextBack}>
-                                    <Text style={styles.buttonText}>Settings</Text>
-                                </View>
-                            </ImageBackground>
-                        </TouchableOpacity>
+                    <View style={styles.body}>
+                        <View style={styles.buttonContainer}>
+                            <TouchableOpacity
+                                style={styles.button}
+                                onPress={() => this.props.navigation.navigate('BusScreen')}>
+                                <ImageBackground
+                                    source={require('../../assets/shuttleImage.jpg')}
+                                    style={{
+                                    width: '100%',
+                                    height: '100%'
+                                }}>
+                                    <View style={styles.buttonTextBack}>
+                                        <Text style={styles.buttonText}>Bus Routes</Text>
+                                    </View>
+                                </ImageBackground>
+                            </TouchableOpacity>
+                            <TouchableOpacity
+                                style={styles.button}
+                                onPress={() => this.props.navigation.navigate('StudyBuddy')}>
+                                <ImageBackground
+                                    source={require('../../assets/studyImage.jpg')}
+                                    style={{
+                                    width: '100%',
+                                    height: '100%'
+                                }}>
+                                    <View style={styles.buttonTextBack}>
+                                        <Text style={styles.buttonText}>Study Buddy{"\n\n"}</Text>
+                                    </View>
+                                </ImageBackground>
+                            </TouchableOpacity>
+                        </View>
+                        <View style={styles.buttonContainer}>
+                            <TouchableOpacity
+                                style={styles.button}
+                                onPress={() => this.props.navigation.navigate('Discounts')}>
+                                <ImageBackground
+                                    source={require('../../assets/discountImage.jpeg')}
+                                    style={{
+                                    width: '100%',
+                                    height: '100%'
+                                }}>
+                                    <View style={styles.buttonTextBack}>
+                                        <Text style={styles.buttonText}>Discounts{"\n\n"}</Text>
+                                    </View>
+                                </ImageBackground>
+                            </TouchableOpacity>
+                            <TouchableOpacity
+                                style={styles.button}
+                                onPress={() => this.props.navigation.navigate('Calendar')}>
+                                <ImageBackground
+                                    source={require('../../assets/calendarImage.jpg')}
+                                    style={{
+                                    width: '100%',
+                                    height: '100%'
+                                }}>
+                                    <View style={styles.buttonTextBack}>
+                                        <Text style={styles.buttonText}>Events{"\n\n"}</Text>
+                                    </View>
+                                </ImageBackground>
+                            </TouchableOpacity>
+                        </View>
+                        <View style={styles.buttonContainer}>
+                            <TouchableOpacity
+                                style={styles.button}
+                                onPress={() => this.props.navigation.navigate('Docs')}>
+                                <ImageBackground
+                                    source={require('../../assets/docsImage.png')}
+                                    style={{
+                                    width: '100%',
+                                    height: '100%'
+                                }}>
+                                    <View style={styles.buttonTextBack}>
+                                        <Text style={styles.buttonText}>Documents</Text>
+                                    </View>
+                                </ImageBackground>
+                            </TouchableOpacity>
+                            <TouchableOpacity
+                                style={styles.button}
+                                onPress={() => this.props.navigation.navigate('Settings')}>
+                                <ImageBackground
+                                    source={require('../../assets/settingsImage.png')}
+                                    style={{
+                                    width: '100%',
+                                    height: '100%'
+                                }}>
+                                    <View style={styles.buttonTextBack}>
+                                        <Text style={styles.buttonText}>Settings</Text>
+                                    </View>
+                                </ImageBackground>
+                            </TouchableOpacity>
+                        </View>
                     </View>
                 </View>
             </View>
