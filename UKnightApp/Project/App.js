@@ -22,6 +22,11 @@ import SetScreen from './components/SettingsScreen';
 import ProfileScreen from './components/ProfileScreen';
 import MessagingScreen from './components/MessagingScreen';
 import Constants from 'expo-constants';
+import FlowchartScreen from './components/Docs/FlowchartScreen';
+import ElectivesScreen from './components/Docs/ElectivesScreen';
+import BrochureScreen from './components/Docs/BrochureScreen';
+import OverrideScreen from './components/Docs/OverrideScreen';
+
 
 const AppNavigator = createSwitchNavigator({
   Home: HomeScreen,
@@ -39,6 +44,10 @@ const AppNavigator = createSwitchNavigator({
   Settings: SetScreen,
   Profile: ProfileScreen,
   Messaging: MessagingScreen,
+  Flow: FlowchartScreen,
+  Electives: ElectivesScreen,
+  Brochure: BrochureScreen,
+  Override: OverrideScreen,
 },{
   initialRouteName: 'Land',
 });
@@ -47,7 +56,7 @@ const AppContainer = createAppContainer(AppNavigator);
 
 export default class App extends React.Component {
   render() {
-    return ( 
+    return (
       <AppContainer />
     );
   }

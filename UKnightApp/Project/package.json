@@ -13,6 +13,7 @@
     "@react-navigation/native": "^5.0.9",
     "@react-navigation/stack": "^5.1.1",
     "expo": "~36.0.0",
+    "expo-font": "~8.0.0",
     "firebase": "^7.9.3",
     "link": "^0.1.5",
     "native-base": "^2.13.8",
@@ -31,8 +32,8 @@
     "react-native-webview": "7.4.3",
     "react-navigation": "^4.1.0",
     "react-navigation-stack": "^2.0.16",
-    "tween-functions": "^1.2.0",
-    "expo-font": "~8.0.0"
+    "rn-pdf-reader-js": "^0.7.2",
+    "tween-functions": "^1.2.0"
   },
   "devDependencies": {
     "babel-preset-expo": "~8.0.0",

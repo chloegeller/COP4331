@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, View, Button, TouchableOpacity} from 'react-native';
 import Constants from 'expo-constants';
+
 class DocumentsScreen extends React.Component {
     static navigationOptions = {
         title: 'Documents',
@@ -28,7 +29,8 @@ class DocumentsScreen extends React.Component {
                             <Button
                                 onPress={() => this.props.navigation.navigate('Home')}
                                 title="Back"
-                                color="#eeeeee"/>
+                                color="#eeeeee"
+                            />
                         </View>
                         <View style={{
                             flex: 0.5
@@ -46,6 +48,27 @@ class DocumentsScreen extends React.Component {
                                 color="#eeeeee"/>
                         </View>
                     </View>
+                </View>
+                <View  style={styles.body}>
+                  <View style={{width: "60%"}}>
+                    <Button style={styles.bodyButton}
+                      onPress={() => this.props.navigation.navigate('Flow')}
+                      title="CS Course Flowchart"
+                    />
+                    <Button style={styles.bodyButton}
+                      onPress={() => this.props.navigation.navigate('Electives')}
+                      title="CS Electives"
+                    />
+                    <Button style={styles.bodyButton}
+                      onPress={() => this.props.navigation.navigate('Brochure')}
+                      title="CS Brochure"
+                    />
+                    <Button style={styles.bodyButton}
+                      onPress={() => this.props.navigation.navigate('Override')}
+                      title="CECS Override"
+                    />
+                  </View>
+                  <View style={{flex: 0.5}}/>
                 </View>
             </View>
         );
@@ -67,7 +90,7 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     menuButton: {
-        flex: 1
+        flex: 1,
     },
     headerText: {
         color: '#f8c700',
@@ -80,9 +103,12 @@ const styles = StyleSheet.create({
     body: {
         flex: 8,
         flexDirection: 'column',
-        justifyContent: 'space-around',
+        alignItems: 'center',
+        justifyContent: 'center',
         backgroundColor: '#2e3a41',
-        paddingBottom: 24
+    },
+    bodyButton: {
+        color: '#f8c700',
     },
     buttonTextBack: {
         backgroundColor: '#586d78',
