@@ -45,7 +45,7 @@ class HomeScreen extends React.Component {
                                 style={{
                                 flex: 0.5
                             }}></View>
-                            <Text style={styles.headerText}>StudyBuddy</Text>
+                            <Text style={styles.headerText}>Study Group</Text>
                             <View
                                 style={{
                                 flex: 0.5
@@ -62,7 +62,7 @@ class HomeScreen extends React.Component {
                         <View style={styles.buttonContainer}>
                             <TouchableOpacity
                                 style={styles.button}
-                                onPress={() => this.props.navigation.navigate('Courses')}>
+                                onPress={() => this.props.navigation.navigate('BusScreen')}>
                                 <View style={styles.buttonTextBack}>
                                     <Text style={styles.buttonText}>Courses</Text>
                                 </View>
@@ -71,7 +71,7 @@ class HomeScreen extends React.Component {
                         <View style={styles.buttonContainer}>
                             <TouchableOpacity
                                 style={styles.button}
-                                onPress={() => this.props.navigation.navigate('StudyPartner')}>
+                                onPress={() => this.props.navigation.navigate('Docs')}>
                                   <View style={styles.buttonTextBack}>
                                       <Text style={styles.buttonText}>Find study partners</Text>
                                   </View>

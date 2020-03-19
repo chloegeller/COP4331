@@ -26,6 +26,8 @@ import FlowchartScreen from './components/Docs/FlowchartScreen';
 import ElectivesScreen from './components/Docs/ElectivesScreen';
 import BrochureScreen from './components/Docs/BrochureScreen';
 import OverrideScreen from './components/Docs/OverrideScreen';
+import CourseScreen from './components/CourseScreen';
+import StudyPartnerScreen from './components/StudyPartnerScreen';
 
 
 const AppNavigator = createSwitchNavigator({
@@ -48,6 +50,8 @@ const AppNavigator = createSwitchNavigator({
   Electives: ElectivesScreen,
   Brochure: BrochureScreen,
   Override: OverrideScreen,
+  Courses: CourseScreen,
+  StudyPartner: StudyPartnerScreen,
 },{
   initialRouteName: 'Land',
 });
