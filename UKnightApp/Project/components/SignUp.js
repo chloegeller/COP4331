@@ -59,7 +59,7 @@ class Signup extends React.Component {
                         placeholderTextColor="#eeeeee"
                         secureTextEntry={true}/>
                     <TouchableOpacity style={styles.button} onPress={this.handleSignUp}>
-                        <Text style={styles.buttonText}>Signup</Text>
+                        <Text style={styles.buttonText}>Sign Up</Text>
                     </TouchableOpacity>
                 </View>
             </View>

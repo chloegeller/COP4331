@@ -27,7 +27,7 @@ class MessagingScreen extends React.Component {
                     <View style={styles.header}>
                         <View style={styles.menuButton}>
                             <Button
-                                onPress={() => this.props.navigation.navigate('Home')}
+                                onPress={() => this.props.navigation.navigate('Home_LI')}
                                 title="Back"
                                 color="#eeeeee"/>
                         </View>
@@ -42,44 +42,12 @@ class MessagingScreen extends React.Component {
                         }}></View>
                         <View style={styles.loginButton}>
                             <Button
-                                onPress={() => this.props.navigation.navigate('LogIn')}
-                                title="Login"
+                                onPress={() => this.props.navigation.navigate('Profile')}
+                                title="Profile"
                                 color="#eeeeee"/>
                         </View>
                     </View>
-                    <View style={styles.body}>
-                        <View>
-                            <Text
-                                style={{
-                                fontSize: 22,
-                                color: '#eeeeee',
-                                textAlign: 'center'
-                            }}>
-                                If you would like to use this feature, {"\n"}please login :)
-                            </Text>
-                            <TouchableOpacity
-                                style={styles.button}
-                                onPress={() => this.props.navigation.navigate('LogIn')}>
-                                <Text style={styles.buttonText}>Login</Text>
-                            </TouchableOpacity>
-                        </View>
-                        <View>
-                            <Text
-                                style={{
-                                fontSize: 22,
-                                color: '#eeeeee',
-                                textAlign: 'center'
-                            }}>
-                                If you don't have an account,{"\n"}and would like to use this feature,{"\n"}
-                                you can make one by signing up! :)
-                            </Text>
-                            <TouchableOpacity
-                                style={styles.button}
-                                onPress={() => this.props.navigation.navigate('SignUp')}>
-                                <Text style={styles.buttonText}>Sign Up</Text>
-                            </TouchableOpacity>
-                        </View>
-                    </View>
+                    <View style={styles.body}></View>
                 </View>
             </View>
         );
@@ -123,26 +91,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         top: '60%',
         height: 40
-    },
-    button: {
-        marginTop: 30,
-        marginBottom: 20,
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        paddingVertical: 5,
-        alignItems: 'center',
-
-        backgroundColor: '#f8c700',
-        borderColor: '#F6820D',
-        borderWidth: 1,
-        borderRadius: 5,
-        width: 200
-    },
-    buttonText: {
-        fontSize: 20,
-        fontWeight: 'bold',
-        color: '#32333d'
-
     }
 });
 
