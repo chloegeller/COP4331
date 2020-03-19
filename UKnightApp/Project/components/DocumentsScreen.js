@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#2e3a41',
     },
     bodyButton: {
-        color: '#ffffff',
+        color: '#586d78',
     },
 });
 
