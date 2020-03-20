@@ -1,6 +1,9 @@
 import React from 'react';
 import {StyleSheet, Text, View, Button, TouchableOpacity} from 'react-native';
 import Constants from 'expo-constants';
+import FireBase from '../../config/FireBase'
+import inAppMessaging from '@react-native-firebase/in-app-messaging';
+import { firebase } from '@react-native-firebase/in-app-messaging';
 
 class MessagingScreen extends React.Component {
     static navigationOptions = {
@@ -74,7 +77,8 @@ const styles = StyleSheet.create({
     headerText: {
         color: '#f8c700',
         fontSize: 40,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        alignItems: 'center'
     },
     loginButton: {
         flex: 1
@@ -84,7 +88,7 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'space-around',
         backgroundColor: '#2e3a41',
-        paddingBottom: 24
+        paddingBottom: 30
     },
     buttonTextBack: {
         backgroundColor: '#586d78',

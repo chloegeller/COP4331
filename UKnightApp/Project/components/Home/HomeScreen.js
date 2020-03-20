@@ -67,7 +67,8 @@ class HomeScreen extends React.Component {
                                     source={require('../../assets/shuttleImage.jpg')}
                                     style={{
                                     width: '100%',
-                                    height: '100%'
+                                    height: '100%',
+                                    borderRadius: 12
                                 }}>
                                     <View style={styles.buttonTextBack}>
                                         <Text style={styles.buttonText}>Bus Routes</Text>
@@ -81,7 +82,8 @@ class HomeScreen extends React.Component {
                                     source={require('../../assets/studyImage.jpg')}
                                     style={{
                                     width: '100%',
-                                    height: '100%'
+                                    height: '100%',
+                                    borderRadius: 12
                                 }}>
                                     <View style={styles.buttonTextBack}>
                                         <Text style={styles.buttonText}>Study Buddy{"\n\n"}</Text>
@@ -97,7 +99,8 @@ class HomeScreen extends React.Component {
                                     source={require('../../assets/discountImage.jpeg')}
                                     style={{
                                     width: '100%',
-                                    height: '100%'
+                                    height: '100%',
+                                    borderRadius: 12
                                 }}>
                                     <View style={styles.buttonTextBack}>
                                         <Text style={styles.buttonText}>Discounts{"\n\n"}</Text>
@@ -111,7 +114,8 @@ class HomeScreen extends React.Component {
                                     source={require('../../assets/calendarImage.jpg')}
                                     style={{
                                     width: '100%',
-                                    height: '100%'
+                                    height: '100%',
+                                    borderRadius: 12
                                 }}>
                                     <View style={styles.buttonTextBack}>
                                         <Text style={styles.buttonText}>Events{"\n\n"}</Text>
@@ -127,7 +131,8 @@ class HomeScreen extends React.Component {
                                     source={require('../../assets/docsImage.png')}
                                     style={{
                                     width: '100%',
-                                    height: '100%'
+                                    height: '100%',
+                                    borderRadius: 12
                                 }}>
                                     <View style={styles.buttonTextBack}>
                                         <Text style={styles.buttonText}>Documents</Text>
@@ -141,7 +146,9 @@ class HomeScreen extends React.Component {
                                     source={require('../../assets/chatimg.png')}
                                     style={{
                                     width: '100%',
-                                    height: '100%'
+                                    height: '100%',
+                                    //borderRadius: 12
+                                    
                                 }}>
                                     <View style={styles.buttonTextBack}>
                                         <Text style={styles.buttonText}>Messaging{"\n\n"}</Text>
@@ -198,7 +205,9 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-around',
         // alignItems: 'center',
-        height: '33.33%'
+        height: '33.33%',
+        overflow: 'hidden',
+        
     },
     button: {
         // marginTop: 30, marginBottom: 30,
@@ -210,13 +219,15 @@ const styles = StyleSheet.create({
         //alignItems: 'center',
         borderColor: '#f8c700',
         //borderWidth: 1,
-        borderRadius: 12
+        borderRadius: 12,
+        
     },
     buttonTextBack: {
         backgroundColor: '#586d78',
         alignItems: 'center',
-        top: '83%',
-        height: 40
+        top: '82.5%',
+        height: 40,
+        justifyContent: 'space-around'
     },
     buttonText: {
         color: '#eeeeee',

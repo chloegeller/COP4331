@@ -219,7 +219,7 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'space-around',
         backgroundColor: '#2e3a41',
-        paddingBottom: 24
+        paddingBottom: 30
     },
     buttonContainer: {
         flexDirection: 'row',
@@ -231,15 +231,19 @@ const styles = StyleSheet.create({
         // marginTop: 30, marginBottom: 30,
         paddingVertical: 5,
         paddingHorizontal: 5,
-        borderWidth: 0,
-        borderRadius: 5,
+        borderWidth: 1,
+        //borderRadius: 5,
         width: '50%',
+        //alignItems: 'center',
+        borderColor: '#f8c700',
+        //borderWidth: 1,
+        borderRadius: 12
         //alignItems: 'center',
     },
     buttonTextBack: {
         backgroundColor: '#586d78',
         alignItems: 'center',
-        top: '60%',
+        top: '83%',
         height: 40
     },
     buttonText: {
