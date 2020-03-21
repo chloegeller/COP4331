@@ -60,7 +60,7 @@ class HomeScreen extends React.Component {
                     </View>
                     <View style={styles.body}>
                         <View style={styles.buttonContainer}>
-                            //TODO: create proper screens and redirect to them
+                            {/* TODO: create proper screens and redirect to them */}
                             <TouchableOpacity
                                 style={styles.button}
                                 onPress={() => this.props.navigation.navigate('BusScreen')}>

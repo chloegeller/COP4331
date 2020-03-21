@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
         flex: 8,
         flexDirection: 'column',
         justifyContent: 'space-around',
-        backgroundColor: '#ba9b37',
+        backgroundColor: '#36393f',
         paddingBottom: 24
     },
     buttonTextBack: {

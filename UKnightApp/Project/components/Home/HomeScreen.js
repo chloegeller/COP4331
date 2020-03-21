@@ -9,6 +9,7 @@ import {
     StatusBar
 } from 'react-native';
 import Constants from 'expo-constants';
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 
 class HomeScreen extends React.Component {
 
@@ -63,6 +64,7 @@ class HomeScreen extends React.Component {
                             <TouchableOpacity
                                 style={styles.button}
                                 onPress={() => this.props.navigation.navigate('BusScreen')}>
+                                    
                                 <ImageBackground
                                     source={require('../../assets/shuttleImage.jpg')}
                                     style={{
@@ -73,7 +75,7 @@ class HomeScreen extends React.Component {
                                     <View style={styles.buttonTextBack}>
                                         <Text style={styles.buttonText}>Bus Routes</Text>
                                     </View>
-                                </ImageBackground>
+                                    </ImageBackground>
                             </TouchableOpacity>
                             <TouchableOpacity
                                 style={styles.button}
@@ -175,7 +177,7 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'space-around',
         backgroundColor: '#292b2f',
-        // alignItems: 'center',
+        
     },
     headerVerticalCenter: {
         flexDirection: 'row',
@@ -233,6 +235,9 @@ const styles = StyleSheet.create({
         color: '#eeeeee',
         fontSize: 30,
         fontWeight: 'bold'
+    },
+    icon: {
+        color: '#eeeeee'
     }
 });
 

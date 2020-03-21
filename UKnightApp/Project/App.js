@@ -1,6 +1,7 @@
 
 import React, {useState} from 'react';
 
+
 import { Text, View, Image, StatusBar, StyleSheet } from 'react-native';
 import { createAppContainer } from 'react-navigation';
 import { createSwitchNavigator } from 'react-navigation';
@@ -29,6 +30,11 @@ import OverrideScreen from './components/Docs/OverrideScreen';
 import CourseScreen from './components/CourseScreen';
 import StudyPartnerScreen from './components/StudyPartnerScreen';
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+// import { fas, fab } from "@fortawesome/fontawesome-svg-core";
+import { faBus } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faBus)
 
 const AppNavigator = createSwitchNavigator({
   Home: HomeScreen,

@@ -14,7 +14,7 @@ class HomeScreen extends React.Component {
 
   render() {
     return (
-      <View style = {{ flex: 1, flexDirection: 'column', backgroundColor: '#ba9b37'}}>
+      <View style = {{ flex: 1, flexDirection: 'column', backgroundColor: '#36393f'}}>
         <View style = {{flex: 2}} />
         <View style = {{flex: 1, flexDirection: 'row'}}>
           <View style = {{ flex: 15}}></View>
