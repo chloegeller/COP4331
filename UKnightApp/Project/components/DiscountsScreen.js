@@ -17,7 +17,7 @@ class DiscountsScreen extends React.Component {
                 style={{
                 flex: 1,
                 flexDirection: 'column',
-                backgroundColor: '#32333d'
+                backgroundColor: '#292b2f'
             }}>
                 <View
                     style={{
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
         marginTop: Constants.statusBarHeight,
         flexDirection: 'row',
         justifyContent: 'space-around',
-        backgroundColor: '#32333d',
+        backgroundColor: '#292b2f',
         alignItems: 'center'
     },
     headerVerticalCenter: {
@@ -88,11 +88,11 @@ const styles = StyleSheet.create({
         flex: 8,
         flexDirection: 'column',
         justifyContent: 'space-around',
-        backgroundColor: '#2e3a41',
+        backgroundColor: '#36393f',
         paddingBottom: 24
     },
     buttonTextBack: {
-        backgroundColor: '#586d78',
+        backgroundColor: '#4b5058',
         alignItems: 'center',
         top: '60%',
         height: 40

@@ -25,7 +25,7 @@ class BusRoutesOn extends React.Component {
                 style={{
                 flex: 1,
                 flexDirection: 'column',
-                backgroundColor: '#32333d'
+                backgroundColor: '#292b2f'
             }}>
                 <View
                     style={{
@@ -63,12 +63,12 @@ class BusRoutesOn extends React.Component {
                             color: '#f8c700',
                             textAlign: 'center'
                         }}>
-                            Pegasus Express Routes
+                            {"\n"}Pegasus Express Routes
 
                         </Text>
                         <Text
                             style={{
-                            fontSize: 15,
+                            fontSize: 10,
                             color: 'black',
                             textAlign: 'left'
                         }}>
@@ -77,9 +77,10 @@ class BusRoutesOn extends React.Component {
                         </Text>
                         <Text
                             style={{
-                            fontSize: 15,
+                            fontSize: 18,
                             color: '#eeeeee',
-                            textAlign: 'left'
+                            textAlign: 'center',
+                            fontWeight: 'bold'
                         }}>
                             Spring/Fall Hours: 7am - 7pm {"\n"}
                             Summer Hours: 7am - 4pm {"\n"}
@@ -88,7 +89,7 @@ class BusRoutesOn extends React.Component {
 
                         <Text
                             style={{
-                            fontSize: 12,
+                            fontSize: 14,
                             color: '#eeeeee',
                             textAlign: 'left'
                         }}>
@@ -129,7 +130,7 @@ const styles = StyleSheet.create({
         marginTop: Constants.statusBarHeight,
         flexDirection: 'row',
         justifyContent: 'space-around',
-        backgroundColor: '#32333d',
+        backgroundColor: '#292b2f',
         alignItems: 'center'
     },
     headerVerticalCenter: {
@@ -153,11 +154,11 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'column',
         // justifyContent: 'space-around',
-        backgroundColor: '#2e3a41',
+        backgroundColor: '#36393f',
         paddingBottom: 24
     },
     buttonTextBack: {
-        backgroundColor: '#586d78',
+        backgroundColor: '#4b5058',
         alignItems: 'center',
         top: '60%',
         height: 40

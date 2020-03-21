@@ -17,7 +17,7 @@ class DocumentsScreen extends React.Component {
             style={{
             flex: 1,
             flexDirection: 'column',
-            backgroundColor: '#32333d'
+            backgroundColor: '#292b2f'
           }}>
             <View
               style={{
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
         marginTop: Constants.statusBarHeight,
         flexDirection: 'row',
         justifyContent: 'space-around',
-        backgroundColor: '#32333d',
+        backgroundColor: '#292b2f',
         alignItems: 'center'
     },
     headerVerticalCenter: {
@@ -100,10 +100,10 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#2e3a41',
+        backgroundColor: '#36393f',
     },
     bodyButton: {
-        color: '#586d78',
+        color: '#4b5058',
     },
 });
 

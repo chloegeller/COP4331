@@ -17,7 +17,7 @@ class BusScreen extends React.Component {
                 style={{
                 flex: 1,
                 flexDirection: 'column',
-                backgroundColor: '#32333d'
+                backgroundColor: '#292b2f'
             }}>
                 <View style={styles.header}>
                     <View style={styles.menuButton}>
@@ -44,52 +44,25 @@ class BusScreen extends React.Component {
                 </View>
 
                 <View style={styles.body}>
-                    <View style={{
-                        flex: 2
-                    }}></View>
-
-                    <View
-                        style={{
-                        flex: 4,
-                        flexDirection: 'row'
-                    }}>
-
+                    <View style={styles.btnContainer}>
                         <TouchableOpacity
                             style={styles.button}
                             onPress={() => this.props.navigation.navigate('BusOn')}>
-                            <Text style={styles.buttonText}>On-Campus:{"\n\n"}Pegasus Express</Text>
+                            <Text style={styles.buttonText}>Pegasus Express</Text>
                         </TouchableOpacity>
 
                         <TouchableOpacity
                             style={styles.button}
                             onPress={() => this.props.navigation.navigate('BusOff')}>
                             <Text style={styles.buttonText}>
-                                Off-Campus:{"\n\n"}
                                 Shuttle Routes</Text>
                         </TouchableOpacity>
-
-                    </View>
-                    <View
-                        style={{
-                        flex: 4,
-                        flexDirection: 'row'
-                    }}>
 
                         <TouchableOpacity
                             style={styles.button}
                             onPress={() => WebBrowser.openBrowserAsync("https://ucf.crystal-tod.com/rider/")}>
                             <Text style={styles.buttonText}>Live Shuttle Tracker</Text>
                         </TouchableOpacity>
-
-                        <View style={{
-                            flex: 1
-                        }}></View>
-
-                    </View>
-                    <View style={{
-                        flex: 14
-                    }}>
-                        {/*This one stops the buttons from stretching to the bottom of the screen*/}
                     </View>
                 </View>
             </View>
@@ -103,7 +76,7 @@ const styles = StyleSheet.create({
         marginTop: Constants.statusBarHeight,
         flexDirection: 'row',
         justifyContent: 'space-around',
-        backgroundColor: '#32333d',
+        backgroundColor: '#292b2f',
         alignItems: 'center'
     },
     headerVerticalCenter: {
@@ -125,28 +98,36 @@ const styles = StyleSheet.create({
     body: {
         flex: 8,
         flexDirection: 'column',
-        justifyContent: 'space-around',
-        backgroundColor: '#2e3a41',
+        justifyContent: 'space-evenly',
+        backgroundColor: '#36393f',
         paddingBottom: 24
     },
     buttonTextBack: {
-        backgroundColor: '#586d78',
+        backgroundColor: '#4b5058',
         alignItems: 'center',
         top: '60%',
         height: 40
     },
+    btnContainer: {
+        flexDirection: 'column',
+    },
     button: {
-        flex: 1,
-        margin: 10,
+        // flex: 1,
+        margin: 24,
+        padding: 24, 
         alignItems: 'center',
-        backgroundColor: '#505050',
+        backgroundColor: '#4b5058',
         borderColor: '#f8c700',
-        borderWidth: 1,
-        borderRadius: 5
+        //borderWidth: 1,
+        borderRadius: 12,
+    
     },
     buttonText: {
         textAlign: 'center',
-        color: 'white'
+        color: '#eeeeee',
+        //ustifyContent: 'space-evenly',
+        fontSize: 24,
+        // fontWeight: 'bold'
     }
 });
 

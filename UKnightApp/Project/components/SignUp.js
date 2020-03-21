@@ -31,7 +31,7 @@ class Signup extends React.Component {
                 style={{
                 flex: 1,
                 flexDirection: 'column',
-                backgroundColor: '#32333d'
+                backgroundColor: '#292b2f'
             }}>
                 <View style={styles.container}>
                     <Button
@@ -70,7 +70,7 @@ class Signup extends React.Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#2e3a41',
+        backgroundColor: '#36393f',
         alignItems: 'center',
         justifyContent: 'center'
     },
@@ -89,15 +89,15 @@ const styles = StyleSheet.create({
         paddingVertical: 5,
         alignItems: 'center',
         backgroundColor: '#f8c700',
-        borderColor: '#FFA611',
-        borderWidth: 1,
-        borderRadius: 5,
+        //borderColor: '#FFA611',
+        //borderWidth: 1,
+        borderRadius: 10,
         width: 200
     },
     buttonText: {
         fontSize: 20,
         fontWeight: 'bold',
-        color: '#32333d'
+        color: '#292b2f'
     },
     buttonSignup: {
         fontSize: 12

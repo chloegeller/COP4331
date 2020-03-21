@@ -26,7 +26,7 @@ class HomeScreen extends React.Component {
                 style={{
                 flex: 1,
                 flexDirection: 'column',
-                backgroundColor: '#32333d'
+                backgroundColor: '#292b2f'
             }}>
                 <View
                     style={{
@@ -174,7 +174,7 @@ const styles = StyleSheet.create({
         marginTop: Constants.statusBarHeight,
         flexDirection: 'column',
         justifyContent: 'space-around',
-        backgroundColor: '#32333d',
+        backgroundColor: '#292b2f',
         // alignItems: 'center',
     },
     headerVerticalCenter: {
@@ -198,7 +198,7 @@ const styles = StyleSheet.create({
         flex: 8,
         flexDirection: 'column',
         justifyContent: 'space-around',
-        backgroundColor: '#2e3a41',
+        backgroundColor: '#36393f',
         paddingBottom: 30
     },
     buttonContainer: {
@@ -213,7 +213,7 @@ const styles = StyleSheet.create({
         // marginTop: 30, marginBottom: 30,
         paddingVertical: 5,
         paddingHorizontal: 5,
-        borderWidth: 1,
+        borderWidth: 0.6,
         //borderRadius: 5,
         width: '50%',
         //alignItems: 'center',
@@ -223,7 +223,7 @@ const styles = StyleSheet.create({
         
     },
     buttonTextBack: {
-        backgroundColor: '#586d78',
+        backgroundColor: '#4b5058',
         alignItems: 'center',
         top: '82.5%',
         height: 40,
