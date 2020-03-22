@@ -29,7 +29,8 @@ class CalendarScreen extends React.Component {
                             <Button
                                 onPress={() => this.props.navigation.navigate('Home_LI')}
                                 title="Back"
-                                color="#eeeeee"/>
+                                color="#eeeeee"
+                                alignItems='left'/>
                         </View>
                         <View style={{
                             flex: 0.2

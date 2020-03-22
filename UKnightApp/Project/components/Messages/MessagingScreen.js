@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
     body: {
         flex: 8,
         flexDirection: 'column',
-        justifyContent: 'space-around',
+        justifyContent: 'space-evenly',
         backgroundColor: '#36393f',
         paddingBottom: 24
     },

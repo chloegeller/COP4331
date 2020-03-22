@@ -41,15 +41,15 @@ class HomeScreen extends React.Component {
                                     title="Back"
                                     color="#eeeeee"/>
                             </View>
-                            <View
+                            {/* <View
                                 style={{
                                 flex: 0.5
-                            }}></View>
+                            }}></View> */}
                             <Text style={styles.headerText}>Study Group</Text>
-                            <View
+                            {/* <View
                                 style={{
                                 flex: 0.5
-                            }}></View>
+                            }}></View> */}
                             <View style={styles.loginButton}>
                                 <Button
                                     onPress={() => this.props.navigation.navigate('Settings')}
@@ -109,7 +109,7 @@ const styles = StyleSheet.create({
     },
     headerText: {
         color: '#f8c700',
-        fontSize: 40,
+        fontSize: 38,
         fontWeight: 'bold',
         alignItems: 'center'
     },
@@ -135,7 +135,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#4b5058',
         paddingVertical: 5,
         paddingHorizontal: 5,
-        borderWidth: 1,
+        borderWidth: 0.5,
         //borderRadius: 5,
         width: '80%',
         //alignItems: 'center',
@@ -146,7 +146,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     buttonText: {
-        color: '#f8c700',
+        color: '#eeeeee',
         fontSize: 30,
         fontWeight: 'bold'
     }

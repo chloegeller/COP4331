@@ -31,15 +31,15 @@ class ProfileScreen extends React.Component {
                                 title="Back"
                                 color="#808080"/>
                         </View>
-                        <View style={{
+                        {/* <View style={{
                             flex: 0.5
-                        }}></View>
+                        }}></View> */}
                         <Text style={styles.headerText}>
                             Profile
                         </Text>
-                        <View style={{
+                        {/* <View style={{
                             flex: 0.5
-                        }}></View>
+                        }}></View> */}
                         <View style={styles.loginButton}>
                             <Button
                                 onPress={() => this.props.navigation.navigate('LogIn')}

@@ -28,7 +28,7 @@ class SettingsScreen extends React.Component {
                             <Button
                                 onPress={() => this.props.navigation.navigate('Home_LI')}
                                 title="Back"
-                                color="#808080"/>
+                                color="#eeeeee"/>
                         </View>
                         <View style={{
                             flex: 0.5

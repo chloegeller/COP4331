@@ -30,13 +30,13 @@ class NotificationScreen extends React.Component {
                                 title="Back"
                                 color="#eeeeee"/>
                         </View>
-                        <View style={{
+                        {/* <View style={{
                             flex: 0.5
-                        }}></View>
+                        }}></View> */}
                         <Text style={styles.headerText}>Notifications</Text>
-                        <View style={{
+                        {/* <View style={{
                             flex: 0.5
-                        }}></View>
+                        }}></View> */}
                         <View style={styles.loginButton}>
                             <Button
                                 onPress={() => this.props.navigation.navigate('LogIn')}

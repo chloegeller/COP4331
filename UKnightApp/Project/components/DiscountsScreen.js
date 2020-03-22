@@ -31,15 +31,15 @@ class DiscountsScreen extends React.Component {
                                 title="Back"
                                 color="#eeeeee"/>
                         </View>
-                        <View style={{
+                        {/* <View style={{
                             flex: 0.5
-                        }}></View>
+                        }}></View> */}
                         <Text style={styles.headerText}>
                             Discounts
                         </Text>
-                        <View style={{
+                        {/* <View style={{
                             flex: 0.5
-                        }}></View>
+                        }}></View> */}
                         <View style={styles.loginButton}>
                             <Button
                                 onPress={() => this.props.navigation.navigate('Settings')}

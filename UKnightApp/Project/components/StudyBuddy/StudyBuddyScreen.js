@@ -41,20 +41,18 @@ class StudyBuddyScreen extends React.Component {
                                     title="Back"
                                     color="#eeeeee"/>
                             </View>
-                            <View
+                            {/* <View
                                 style={{
                                 flex: 0.5
-                            }}></View>
+                            }}></View> */}
                             <Text style={styles.headerText}>StudyBuddy</Text>
-                            <View
+                            {/* <View
                                 style={{
                                 flex: 0.5
-                            }}></View>
+                            }}></View> */}
                             <View style={styles.loginButton}>
-                                <Button
-                                    onPress={() => this.props.navigation.navigate('Settings')}
-                                    title="Settings"
-                                    color="#eeeeee"/>
+                                <Button onPress={() => this.props.navigation.navigate('Settings')} title="Settings" color="#eeeeee" // justifyContent="space-around"
+                                />
                             </View>
                         </View>
                     </View>
@@ -72,12 +70,15 @@ class StudyBuddyScreen extends React.Component {
                             <TouchableOpacity
                                 style={styles.button}
                                 onPress={() => this.props.navigation.navigate('StudyPartner')}>
-                                  <View style={styles.buttonTextBack}>
-                                      <Text style={styles.buttonText}>Find study partners</Text>
-                                  </View>
+                                <View style={styles.buttonTextBack}>
+                                    <Text style={styles.buttonText}>Find study partners</Text>
+                                </View>
                             </TouchableOpacity>
                         </View>
-                        <View style={{flex: 0.5}}/>
+                        <View
+                            style={{
+                            flex: 0.5
+                        }}/>
                     </View>
                 </View>
             </View>
@@ -109,7 +110,7 @@ const styles = StyleSheet.create({
     },
     headerText: {
         color: '#f8c700',
-        fontSize: 40,
+        fontSize: 38,
         fontWeight: 'bold',
         alignItems: 'center'
     },
@@ -135,15 +136,14 @@ const styles = StyleSheet.create({
         backgroundColor: '#4b5058',
         paddingVertical: 5,
         paddingHorizontal: 5,
-        //borderWidth: 1,
-        //borderRadius: 5,
+        //borderWidth: 1, borderRadius: 5,
         width: '80%',
         //alignItems: 'center',
         borderColor: '#f8c700',
         //borderWidth: 1,
         borderRadius: 12,
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'center'
     },
     buttonText: {
         color: '#eeeeee',

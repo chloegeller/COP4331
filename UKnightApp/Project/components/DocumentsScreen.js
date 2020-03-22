@@ -32,9 +32,9 @@ class DocumentsScreen extends React.Component {
                     color="#eeeeee"
                   />
                 </View>
-                <View style={{flex: 0.2}}/>
+                {/* <View style={{flex: 0.2}}/> */}
                 <Text style={styles.headerText}>Documents</Text>
-                <View style={{flex: 0.2}}/>
+                {/* <View style={{flex: 0.2}}/> */}
                 <View style={styles.loginButton}>
                   <Button
                     onPress={() => this.props.navigation.navigate('Settings')}
