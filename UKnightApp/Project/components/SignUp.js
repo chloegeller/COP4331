@@ -35,7 +35,7 @@ class Signup extends React.Component {
             }}>
                 <View style={styles.container}>
                     <Button
-                        onPress={() => this.props.navigation.navigate('Home')}
+                        onPress={() => this.props.navigation.navigate('LogIn')}
                         title="Back"
                         color="#eeeeee"/>
                     <TextInput
