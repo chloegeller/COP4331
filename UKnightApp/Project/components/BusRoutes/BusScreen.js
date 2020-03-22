@@ -22,7 +22,7 @@ class BusScreen extends React.Component {
                 <View style={styles.header}>
                     <View style={styles.menuButton}>
                         <Button
-                            onPress={() => this.props.navigation.navigate('Home')}
+                            onPress={() => this.props.navigation.navigate('Home_LI')}
                             title="Back"
                             color="#eeeeee"/>
                     </View>
@@ -37,8 +37,8 @@ class BusScreen extends React.Component {
                     }}></View>
                     <View style={styles.loginButton}>
                         <Button
-                            onPress={() => this.props.navigation.navigate('LogIn')}
-                            title="Login"
+                            onPress={() => this.props.navigation.navigate('Settings')}
+                            title="Settings"
                             color="#eeeeee"/>
                     </View>
                 </View>

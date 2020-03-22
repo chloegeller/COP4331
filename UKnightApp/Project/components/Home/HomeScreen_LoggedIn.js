@@ -65,24 +65,28 @@ class HomeScreen_LoggedIn extends React.Component {
                     flexDirection: 'column'
                 }}>
                     <View style={styles.header}>
-                        <View style={styles.menuButton}>
-                            <Button
-                                onPress={() => alert("Pressed menu button!")}
-                                title="Menu"
-                                color="#eeeeee"/>
-                        </View>
-                        <View style={{
-                            flex: 0.5
-                        }}></View>
-                        <Text style={styles.headerText}>uKnight</Text>
-                        <View style={{
-                            flex: 0.5
-                        }}></View>
-                        <View style={styles.loginButton}>
-                            <Button
-                                onPress={() => this.props.navigation.navigate('Profile')}
-                                title="Profile"
-                                color="#eeeeee"/>
+                        <View style={styles.headerVerticalCenter}>
+                            <View style={styles.menuButton}>
+                                <Button
+                                    onPress={() => alert("Pressed menu button!")}
+                                    title="Menu"
+                                    color="#eeeeee" />
+                            </View>
+                            <View
+                                style={{
+                                    flex: 0.2
+                                }}></View>
+                            <Text style={styles.headerText}>uKnight</Text>
+                            <View
+                                style={{
+                                    flex: 0.2
+                                }}></View>
+                            <View style={styles.loginButton}>
+                                <Button
+                                    onPress={() => this.props.navigation.navigate('Settings')}
+                                    title="Settings"
+                                    color="#eeeeee" />
+                            </View>
                         </View>
                     </View>
                     <View style={styles.body}>
@@ -163,15 +167,17 @@ class HomeScreen_LoggedIn extends React.Component {
                             </TouchableOpacity>
                             <TouchableOpacity
                                 style={styles.button}
-                                onPress={() => this.props.navigation.navigate('Settings')}>
+                                onPress={() => this.props.navigation.navigate('Messaging')}>
                                 <ImageBackground
-                                    source={require('../../assets/settingsImage.png')}
+                                    source={require('../../assets/chatimg.png')}
                                     style={{
-                                    width: '100%',
-                                    height: '100%'
-                                }}>
+                                        width: '100%',
+                                        height: '100%',
+                                        //borderRadius: 12
+
+                                    }}>
                                     <View style={styles.buttonTextBack}>
-                                        <Text style={styles.buttonText}>Settings</Text>
+                                        <Text style={styles.buttonText}>Messaging{"\n\n"}</Text>
                                     </View>
                                 </ImageBackground>
                             </TouchableOpacity>

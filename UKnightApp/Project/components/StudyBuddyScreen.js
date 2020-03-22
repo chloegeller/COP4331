@@ -10,10 +10,10 @@ import {
 } from 'react-native';
 import Constants from 'expo-constants';
 
-class HomeScreen extends React.Component {
+class StudyBuddyScreen extends React.Component {
 
     static navigationOptions = {
-        title: 'Home',
+        title: 'StudyBuddyScreen',
         headerTintColor: '#ffffff',
         headerStyle: {
             backgroundColor: '#000000'
@@ -37,7 +37,7 @@ class HomeScreen extends React.Component {
                         <View style={styles.headerVerticalCenter}>
                             <View style={styles.menuButton}>
                                 <Button
-                                    onPress={() => this.props.navigation.navigate('Home')}
+                                    onPress={() => this.props.navigation.navigate('Home_LI')}
                                     title="Back"
                                     color="#eeeeee"/>
                             </View>
@@ -52,8 +52,8 @@ class HomeScreen extends React.Component {
                             }}></View>
                             <View style={styles.loginButton}>
                                 <Button
-                                    onPress={() => this.props.navigation.navigate('LogIn')}
-                                    title="Login"
+                                    onPress={() => this.props.navigation.navigate('Settings')}
+                                    title="Settings"
                                     color="#eeeeee"/>
                             </View>
                         </View>
@@ -152,4 +152,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default HomeScreen;
+export default StudyBuddyScreen;

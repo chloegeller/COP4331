@@ -15,13 +15,13 @@ class LandingScreen extends React.Component {
       this.props.navigation.navigate('Home_LI')
     } else {
       // No user is signed in.
-      this.props.navigation.navigate('Home')
+      this.props.navigation.navigate('LogIn')
     }
   }
 
   render() {
     return (
-      <TouchableWithoutFeedback onPress={() => this.props.navigation.navigate('Home')}>
+      <TouchableWithoutFeedback onPress={() => this.props.navigation.navigate('LogIn')}>
         <View style={styles.container1}>
           {/* <Text style={styles.heading}>UKnight</Text> */}
           {/* <View style={styles.container2}> */}

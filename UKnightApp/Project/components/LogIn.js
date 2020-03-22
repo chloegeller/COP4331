@@ -35,10 +35,7 @@ class LogIn extends React.Component {
                 backgroundColor: '#292b2f'
             }}>
                 <View style={styles.container}>
-                    <Button
-                        onPress={() => this.props.navigation.navigate('Home')}
-                        title="Back"
-                        color="#eeeeee"/>
+                    
                     <TextInput
                         style={styles.inputBox}
                         value={this.state.email}

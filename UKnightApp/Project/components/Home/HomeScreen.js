@@ -44,17 +44,17 @@ class HomeScreen extends React.Component {
                             </View>
                             <View
                                 style={{
-                                flex: 0.5
+                                flex: 0.2
                             }}></View>
                             <Text style={styles.headerText}>uKnight</Text>
                             <View
                                 style={{
-                                flex: 0.5
+                                flex: 0.2
                             }}></View>
                             <View style={styles.loginButton}>
                                 <Button
-                                    onPress={() => this.props.navigation.navigate('LogIn')}
-                                    title="Login"
+                                    onPress={() => this.props.navigation.navigate('Settings')}
+                                    title="Settings"
                                     color="#eeeeee"/>
                             </View>
                         </View>

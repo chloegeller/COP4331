@@ -27,18 +27,18 @@ class DocumentsScreen extends React.Component {
               <View style={styles.header}>
                 <View style={styles.menuButton}>
                   <Button
-                    onPress={() => this.props.navigation.navigate('Home')}
+                    onPress={() => this.props.navigation.navigate('Home_LI')}
                     title="Back"
                     color="#eeeeee"
                   />
                 </View>
-                <View style={{flex: 0.5}}/>
+                <View style={{flex: 0.2}}/>
                 <Text style={styles.headerText}>Documents</Text>
-                <View style={{flex: 0.5}}/>
+                <View style={{flex: 0.2}}/>
                 <View style={styles.loginButton}>
                   <Button
-                    onPress={() => this.props.navigation.navigate('LogIn')}
-                    title="Login"
+                    onPress={() => this.props.navigation.navigate('Settings')}
+                    title="Settings"
                     color="#eeeeee"
                   />
                 </View>

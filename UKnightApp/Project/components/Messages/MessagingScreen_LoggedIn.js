@@ -5,9 +5,9 @@ import FireBase from '../../config/FireBase'
 import inAppMessaging from '@react-native-firebase/in-app-messaging';
 import { firebase } from '@react-native-firebase/in-app-messaging';
 
-class MessagingScreen extends React.Component {
+class MessagingScreen_LI extends React.Component {
     static navigationOptions = {
-        title: 'Messaging Screen',
+        title: 'Messaging Screen Logged In',
         headerTintColor: '#ffffff',
         headerStyle: {
             backgroundColor: '#000000'
@@ -45,7 +45,7 @@ class MessagingScreen extends React.Component {
                         }}></View>
                         <View style={styles.loginButton}>
                             <Button
-                                onPress={() => this.props.navigation.navigate('Profile')}
+                                onPress={() => this.props.navigation.navigate('Settings')}
                                 title="Profile"
                                 color="#eeeeee"/>
                         </View>
@@ -98,4 +98,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default MessagingScreen;
+export default MessagingScreen_LI;

@@ -26,7 +26,7 @@ class SettingsScreen extends React.Component {
                     <View style={styles.header}>
                         <View style={styles.menuButton}>
                             <Button
-                                onPress={() => this.props.navigation.navigate('Home')}
+                                onPress={() => this.props.navigation.navigate('Home_LI')}
                                 title="Back"
                                 color="#808080"/>
                         </View>
@@ -37,14 +37,9 @@ class SettingsScreen extends React.Component {
                             Settings
                         </Text>
                         <View style={{
-                            flex: 0.5
+                            flex: 1.3
                         }}></View>
-                        <View style={styles.loginButton}>
-                            <Button
-                                onPress={() => this.props.navigation.navigate('LogIn')}
-                                title="Login"
-                                color="#808080"/>
-                        </View>
+                        
                     </View>
                     <View style={styles.body}></View>
                 </View>
