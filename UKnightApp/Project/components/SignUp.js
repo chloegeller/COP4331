@@ -43,21 +43,25 @@ class Signup extends React.Component {
                         value={this.state.name}
                         onChangeText={name => this.setState({name})}
                         placeholder='Full Name'
-                        placeholderTextColor="#eeeeee"/>
+                        placeholderTextColor="#eeeeee"
+                        color="#eeeeee"/>
+                        
                     <TextInput
                         style={styles.inputBox}
                         value={this.state.email}
                         onChangeText={email => this.setState({email})}
                         placeholder='Email'
                         placeholderTextColor="#eeeeee"
-                        autoCapitalize='none'/>
+                        autoCapitalize='none'
+                        color="#eeeeee"/>
                     <TextInput
                         style={styles.inputBox}
                         value={this.state.password}
                         onChangeText={password => this.setState({password})}
                         placeholder='Password'
                         placeholderTextColor="#eeeeee"
-                        secureTextEntry={true}/>
+                        secureTextEntry={true}
+                        color="#eeeeee"/>
                     <TouchableOpacity style={styles.button} onPress={this.handleSignUp}>
                         <Text style={styles.buttonText}>Sign Up</Text>
                     </TouchableOpacity>

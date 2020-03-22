@@ -42,14 +42,16 @@ class LogIn extends React.Component {
                         onChangeText={email => this.setState({email})}
                         placeholder='Email'
                         placeholderTextColor="#eeeeee"
-                        autoCapitalize='none'/>
+                        autoCapitalize='none'
+                        color="#eeeeee"/>
                     <TextInput
                         style={styles.inputBox}
                         value={this.state.password}
                         onChangeText={password => this.setState({password})}
                         placeholder='Password'
                         placeholderTextColor="#eeeeee"
-                        secureTextEntry={true}/>
+                        secureTextEntry={true}
+                        color="#eeeeee"/>
                     <TouchableOpacity style={styles.button} onPress={this.handleLogIn}>
                         <Text style={styles.buttonText}>Login</Text>
                     </TouchableOpacity>
