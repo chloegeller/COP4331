@@ -21,10 +21,20 @@ class HomeScreen extends React.Component {
         }
     };
 
-    constructor(props) {
-      super(props)
-      this.state = {count: 0}
-    }
+    state = {
+      color: "white",
+    };
+
+    coursePress = () => {
+      if(this.state.color == "white")
+          this.setState({
+            color: "yellow"
+          })
+      else
+        this.setState({
+          color: "white"
+        })
+    };
 
     render() {
         return (
@@ -76,46 +86,41 @@ class HomeScreen extends React.Component {
                         </View>
                         <View style={styles.list}>
                             <ScrollView>
-                                <TouchableOpacity
-
-                                >
-                                    <Text style={styles.listItems}>Computer Science I</Text>
-                                </TouchableOpacity>
-                                <TouchableOpacity
-
-                                >
-                                    <Text style={styles.listItems}>Computer Science II</Text>
-                                </TouchableOpacity>
-                                <TouchableOpacity
-
-                                >
-                                    <Text style={styles.listItems}>Processes for Object Oriented Software Development</Text>
-                                </TouchableOpacity>
-                                <TouchableOpacity
-
-                                >
-                                    <Text style={styles.listItems}>Security in Computing</Text>
-                                </TouchableOpacity>
-                                <TouchableOpacity
-
-                                >
-                                    <Text style={styles.listItems}>Intro to Discrete</Text>
-                                </TouchableOpacity>
-                                <TouchableOpacity
-
-                                >
-                                    <Text style={styles.listItems}>Systems Software</Text>
-                                </TouchableOpacity>
-                                <TouchableOpacity
-
-                                >
-                                    <Text style={styles.listItems}>Object Oriented Programming</Text>
-                                </TouchableOpacity>
-                                <TouchableOpacity
-
-                                >
-                                    <Text style={styles.listItems}>Discrete Computational Structures</Text>
-                                </TouchableOpacity>
+                                <Button
+                                   title="Computer Science I"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
+                                <Button
+                                   title="Computer Science II"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
+                                <Button
+                                   title="Object Oriented Programming"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
+                                <Button
+                                   title="Intro to Discrete"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
+                                <Button
+                                   title="Systems Software"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
+                                <Button
+                                   title="Processes for Object-Oriented Software Development"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
+                                <Button
+                                   title="Discrete Computational Structures"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
                             </ScrollView>
                         </View>
                     </View>
@@ -193,11 +198,6 @@ const styles = StyleSheet.create({
     list: {
         alignItems: 'center',
     },
-    listItems: {
-        color: 'white',
-        fontSize: 24,
-        margin: 5,
-    }
 });
 
 export default HomeScreen;
