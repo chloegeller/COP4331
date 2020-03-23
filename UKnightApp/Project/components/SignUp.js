@@ -44,7 +44,8 @@ class Signup extends React.Component {
                         onChangeText={name => this.setState({name})}
                         placeholder='Full Name'
                         placeholderTextColor="#eeeeee"
-                        color="#eeeeee"/>
+                        // color="#eeeeee"
+                        />
                         
                     <TextInput
                         style={styles.inputBox}

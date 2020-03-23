@@ -43,7 +43,8 @@ class LogIn extends React.Component {
                         placeholder='Email'
                         placeholderTextColor="#eeeeee"
                         autoCapitalize='none'
-                        color="#eeeeee"/>
+                        // color="#eeeeee"
+                        />
                     <TextInput
                         style={styles.inputBox}
                         value={this.state.password}
