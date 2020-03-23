@@ -21,6 +21,11 @@ class HomeScreen extends React.Component {
         }
     };
 
+    constructor(props) {
+      super(props)
+      this.state = {count: 0}
+    }
+
     render() {
         return (
             <View
@@ -63,7 +68,7 @@ class HomeScreen extends React.Component {
                         <View style={styles.buttonContainer}>
                             <TouchableOpacity
                                 style={styles.button}
-                                onPress={() => this.props.navigation.navigate('Docs')}>
+                                onPress={() => this.props.navigation.navigate('Courses')}>
                                   <View style={styles.buttonTextBack}>
                                       <Text style={styles.buttonText}>Add Courses</Text>
                                   </View>
@@ -71,11 +76,46 @@ class HomeScreen extends React.Component {
                         </View>
                         <View style={styles.list}>
                             <ScrollView>
-                                <Text style={styles.listItems}>Computer Science I</Text>
-                                <Text style={styles.listItems}>Computer Science II</Text>
-                                <Text style={styles.listItems}>Processes of Object Oriented Programming</Text>
-                                <Text style={styles.listItems}>Computer Science I</Text>
-                                <Text style={styles.listItems}>Computer Science I</Text>
+                                <TouchableOpacity
+
+                                >
+                                    <Text style={styles.listItems}>Computer Science I</Text>
+                                </TouchableOpacity>
+                                <TouchableOpacity
+
+                                >
+                                    <Text style={styles.listItems}>Computer Science II</Text>
+                                </TouchableOpacity>
+                                <TouchableOpacity
+
+                                >
+                                    <Text style={styles.listItems}>Processes for Object Oriented Software Development</Text>
+                                </TouchableOpacity>
+                                <TouchableOpacity
+
+                                >
+                                    <Text style={styles.listItems}>Security in Computing</Text>
+                                </TouchableOpacity>
+                                <TouchableOpacity
+
+                                >
+                                    <Text style={styles.listItems}>Intro to Discrete</Text>
+                                </TouchableOpacity>
+                                <TouchableOpacity
+
+                                >
+                                    <Text style={styles.listItems}>Systems Software</Text>
+                                </TouchableOpacity>
+                                <TouchableOpacity
+
+                                >
+                                    <Text style={styles.listItems}>Object Oriented Programming</Text>
+                                </TouchableOpacity>
+                                <TouchableOpacity
+
+                                >
+                                    <Text style={styles.listItems}>Discrete Computational Structures</Text>
+                                </TouchableOpacity>
                             </ScrollView>
                         </View>
                     </View>
