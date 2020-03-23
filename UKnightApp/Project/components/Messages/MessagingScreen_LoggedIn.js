@@ -3,7 +3,7 @@ import {StyleSheet, Text, View, Button, TouchableOpacity} from 'react-native';
 import Constants from 'expo-constants';
 import FireBase from '../../config/FireBase'
 import inAppMessaging from '@react-native-firebase/in-app-messaging';
-import { firebase } from '@react-native-firebase/in-app-messaging';
+import {firebase} from '@react-native-firebase/in-app-messaging';
 
 class MessagingScreen_LI extends React.Component {
     static navigationOptions = {

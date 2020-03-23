@@ -109,18 +109,17 @@ const styles = StyleSheet.create({
         height: 40
     },
     btnContainer: {
-        flexDirection: 'column',
+        flexDirection: 'column'
     },
     button: {
         // flex: 1,
         margin: 24,
-        padding: 24, 
+        padding: 24,
         alignItems: 'center',
         backgroundColor: '#4b5058',
         borderColor: '#f8c700',
         borderWidth: 0.5,
-        borderRadius: 12,
-    
+        borderRadius: 12
     },
     buttonText: {
         textAlign: 'center',

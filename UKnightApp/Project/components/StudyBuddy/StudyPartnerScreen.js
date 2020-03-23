@@ -72,12 +72,15 @@ class HomeScreen extends React.Component {
                             <TouchableOpacity
                                 style={styles.button}
                                 onPress={() => this.props.navigation.navigate('Docs')}>
-                                  <View style={styles.buttonTextBack}>
-                                      <Text style={styles.buttonText}>Find study partners</Text>
-                                  </View>
+                                <View style={styles.buttonTextBack}>
+                                    <Text style={styles.buttonText}>Find study partners</Text>
+                                </View>
                             </TouchableOpacity>
                         </View>
-                        <View style={{flex: 0.5}}/>
+                        <View
+                            style={{
+                            flex: 0.5
+                        }}/>
                     </View>
                 </View>
             </View>
@@ -143,7 +146,7 @@ const styles = StyleSheet.create({
         //borderWidth: 1,
         borderRadius: 12,
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'center'
     },
     buttonText: {
         color: '#f8c700',

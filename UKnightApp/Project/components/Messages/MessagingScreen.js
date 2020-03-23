@@ -132,11 +132,9 @@ const styles = StyleSheet.create({
         paddingVertical: 5,
         alignItems: 'center',
 
-        //backgroundColor: '#36393f',
-        //borderColor: '#2f3136',
-        //borderWidth: 1,
+        //backgroundColor: '#36393f', borderColor: '#2f3136', borderWidth: 1,
         borderRadius: 8,
-        width: 200,
+        width: 200
     },
     buttonText: {
         fontSize: 28,

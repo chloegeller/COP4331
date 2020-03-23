@@ -41,22 +41,22 @@ class HomeScreen_LoggedIn extends React.Component {
                                 <Button
                                     onPress={() => alert("Pressed menu button!")}
                                     title="Menu"
-                                    color="#eeeeee" />
+                                    color="#eeeeee"/>
                             </View>
                             <View
                                 style={{
-                                    flex: 0.2
-                                }}></View>
+                                flex: 0.2
+                            }}></View>
                             <Text style={styles.headerText}>uKnight</Text>
                             <View
                                 style={{
-                                    flex: 0.2
-                                }}></View>
+                                flex: 0.2
+                            }}></View>
                             <View style={styles.loginButton}>
                                 <Button
                                     onPress={() => this.props.navigation.navigate('Settings')}
                                     title="Settings"
-                                    color="#eeeeee" />
+                                    color="#eeeeee"/>
                             </View>
                         </View>
                     </View>
@@ -142,11 +142,9 @@ class HomeScreen_LoggedIn extends React.Component {
                                 <ImageBackground
                                     source={require('../../assets/chatimg.png')}
                                     style={{
-                                        width: '100%',
-                                        height: '100%',
-                                        //borderRadius: 12
-
-                                    }}>
+                                    width: '100%',
+                                    height: '100%'
+                                }}>
                                     <View style={styles.buttonTextBack}>
                                         <Text style={styles.buttonText}>Messaging{"\n\n"}</Text>
                                     </View>

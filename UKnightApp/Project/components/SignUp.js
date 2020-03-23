@@ -38,33 +38,13 @@ class Signup extends React.Component {
                         onPress={() => this.props.navigation.navigate('LogIn')}
                         title="Back"
                         color="#eeeeee"/>
-                    <TextInput
-                        style={styles.inputBox}
-                        value={this.state.name}
-                        onChangeText={name => this.setState({name})}
-                        placeholder='Full Name'
-                        placeholderTextColor="#eeeeee"
-                        // color="#eeeeee"
-                        />
-                        
-                    <TextInput
-                        style={styles.inputBox}
-                        value={this.state.email}
-                        onChangeText={email => this.setState({email})}
-                        placeholder='Email'
-                        placeholderTextColor="#eeeeee"
-                        autoCapitalize='none'
-                        // color="#eeeeee"
-                        />
-                    <TextInput
-                        style={styles.inputBox}
-                        value={this.state.password}
-                        onChangeText={password => this.setState({password})}
-                        placeholder='Password'
-                        placeholderTextColor="#eeeeee"
-                        secureTextEntry={true}
-                        // color="#eeeeee"
-                        />
+                    <TextInput style={styles.inputBox} value={this.state.name} onChangeText={name => this.setState({name})} placeholder='Full Name' placeholderTextColor="#eeeeee" // color="#eeeeee"
+                    />
+
+                    <TextInput style={styles.inputBox} value={this.state.email} onChangeText={email => this.setState({email})} placeholder='Email' placeholderTextColor="#eeeeee" autoCapitalize='none' // color="#eeeeee"
+                    />
+                    <TextInput style={styles.inputBox} value={this.state.password} onChangeText={password => this.setState({password})} placeholder='Password' placeholderTextColor="#eeeeee" secureTextEntry={true} // color="#eeeeee"
+                    />
                     <TouchableOpacity style={styles.button} onPress={this.handleSignUp}>
                         <Text style={styles.buttonText}>Sign Up</Text>
                     </TouchableOpacity>
@@ -96,8 +76,7 @@ const styles = StyleSheet.create({
         paddingVertical: 5,
         alignItems: 'center',
         backgroundColor: '#f8c700',
-        //borderColor: '#FFA611',
-        //borderWidth: 1,
+        //borderColor: '#FFA611', borderWidth: 1,
         borderRadius: 10,
         width: 200
     },

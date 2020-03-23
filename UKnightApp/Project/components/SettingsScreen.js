@@ -39,7 +39,7 @@ class SettingsScreen extends React.Component {
                         <View style={{
                             flex: 1.3
                         }}></View>
-                        
+
                     </View>
                     <View style={styles.body}></View>
                 </View>
