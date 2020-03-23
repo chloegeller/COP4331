@@ -146,7 +146,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     buttonText: {
-        color: '#eeeeee',
+        color: '#f8c700',
         fontSize: 30,
         fontWeight: 'bold'
     }

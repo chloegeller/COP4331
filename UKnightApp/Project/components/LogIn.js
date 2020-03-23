@@ -52,7 +52,8 @@ class LogIn extends React.Component {
                         placeholder='Password'
                         placeholderTextColor="#eeeeee"
                         secureTextEntry={true}
-                        color="#eeeeee"/>
+                        // color="#eeeeee"
+                        />
                     <TouchableOpacity style={styles.button} onPress={this.handleLogIn}>
                         <Text style={styles.buttonText}>Login</Text>
                     </TouchableOpacity>

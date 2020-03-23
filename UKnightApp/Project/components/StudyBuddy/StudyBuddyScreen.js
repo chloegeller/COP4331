@@ -140,13 +140,13 @@ const styles = StyleSheet.create({
         width: '80%',
         //alignItems: 'center',
         borderColor: '#f8c700',
-        //borderWidth: 1,
+        borderWidth: 0.5,
         borderRadius: 12,
         alignItems: 'center',
         justifyContent: 'center'
     },
     buttonText: {
-        color: '#eeeeee',
+        color: '#f8c700',
         fontSize: 24,
         fontWeight: 'bold'
     }

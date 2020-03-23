@@ -2,6 +2,7 @@ import React from 'react';
 import {StyleSheet, Text, View, Button, TouchableOpacity} from 'react-native';
 import {WebView} from 'react-native-webview';
 import Constants from 'expo-constants';
+import * as WebBrowser from 'expo-web-browser';
 class CalendarScreen extends React.Component {
     static navigationOptions = {
         title: 'Calendar',
@@ -49,10 +50,31 @@ class CalendarScreen extends React.Component {
                         </View>
                     </View>
                     <View style={styles.body}>
-                        <WebView
-                            source={{
-                            html: '<iframe src="https://calendar.google.com/calendar/b/4/embed?height=600&amp;wkst=1&amp;bgcolor=%23F6BF26&amp;ctz=America%2FNew_York&amp;src=OW1rZm5tNXVva2UxcDFta2RrZW51aDdlbWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23616161&amp;mode=AGENDA&amp;showTz=0&amp;showCalendars=0&amp;showTabs=0&amp;showPrint=0&amp;showTitle=0" style="border-width:0" height="100%" width="100%" frameborder="1" scrolling="no"></iframe>'
-                        }}/>
+                    <TouchableOpacity
+                            style={styles.button}
+                            onPress={() => WebBrowser.openBrowserAsync("https://events.ucf.edu/upcoming/")}>
+                            <Text style={styles.buttonText}>Upcoming Events</Text>
+                        </TouchableOpacity>
+                    <TouchableOpacity
+                            style={styles.button}
+                            onPress={() => WebBrowser.openBrowserAsync("https://events.ucf.edu/this-week/")}>
+                            <Text style={styles.buttonText}>Weekly Update</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                            style={styles.button}
+                            onPress={() => WebBrowser.openBrowserAsync("https://www.ucf.edu/news/")}>
+                            <Text style={styles.buttonText}>News</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                            style={styles.button}
+                            onPress={() => WebBrowser.openBrowserAsync("https://calendar.ucf.edu/2020/spring")}>
+                            <Text style={styles.buttonText}>Academic Calendar</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                            style={styles.button}
+                            onPress={() => WebBrowser.openBrowserAsync("https://calendar.google.com/calendar/embed?src=9mkfnm5uoke1p1mkdkenuh7emk%40group.calendar.google.com&ctz=America%2FNew_York")}>
+                            <Text style={styles.buttonText}>Discounts</Text>
+                        </TouchableOpacity>
                     </View>
                 </View>
             </View>
@@ -88,7 +110,7 @@ const styles = StyleSheet.create({
     body: {
         flex: 8,
         flexDirection: 'column',
-        justifyContent: 'space-around',
+        justifyContent: 'space-evenly',
         backgroundColor: '#36393f',
         paddingBottom: 24
     },
@@ -97,6 +119,27 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         top: '60%',
         height: 40
+    },
+    btnContainer: {
+        flexDirection: 'column',
+    },
+    button: {
+        // flex: 1,
+        margin: 24,
+        padding: 24, 
+        alignItems: 'center',
+        backgroundColor: '#4b5058',
+        borderColor: '#f8c700',
+        borderWidth: 0.5,
+        borderRadius: 12,
+    
+    },
+    buttonText: {
+        textAlign: 'center',
+        color: '#f8c700',
+        //ustifyContent: 'space-evenly',
+        fontSize: 24,
+        fontWeight: 'bold'
     }
 });
 

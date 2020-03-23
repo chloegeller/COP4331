@@ -118,16 +118,16 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#4b5058',
         borderColor: '#f8c700',
-        //borderWidth: 1,
+        borderWidth: 0.5,
         borderRadius: 12,
     
     },
     buttonText: {
         textAlign: 'center',
-        color: '#eeeeee',
+        color: '#f8c700',
         //ustifyContent: 'space-evenly',
         fontSize: 24,
-        // fontWeight: 'bold'
+        fontWeight: 'bold'
     }
 });
 
