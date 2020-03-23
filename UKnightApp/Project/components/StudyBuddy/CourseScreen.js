@@ -21,6 +21,21 @@ class HomeScreen extends React.Component {
         }
     };
 
+    state = {
+      color: "white",
+    };
+
+    coursePress = () => {
+      if(this.state.color == "white")
+          this.setState({
+            color: "yellow"
+          })
+      else
+        this.setState({
+          color: "white"
+        })
+    };
+
     render() {
         return (
             <View
@@ -63,7 +78,7 @@ class HomeScreen extends React.Component {
                         <View style={styles.buttonContainer}>
                             <TouchableOpacity
                                 style={styles.button}
-                                onPress={() => this.props.navigation.navigate('Docs')}>
+                                onPress={() => this.props.navigation.navigate('Courses')}>
                                   <View style={styles.buttonTextBack}>
                                       <Text style={styles.buttonText}>Add Courses</Text>
                                   </View>
@@ -71,11 +86,41 @@ class HomeScreen extends React.Component {
                         </View>
                         <View style={styles.list}>
                             <ScrollView>
-                                <Text style={styles.listItems}>Computer Science I</Text>
-                                <Text style={styles.listItems}>Computer Science II</Text>
-                                <Text style={styles.listItems}>Processes of Object Oriented Programming</Text>
-                                <Text style={styles.listItems}>Computer Science I</Text>
-                                <Text style={styles.listItems}>Computer Science I</Text>
+                                <Button
+                                   title="Computer Science I"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
+                                <Button
+                                   title="Computer Science II"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
+                                <Button
+                                   title="Object Oriented Programming"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
+                                <Button
+                                   title="Intro to Discrete"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
+                                <Button
+                                   title="Systems Software"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
+                                <Button
+                                   title="Processes for Object-Oriented Software Development"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
+                                <Button
+                                   title="Discrete Computational Structures"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
                             </ScrollView>
                         </View>
                     </View>
@@ -153,11 +198,6 @@ const styles = StyleSheet.create({
     list: {
         alignItems: 'center',
     },
-    listItems: {
-        color: 'white',
-        fontSize: 24,
-        margin: 5,
-    }
 });
 
 export default HomeScreen;
