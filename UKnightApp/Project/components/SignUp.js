@@ -54,7 +54,8 @@ class Signup extends React.Component {
                         placeholder='Email'
                         placeholderTextColor="#eeeeee"
                         autoCapitalize='none'
-                        color="#eeeeee"/>
+                        // color="#eeeeee"
+                        />
                     <TextInput
                         style={styles.inputBox}
                         value={this.state.password}
@@ -62,7 +63,8 @@ class Signup extends React.Component {
                         placeholder='Password'
                         placeholderTextColor="#eeeeee"
                         secureTextEntry={true}
-                        color="#eeeeee"/>
+                        // color="#eeeeee"
+                        />
                     <TouchableOpacity style={styles.button} onPress={this.handleSignUp}>
                         <Text style={styles.buttonText}>Sign Up</Text>
                     </TouchableOpacity>
