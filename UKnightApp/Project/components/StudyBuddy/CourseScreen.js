@@ -6,7 +6,8 @@ import {
     Button,
     ImageBackground,
     TouchableOpacity,
-    StatusBar
+    StatusBar,
+    ScrollView
 } from 'react-native';
 import Constants from 'expo-constants';
 
@@ -60,25 +61,23 @@ class HomeScreen extends React.Component {
                     </View>
                     <View style={styles.body}>
                         <View style={styles.buttonContainer}>
-                            {/* TODO: create proper screens and redirect to them */}
-                            <TouchableOpacity
-                                style={styles.button}
-                                onPress={() => this.props.navigation.navigate('BusScreen')}>
-                                <View style={styles.buttonTextBack}>
-                                    <Text style={styles.buttonText}>Courses</Text>
-                                </View>
-                            </TouchableOpacity>
-                        </View>
-                        <View style={styles.buttonContainer}>
                             <TouchableOpacity
                                 style={styles.button}
                                 onPress={() => this.props.navigation.navigate('Docs')}>
                                   <View style={styles.buttonTextBack}>
-                                      <Text style={styles.buttonText}>Find study partners</Text>
+                                      <Text style={styles.buttonText}>Add Courses</Text>
                                   </View>
                             </TouchableOpacity>
                         </View>
-                        <View style={{flex: 0.5}}/>
+                        <View style={styles.list}>
+                            <ScrollView>
+                                <Text style={styles.listItems}>Computer Science I</Text>
+                                <Text style={styles.listItems}>Computer Science II</Text>
+                                <Text style={styles.listItems}>Processes of Object Oriented Programming</Text>
+                                <Text style={styles.listItems}>Computer Science I</Text>
+                                <Text style={styles.listItems}>Computer Science I</Text>
+                            </ScrollView>
+                        </View>
                     </View>
                 </View>
             </View>
@@ -148,8 +147,16 @@ const styles = StyleSheet.create({
     },
     buttonText: {
         color: '#eeeeee',
-        fontSize: 24,
+        fontSize: 36,
         fontWeight: 'bold'
+    },
+    list: {
+        alignItems: 'center',
+    },
+    listItems: {
+        color: 'white',
+        fontSize: 24,
+        margin: 5,
     }
 });
 
