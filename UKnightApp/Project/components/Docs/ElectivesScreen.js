@@ -1,9 +1,10 @@
-import React from 'react';
-import {StyleSheet, Text, View, Button, TouchableOpacity} from 'react-native';
-import Constants from 'expo-constants';
-class SettingsScreen extends React.Component {
+import * as React from 'react'
+import {StyleSheet, Text, View, Button, TouchableOpacity} from 'react-native'
+import PDFReader from 'rn-pdf-reader-js'
+
+class ElectivesScreen extends React.Component {
     static navigationOptions = {
-        title: 'Settings',
+        title: 'Documents',
         headerTintColor: '#ffffff',
         headerStyle: {
             backgroundColor: '#000000'
@@ -26,7 +27,7 @@ class SettingsScreen extends React.Component {
                     <View style={styles.header}>
                         <View style={styles.menuButton}>
                             <Button
-                                onPress={() => this.props.navigation.navigate('Home_LI')}
+                                onPress={() => this.props.navigation.navigate('Docs')}
                                 title="Back"
                                 color="#eeeeee"/>
                         </View>
@@ -34,32 +35,35 @@ class SettingsScreen extends React.Component {
                             flex: 0.5
                         }}></View>
                         <Text style={styles.headerText}>
-                            Settings
+                            Documents
                         </Text>
                         <View style={{
-                            flex: 1.3
+                            flex: 0.5
                         }}></View>
-
+                        <View style={styles.loginButton}>
+                            <Button
+                                onPress={() => this.props.navigation.navigate('LogIn')}
+                                title="Login"
+                                color="#eeeeee"/>
+                        </View>
                     </View>
-                    <View style={styles.body}></View>
+                    <View style={styles.body}>
+                        <PDFReader
+                            source={{
+                            uri: 'https://www.cs.ucf.edu/wp-content/uploads/2019/08/CSIT-Required-And-Elective-List.pdf'
+                        }}/>
+                    </View>
                 </View>
             </View>
-        );
+        )
     }
 }
 
 const styles = StyleSheet.create({
     header: {
         flex: 1,
-        marginTop: Constants.statusBarHeight,
         flexDirection: 'row',
-        justifyContent: 'space-around',
-        backgroundColor: '#292b2f',
-        alignItems: 'center'
-    },
-    headerVerticalCenter: {
-        flexDirection: 'row',
-        height: '100%',
+        backgroundColor: 'black',
         alignItems: 'center'
     },
     menuButton: {
@@ -67,7 +71,7 @@ const styles = StyleSheet.create({
     },
     headerText: {
         color: '#f8c700',
-        fontSize: 40,
+        fontSize: 32,
         fontWeight: 'bold'
     },
     loginButton: {
@@ -76,16 +80,8 @@ const styles = StyleSheet.create({
     body: {
         flex: 8,
         flexDirection: 'column',
-        justifyContent: 'space-around',
-        backgroundColor: '#36393f',
-        paddingBottom: 24
-    },
-    buttonTextBack: {
-        backgroundColor: '#4b5058',
-        alignItems: 'center',
-        top: '60%',
-        height: 40
+        backgroundColor: '#36393f'
     }
 });
 
-export default SettingsScreen;
+export default ElectivesScreen;

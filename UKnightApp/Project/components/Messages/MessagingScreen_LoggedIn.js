@@ -1,9 +1,13 @@
 import React from 'react';
 import {StyleSheet, Text, View, Button, TouchableOpacity} from 'react-native';
 import Constants from 'expo-constants';
-class SettingsScreen extends React.Component {
+import FireBase from '../../config/FireBase'
+import inAppMessaging from '@react-native-firebase/in-app-messaging';
+import {firebase} from '@react-native-firebase/in-app-messaging';
+
+class MessagingScreen_LI extends React.Component {
     static navigationOptions = {
-        title: 'Settings',
+        title: 'Messaging Screen Logged In',
         headerTintColor: '#ffffff',
         headerStyle: {
             backgroundColor: '#000000'
@@ -30,16 +34,21 @@ class SettingsScreen extends React.Component {
                                 title="Back"
                                 color="#eeeeee"/>
                         </View>
-                        <View style={{
+                        {/* <View style={{
                             flex: 0.5
-                        }}></View>
+                        }}></View> */}
                         <Text style={styles.headerText}>
-                            Settings
+                            Messages
                         </Text>
-                        <View style={{
-                            flex: 1.3
-                        }}></View>
-
+                        {/* <View style={{
+                            flex: 0.5
+                        }}></View> */}
+                        <View style={styles.loginButton}>
+                            <Button
+                                onPress={() => this.props.navigation.navigate('Settings')}
+                                title="Profile"
+                                color="#eeeeee"/>
+                        </View>
                     </View>
                     <View style={styles.body}></View>
                 </View>
@@ -68,7 +77,8 @@ const styles = StyleSheet.create({
     headerText: {
         color: '#f8c700',
         fontSize: 40,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        alignItems: 'center'
     },
     loginButton: {
         flex: 1
@@ -78,7 +88,7 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'space-around',
         backgroundColor: '#36393f',
-        paddingBottom: 24
+        paddingBottom: 30
     },
     buttonTextBack: {
         backgroundColor: '#4b5058',
@@ -88,4 +98,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default SettingsScreen;
+export default MessagingScreen_LI;
