@@ -25,7 +25,8 @@ import SetScreen from './components/SettingsScreen';
 import ProfileScreen from './components/ProfileScreen';
 import MessagingScreen from './components/Messages/MessagingScreen';
 //import MessagingScreen_LI from './components/Messages/MessagingScreen_LoggedIn';
-
+import Contacts from './components/Messages/Contacts';
+import ChatList from './components/Messages/ChatList';
 import Constants from 'expo-constants';
 import FlowchartScreen from './components/Docs/FlowchartScreen';
 import ElectivesScreen from './components/Docs/ElectivesScreen';
@@ -61,6 +62,8 @@ const AppNavigator = createSwitchNavigator({
   Override: OverrideScreen,
   Courses: CourseScreen,
   StudyPartner: StudyPartnerScreen,
+  Contacts: Contacts,
+  Convos: ChatList
 },{
   initialRouteName: 'Land',
 });
