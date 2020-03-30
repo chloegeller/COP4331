@@ -6,15 +6,10 @@ import {
     StyleSheet,
     TouchableOpacity,
     Text
-<<<<<<< HEAD
 } from 'react-native'
-import FireBase, { db } from '../config/FireBase'
-=======
-} from 'react-native';
-import FireBase from '../config/FireBase';
+import FireBase, { db } from '../config/FireBase';
 import {showMessage} from 'react-native-flash-message';
 import validateForm from '../tests/validation';
->>>>>>> ea575f81303f329ef9efeccbb89d1ac189e60215
 import Constants from 'expo-constants';
 
 class Signup extends React.Component {
@@ -95,16 +90,14 @@ class Signup extends React.Component {
                         onChangeText={name => this.setState({name})}
                         placeholder='Full Name'
                         placeholderTextColor="#eeeeee"
-<<<<<<< HEAD
                         // color="#eeeeee"
                         />
-=======
+
                         color="#eeeeee"
                         ref={(input) => {
                         this.nameInput = input;
                     }}
                         onSubmitEditing={() => this.emailInput.focus()}/>
->>>>>>> ea575f81303f329ef9efeccbb89d1ac189e60215
 
                     <TextInput
                         style={styles.inputBox}
