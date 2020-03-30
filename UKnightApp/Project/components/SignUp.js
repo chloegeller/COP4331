@@ -7,7 +7,8 @@ import {
     TouchableOpacity,
     Text
 } from 'react-native'
-import FireBase, { db } from '../config/FireBase';
+import FireBase from '../config/FireBase';
+//import Firestore from '@react-native-firebase/firestore';
 import {showMessage} from 'react-native-flash-message';
 import validateForm from '../tests/validation';
 import Constants from 'expo-constants';
@@ -59,17 +60,25 @@ class Signup extends React.Component {
     //=======================================================================
 
     handleSignUp = () => {
+        this.addUser();
         const {email, password} = this.state
         FireBase
             .auth()
             .createUserWithEmailAndPassword(email, password)
             .then(() => this.props.navigation.navigate('Home_LI'))
             .catch(error => console.log(error))
-
-        db.collection('users')
-          .doc(response.user.uid)
-          .set(user)
     }
+
+    //addUser = () => {
+      //const ref = firestore().collection('users');
+      //db.settings({
+        //timestampsInSnapshots: true
+      //});
+      //const userRef = ref.add({
+        //name: this.state.name,
+        //email: this.state.email
+      //});
+    //}
 
     render() {
         return (
@@ -91,7 +100,6 @@ class Signup extends React.Component {
                         placeholder='Full Name'
                         placeholderTextColor="#eeeeee"
                         // color="#eeeeee"
-                        />
 
                         color="#eeeeee"
                         ref={(input) => {
