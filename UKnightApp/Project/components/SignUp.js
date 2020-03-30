@@ -7,7 +7,7 @@ import {
     TouchableOpacity,
     Text
 } from 'react-native'
-import FireBase, { db } from '../config/FireBase';
+import FireBase, {db} from '../config/FireBase';
 import {showMessage} from 'react-native-flash-message';
 import validateForm from '../tests/validation';
 import Constants from 'expo-constants';
@@ -19,44 +19,40 @@ class Signup extends React.Component {
         password: ''
     };
 
-    //! Please don't remove this, still testing - chloe
-    //=======================================================================
+    // ! Please don't remove this, still testing - chloe
+    // =======================================================================
     // runValidation = () => {     const {name, email, password,
     // passwordConfirmation} = this.state;     const fields = [         {  value:
     // name,             verify: [                 { type: 'isPopulated',
-    //          message: 'Please enter your name'              }             ]
-    //   }, {             value: email,   verify: [                 {
-    //      type: 'isPopulated',              message: 'Please enter your email
-    // address'                 }, {                    type: 'isEmail',
-    //         message: 'Please format your email address correctly'
-    // }             ] }, {             value: password,             verify: [
-    //           {                 type: 'isPopulated',                     message:
-    // 'Please enter your password'                 }, {                     type:
-    // 'isMatched',                     matchValue: passwordConfirmation,
+    // message: 'Please enter your name'              }             ]   }, {
+    //     value: email,   verify: [                 {      type: 'isPopulated',
+    //          message: 'Please enter your email address'                 }, {
+    //               type: 'isEmail',         message: 'Please format your email
+    // address correctly' }             ] }, {             value: password,
+    //    verify: [           {                 type: 'isPopulated',
+    //     message: 'Please enter your password'                 }, {
+    //      type: 'isMatched',                     matchValue: passwordConfirmation,
     // message: 'Password and Confirmation must match'                 }, {
-    //            type: 'isGreaterThanLength',                     length: 5,
-    //              message: 'Password must be at least six characters'
-    // }             ]         }, {             value: passwordConfirmation,
-    //     verify: [                 {     type: 'isPopulated',
-    // message: 'Please confirm your password'                 }             ]
-    //   }     ];     const errorMessage = validateForm(fields);     if
-    // (errorMessage) { showMessage({message: 'Check your form', description:
+    //   type: 'isGreaterThanLength',                     length: 5,
+    // message: 'Password must be at least six characters' }             ]
+    // }, {             value: passwordConfirmation,     verify: [                 {
+    //     type: 'isPopulated', message: 'Please confirm your password'
+    //    }             ]   }     ];     const errorMessage = validateForm(fields);
+    //    if (errorMessage) { showMessage({message: 'Check your form', description:
     // errorMessage, type: 'danger'});         return false;     }     return true;
     // } onSubmitRegistration = () => {     const {email, password} = this.state;
-    // const isFormValid = this.runValidation();     if (!isFormValid) { return;
-    // }     this.setState({isLoading: true});     FireBase .auth()
-    // .createUserWithEmailAndPassword(email, password) .then(({user}) => {
-    //    // Add the new user to the users table      FireBase
-    // .database()                 .ref()    .child('users')
-    // .push({email: this.state.email, uid: user.uid, name: this.state.name});
-    //       // Update the user's metadata on firebase
+    // const isFormValid = this.runValidation();     if (!isFormValid) { return; }
+    //   this.setState({isLoading: true});     FireBase .auth()
+    // .createUserWithEmailAndPassword(email, password) .then(({user}) => {    //
+    // Add the new user to the users table      FireBase .database()
+    // .ref()    .child('users') .push({email: this.state.email, uid: user.uid,
+    // name: this.state.name});       // Update the user's metadata on firebase
     // //ser.updateProfile({displayName: this.state.name});
     // this.setState({isLoading: false});             return this         .props
-    //             .navigation .navigate('Home_LI');         })
-    // .catch((error) => { showMessage({message: 'Check your form', description:
-    // `${error.message} (${error.code})`, type: 'danger'});
-    // this.setState({isLoading: false});         })
-    //=======================================================================
+    //         .navigation .navigate('Home_LI');         }) .catch((error) => {
+    // showMessage({message: 'Check your form', description: `${error.message}
+    // (${error.code})`, type: 'danger'}); this.setState({isLoading: false});
+    //  }) =======================================================================
 
     handleSignUp = () => {
         const {email, password} = this.state
@@ -65,10 +61,10 @@ class Signup extends React.Component {
             .createUserWithEmailAndPassword(email, password)
             .then(() => this.props.navigation.navigate('Home_LI'))
             .catch(error => console.log(error))
-
-        db.collection('users')
-          .doc(response.user.uid)
-          .set(user)
+            db
+            .collection('users')
+            .doc(response.user.uid)
+            .set(user)
     }
 
     render() {
@@ -90,12 +86,10 @@ class Signup extends React.Component {
                         onChangeText={name => this.setState({name})}
                         placeholder='Full Name'
                         placeholderTextColor="#eeeeee"
-                        // color="#eeeeee"
-                        />
-
                         color="#eeeeee"
-                        ref={(input) => {
-                        this.nameInput = input;
+                        ref
+                        ={(input) => {
+                        this.nameInput
                     }}
                         onSubmitEditing={() => this.emailInput.focus()}/>
 
