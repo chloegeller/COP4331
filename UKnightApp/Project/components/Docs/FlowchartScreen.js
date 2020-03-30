@@ -43,8 +43,8 @@ class FlowchartScreen extends React.Component {
                         }}></View>
                         <View style={styles.loginButton}>
                             <Button
-                                onPress={() => this.props.navigation.navigate('LogIn')}
-                                title="Login"
+                                onPress={() => this.props.navigation.navigate('Profile')}
+                                title="Profile"
                                 color="#eeeeee"/>
                         </View>
                     </View>

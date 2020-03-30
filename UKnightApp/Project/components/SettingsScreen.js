@@ -26,7 +26,7 @@ class SettingsScreen extends React.Component {
                     <View style={styles.header}>
                         <View style={styles.menuButton}>
                             <Button
-                                onPress={() => this.props.navigation.navigate('Home_LI')}
+                                onPress={() => this.props.navigation.navigate('Profile')}
                                 title="Back"
                                 color="#eeeeee"/>
                         </View>

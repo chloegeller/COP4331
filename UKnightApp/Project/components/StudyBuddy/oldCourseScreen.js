@@ -6,18 +6,27 @@ import {
     Button,
     ImageBackground,
     TouchableOpacity,
-    StatusBar
+    StatusBar,
+    ScrollView
 } from 'react-native';
 import Constants from 'expo-constants';
+import Firebase from '../../config/FireBase';
 
-class StudyBuddyScreen extends React.Component {
+class CourseScreen extends React.Component {
 
-    static navigationOptions = {
-        title: 'StudyBuddyScreen',
-        headerTintColor: '#ffffff',
-        headerStyle: {
-            backgroundColor: '#000000'
-        }
+    state = {
+      color: "white",
+    };
+
+    coursePress = () => {
+      if(this.state.color == "white")
+          this.setState({
+            color: "yellow"
+          })
+      else
+        this.setState({
+          color: "white"
+        })
     };
 
     render() {
@@ -37,7 +46,7 @@ class StudyBuddyScreen extends React.Component {
                         <View style={styles.headerVerticalCenter}>
                             <View style={styles.menuButton}>
                                 <Button
-                                    onPress={() => this.props.navigation.navigate('Home_LI')}
+                                    onPress={() => this.props.navigation.navigate('StudyBuddy')}
                                     title="Back"
                                     color="#eeeeee"/>
                             </View>
@@ -45,14 +54,16 @@ class StudyBuddyScreen extends React.Component {
                                 style={{
                                 flex: 0.5
                             }}></View> */}
-                            <Text style={styles.headerText}>StudyBuddy</Text>
+                            <Text style={styles.headerText}>Courses</Text>
                             {/* <View
                                 style={{
                                 flex: 0.5
                             }}></View> */}
                             <View style={styles.loginButton}>
-                                <Button onPress={() => this.props.navigation.navigate('Profile')} title="Profile" color="#eeeeee" // justifyContent="space-around"
-                                />
+                                <Button
+                                    onPress={() => this.props.navigation.navigate('Settings')}
+                                    title="Settings"
+                                    color="#eeeeee"/>
                             </View>
                         </View>
                     </View>
@@ -61,24 +72,50 @@ class StudyBuddyScreen extends React.Component {
                             <TouchableOpacity
                                 style={styles.button}
                                 onPress={() => this.props.navigation.navigate('Courses')}>
-                                <View style={styles.buttonTextBack}>
-                                    <Text style={styles.buttonText}>Courses</Text>
-                                </View>
+                                  <View style={styles.buttonTextBack}>
+                                      <Text style={styles.buttonText}>Add Courses</Text>
+                                  </View>
                             </TouchableOpacity>
                         </View>
-                        <View style={styles.buttonContainer}>
-                            <TouchableOpacity
-                                style={styles.button}
-                                onPress={() => this.props.navigation.navigate('StudyPartner')}>
-                                <View style={styles.buttonTextBack}>
-                                    <Text style={styles.buttonText}>Find study partners</Text>
-                                </View>
-                            </TouchableOpacity>
+                        <View style={styles.list}>
+                            <ScrollView>
+                                <Button
+                                   title="Computer Science I"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
+                                <Button
+                                   title="Computer Science II"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
+                                <Button
+                                   title="Object Oriented Programming"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
+                                <Button
+                                   title="Intro to Discrete"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
+                                <Button
+                                   title="Systems Software"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
+                                <Button
+                                   title="Processes for Object-Oriented Software Development"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
+                                <Button
+                                   title="Discrete Computational Structures"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
+                            </ScrollView>
                         </View>
-                        <View
-                            style={{
-                            flex: 0.5
-                        }}/>
                     </View>
                 </View>
             </View>
@@ -110,7 +147,7 @@ const styles = StyleSheet.create({
     },
     headerText: {
         color: '#f8c700',
-        fontSize: 38,
+        fontSize: 40,
         fontWeight: 'bold',
         alignItems: 'center'
     },
@@ -136,20 +173,24 @@ const styles = StyleSheet.create({
         backgroundColor: '#4b5058',
         paddingVertical: 5,
         paddingHorizontal: 5,
-        //borderWidth: 1, borderRadius: 5,
+        //borderWidth: 1,
+        //borderRadius: 5,
         width: '80%',
         //alignItems: 'center',
         borderColor: '#f8c700',
-        borderWidth: 0.5,
+        //borderWidth: 1,
         borderRadius: 12,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
     buttonText: {
-        color: '#f8c700',
-        fontSize: 24,
+        color: '#eeeeee',
+        fontSize: 36,
         fontWeight: 'bold'
-    }
+    },
+    list: {
+        alignItems: 'center',
+    },
 });
 
-export default StudyBuddyScreen;
+export default CourseScreen;

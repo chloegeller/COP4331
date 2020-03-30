@@ -27,24 +27,24 @@ class ProfileScreen extends React.Component {
                     <View style={styles.header}>
                         <View style={styles.menuButton}>
                             <Button
-                                onPress={() => this.props.navigation.navigate('Home')}
+                                onPress={() => this.props.navigation.navigate('Home_LI')}
                                 title="Back"
-                                color="#808080"/>
+                                color="#eeeeee" />
                         </View>
-                        {/* <View style={{
+                        <View style={{
                             flex: 0.5
-                        }}></View> */}
+                        }}></View>
                         <Text style={styles.headerText}>
                             Profile
                         </Text>
-                        {/* <View style={{
+                        <View style={{
                             flex: 0.5
-                        }}></View> */}
+                        }}></View>
                         <View style={styles.loginButton}>
                             <Button
-                                onPress={() => this.props.navigation.navigate('LogIn')}
-                                title="Login"
-                                color="#808080"/>
+                                onPress={() => this.props.navigation.navigate('Settings')}
+                                title="Settings"
+                                color="#eeeeee" />
                         </View>
                     </View>
                     <View style={styles.body}></View>

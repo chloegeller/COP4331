@@ -10,26 +10,67 @@ import {
     ScrollView
 } from 'react-native';
 import Constants from 'expo-constants';
+import Firebase from '../../config/FireBase';
 
-class HomeScreen extends React.Component {
+class CourseScreen extends React.Component {
 
-    static navigationOptions = {
-        title: 'Home',
-        headerTintColor: '#ffffff',
-        headerStyle: {
-            backgroundColor: '#000000'
-        }
-    };
 
+    // My attempt to use an array for this ran me into fatal errors on this page, and so I opted for 7 separate variables.
+    // Maybe there is a way to do it with an array, and using an array would make expanding this much easier,
+    // but I don't kow enough about javascript it seems.
     state = {
-        color: "white"
+        colorCS1: "gray",
+        colorCS2: "gray",
+        colorOOP: "gray",
+        colorID: "gray",
+        colorSS: "gray",
+        colorPOOSD: "gray",
+        colorDCS: "gray"
     };
 
-    coursePress = () => {
-        if (this.state.color == "white") 
-            this.setState({color: "yellow"})
-        else 
-            this.setState({color: "white"})
+    coursePress = (n) => {
+      if (n == 0) {
+        if (this.state.colorCS1 == "gray")
+          this.setState({colorCS1: "gold"})
+        else
+          this.setState({colorCS1: "gray"})
+      }
+      else if (n == 1) {
+        if (this.state.colorCS2 == "gray")
+          this.setState({colorCS2: "gold"})
+        else
+          this.setState({colorCS2: "gray"})
+      }
+      else if (n == 2) {
+        if (this.state.colorOOP == "gray")
+          this.setState({colorOOP: "gold"})
+        else
+          this.setState({colorOOP: "gray"})
+      }
+      else if (n == 3) {
+        if (this.state.colorID == "gray")
+          this.setState({colorID: "gold"})
+        else
+          this.setState({colorID: "gray"})
+      }
+      else if (n == 4) {
+        if (this.state.colorSS == "gray")
+          this.setState({colorSS: "gold"})
+        else
+          this.setState({colorSS: "gray"})
+      }
+      else if (n == 5) {
+        if (this.state.colorPOOSD == "gray")
+          this.setState({colorPOOSD: "gold"})
+        else
+          this.setState({colorPOOSD: "gray"})
+      }
+      else if (n == 6) {
+        if (this.state.colorDCS == "gray")
+          this.setState({colorDCS: "gold"})
+        else
+          this.setState({colorDCS: "gray"})
+      }
     };
 
     render() {
@@ -64,8 +105,8 @@ class HomeScreen extends React.Component {
                             }}></View> */}
                             <View style={styles.loginButton}>
                                 <Button
-                                    onPress={() => this.props.navigation.navigate('Settings')}
-                                    title="Settings"
+                                    onPress={() => this.props.navigation.navigate('Profile')}
+                                    title="Profile"
                                     color="#eeeeee"/>
                             </View>
                         </View>
@@ -84,32 +125,39 @@ class HomeScreen extends React.Component {
                             <ScrollView>
                                 <Button
                                     title="Computer Science I"
-                                    color={this.state.color}
-                                    onPress={this.coursePress}/>
+                                    color={this.state.colorCS1}
+                                    onPress={() => this.coursePress(0)}>
+                                </Button>
                                 <Button
                                     title="Computer Science II"
-                                    color={this.state.color}
-                                    onPress={this.coursePress}/>
+                                    color={this.state.colorCS2}
+                                    onPress={() => this.coursePress(1)}>
+                                </Button>
                                 <Button
                                     title="Object Oriented Programming"
-                                    color={this.state.color}
-                                    onPress={this.coursePress}/>
+                                    color={this.state.colorOOP}
+                                    onPress={() => this.coursePress(2)}>
+                                </Button>
                                 <Button
                                     title="Intro to Discrete"
-                                    color={this.state.color}
-                                    onPress={this.coursePress}/>
+                                    color={this.state.colorID}
+                                    onPress={() => this.coursePress(3)}>
+                                </Button>
                                 <Button
                                     title="Systems Software"
-                                    color={this.state.color}
-                                    onPress={this.coursePress}/>
+                                    color={this.state.colorSS}
+                                    onPress={() => this.coursePress(4)}>
+                                </Button>
                                 <Button
                                     title="Processes for Object-Oriented Software Development"
-                                    color={this.state.color}
-                                    onPress={this.coursePress}/>
+                                    color={this.state.colorPOOSD}
+                                    onPress={() => this.coursePress(5)}>
+                                </Button>
                                 <Button
                                     title="Discrete Computational Structures"
-                                    color={this.state.color}
-                                    onPress={this.coursePress}/>
+                                    color={this.state.colorDCS}
+                                    onPress={() => this.coursePress(6)}>
+                                </Button>
                             </ScrollView>
                         </View>
                     </View>
@@ -188,4 +236,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default HomeScreen;
+export default CourseScreen;
