@@ -9,7 +9,7 @@ import {
     StatusBar
 } from 'react-native';
 import Constants from 'expo-constants';
-import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
+// import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 
 class HomeScreen extends React.Component {
 
