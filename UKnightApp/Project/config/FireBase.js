@@ -8,6 +8,7 @@ import {
     MESSAGE_SENDER_ID,
     APP_ID
 } from 'react-native-dotenv'
+import "firebase/firestore"
 
 // Initialize FireBase
 const firebaseConfig = {
@@ -24,5 +25,7 @@ const firebaseConfig = {
 const FireBase = firebase.initializeApp(firebaseConfig);
 
 export const db = firebase.database();
+
+export const firestore = firebase.firestore()
 
 export default FireBase;

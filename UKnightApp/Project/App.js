@@ -1,6 +1,4 @@
-
 import React, {useState} from 'react';
-
 
 import { Text, View, Image, StatusBar, StyleSheet } from 'react-native';
 import { createAppContainer } from 'react-navigation';
@@ -66,6 +64,7 @@ const AppNavigator = createSwitchNavigator({
 });
 
 const AppContainer = createAppContainer(AppNavigator);
+
 
 export default class App extends React.Component {
   render() {

@@ -7,8 +7,9 @@ import {
     TouchableOpacity,
     Text
 } from 'react-native'
-import FireBase from '../config/FireBase'
+import FireBase, { db } from '../config/FireBase'
 import Constants from 'expo-constants';
+
 class Signup extends React.Component {
     state = {
         name: '',
@@ -23,6 +24,10 @@ class Signup extends React.Component {
             .createUserWithEmailAndPassword(email, password)
             .then(() => this.props.navigation.navigate('Home_LI'))
             .catch(error => console.log(error))
+
+        db.collection('users')
+          .doc(response.user.uid)
+          .set(user)
     }
 
     render() {
@@ -46,7 +51,7 @@ class Signup extends React.Component {
                         placeholderTextColor="#eeeeee"
                         // color="#eeeeee"
                         />
-                        
+
                     <TextInput
                         style={styles.inputBox}
                         value={this.state.email}
