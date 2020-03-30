@@ -48,35 +48,19 @@ class MessagingScreen extends React.Component {
                         </View>
                     </View>
                     <View style={styles.body}>
-                        <View>
-                            <Text
-                                style={{
-                                fontSize: 22,
-                                color: '#eeeeee',
-                                textAlign: 'center'
-                            }}>
-                                If you would like to use this feature, {"\n"}please login :)
-                            </Text>
+                        <View style={styles.buttonContainer}>
                             <TouchableOpacity
                                 style={styles.button}
-                                onPress={() => this.props.navigation.navigate('LogIn')}>
-                                <Text style={styles.buttonText}>Login</Text>
+                                onPress={() => this.props.navigation.navigate('Contacts')}>
+
+                                <Text style={styles.buttonText}>Contacts</Text>
                             </TouchableOpacity>
                         </View>
-                        <View>
-                            <Text
-                                style={{
-                                fontSize: 22,
-                                color: '#eeeeee',
-                                textAlign: 'center'
-                            }}>
-                                If you don't have an account,{"\n"}and would like to use this feature,{"\n"}
-                                you can make one by signing up! :)
-                            </Text>
+                        <View style={styles.buttonContainer}>
                             <TouchableOpacity
                                 style={styles.button}
-                                onPress={() => this.props.navigation.navigate('SignUp')}>
-                                <Text style={styles.buttonText}>Sign Up</Text>
+                                onPress={() => this.props.navigation.navigate('Convos')}>
+                                <Text style={styles.buttonText}>Conversations</Text>
                             </TouchableOpacity>
                         </View>
                     </View>
@@ -118,6 +102,13 @@ const styles = StyleSheet.create({
         backgroundColor: '#36393f',
         paddingBottom: 24
     },
+    buttonContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        // alignItems: 'center',
+        height: '25%',
+        paddingVertical: 30
+    },
     buttonTextBack: {
         backgroundColor: '#4b5058',
         alignItems: 'center',
@@ -132,14 +123,15 @@ const styles = StyleSheet.create({
         paddingVertical: 5,
         alignItems: 'center',
 
-        //backgroundColor: '#36393f',
-        //borderColor: '#2f3136',
-        //borderWidth: 1,
-        borderRadius: 8,
-        width: 200,
+        backgroundColor: '#4b5058',
+        borderColor: '#f8c700',
+
+        borderWidth: 0.5,
+        borderRadius: 12,
+        width: '80%'
     },
     buttonText: {
-        fontSize: 28,
+        fontSize: 24,
         fontWeight: 'bold',
         color: '#f8c700'
 

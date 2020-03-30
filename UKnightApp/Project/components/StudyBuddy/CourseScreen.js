@@ -15,18 +15,14 @@ import Firebase from '../../config/FireBase';
 class CourseScreen extends React.Component {
 
     state = {
-      color: "white",
+        color: "white"
     };
 
     coursePress = () => {
-      if(this.state.color == "white")
-          this.setState({
-            color: "yellow"
-          })
-      else
-        this.setState({
-          color: "white"
-        })
+        if (this.state.color == "white") 
+            this.setState({color: "yellow"})
+        else 
+            this.setState({color: "white"})
     };
 
     render() {
@@ -72,48 +68,41 @@ class CourseScreen extends React.Component {
                             <TouchableOpacity
                                 style={styles.button}
                                 onPress={() => this.props.navigation.navigate('Courses')}>
-                                  <View style={styles.buttonTextBack}>
-                                      <Text style={styles.buttonText}>Add Courses</Text>
-                                  </View>
+                                <View style={styles.buttonTextBack}>
+                                    <Text style={styles.buttonText}>Add Courses</Text>
+                                </View>
                             </TouchableOpacity>
                         </View>
                         <View style={styles.list}>
                             <ScrollView>
                                 <Button
-                                   title="Computer Science I"
-                                   color={this.state.color}
-                                   onPress={this.coursePress}
-                                />
+                                    title="Computer Science I"
+                                    color={this.state.color}
+                                    onPress={this.coursePress}/>
                                 <Button
-                                   title="Computer Science II"
-                                   color={this.state.color}
-                                   onPress={this.coursePress}
-                                />
+                                    title="Computer Science II"
+                                    color={this.state.color}
+                                    onPress={this.coursePress}/>
                                 <Button
-                                   title="Object Oriented Programming"
-                                   color={this.state.color}
-                                   onPress={this.coursePress}
-                                />
+                                    title="Object Oriented Programming"
+                                    color={this.state.color}
+                                    onPress={this.coursePress}/>
                                 <Button
-                                   title="Intro to Discrete"
-                                   color={this.state.color}
-                                   onPress={this.coursePress}
-                                />
+                                    title="Intro to Discrete"
+                                    color={this.state.color}
+                                    onPress={this.coursePress}/>
                                 <Button
-                                   title="Systems Software"
-                                   color={this.state.color}
-                                   onPress={this.coursePress}
-                                />
+                                    title="Systems Software"
+                                    color={this.state.color}
+                                    onPress={this.coursePress}/>
                                 <Button
-                                   title="Processes for Object-Oriented Software Development"
-                                   color={this.state.color}
-                                   onPress={this.coursePress}
-                                />
+                                    title="Processes for Object-Oriented Software Development"
+                                    color={this.state.color}
+                                    onPress={this.coursePress}/>
                                 <Button
-                                   title="Discrete Computational Structures"
-                                   color={this.state.color}
-                                   onPress={this.coursePress}
-                                />
+                                    title="Discrete Computational Structures"
+                                    color={this.state.color}
+                                    onPress={this.coursePress}/>
                             </ScrollView>
                         </View>
                     </View>
@@ -173,15 +162,14 @@ const styles = StyleSheet.create({
         backgroundColor: '#4b5058',
         paddingVertical: 5,
         paddingHorizontal: 5,
-        //borderWidth: 1,
-        //borderRadius: 5,
+        //borderWidth: 1, borderRadius: 5,
         width: '80%',
         //alignItems: 'center',
         borderColor: '#f8c700',
         //borderWidth: 1,
         borderRadius: 12,
         alignItems: 'center',
-        justifyContent: 'center',
+        justifyContent: 'center'
     },
     buttonText: {
         color: '#eeeeee',
@@ -189,8 +177,8 @@ const styles = StyleSheet.create({
         fontWeight: 'bold'
     },
     list: {
-        alignItems: 'center',
-    },
+        alignItems: 'center'
+    }
 });
 
 export default CourseScreen;

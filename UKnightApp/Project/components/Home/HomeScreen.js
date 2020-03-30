@@ -9,7 +9,7 @@ import {
     StatusBar
 } from 'react-native';
 import Constants from 'expo-constants';
-import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
+import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 
 class HomeScreen extends React.Component {
 
@@ -64,7 +64,7 @@ class HomeScreen extends React.Component {
                             <TouchableOpacity
                                 style={styles.button}
                                 onPress={() => this.props.navigation.navigate('BusScreen')}>
-                                    
+
                                 <ImageBackground
                                     source={require('../../assets/shuttleImage.jpg')}
                                     style={{
@@ -75,7 +75,7 @@ class HomeScreen extends React.Component {
                                     <View style={styles.buttonTextBack}>
                                         <Text style={styles.buttonText}>Bus Routes</Text>
                                     </View>
-                                    </ImageBackground>
+                                </ImageBackground>
                             </TouchableOpacity>
                             <TouchableOpacity
                                 style={styles.button}
@@ -148,9 +148,7 @@ class HomeScreen extends React.Component {
                                     source={require('../../assets/chatimg.png')}
                                     style={{
                                     width: '100%',
-                                    height: '100%',
-                                    //borderRadius: 12
-                                    
+                                    height: '100%'
                                 }}>
                                     <View style={styles.buttonTextBack}>
                                         <Text style={styles.buttonText}>Messaging{"\n\n"}</Text>
@@ -176,8 +174,7 @@ const styles = StyleSheet.create({
         marginTop: Constants.statusBarHeight,
         flexDirection: 'column',
         justifyContent: 'space-around',
-        backgroundColor: '#292b2f',
-        
+        backgroundColor: '#292b2f'
     },
     headerVerticalCenter: {
         flexDirection: 'row',
@@ -208,8 +205,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-around',
         // alignItems: 'center',
         height: '33.33%',
-        overflow: 'hidden',
-        
+        overflow: 'hidden'
     },
     button: {
         // marginTop: 30, marginBottom: 30,
@@ -221,8 +217,7 @@ const styles = StyleSheet.create({
         //alignItems: 'center',
         borderColor: '#f8c700',
         //borderWidth: 1,
-        borderRadius: 12,
-        
+        borderRadius: 12
     },
     buttonTextBack: {
         backgroundColor: '#4b5058',

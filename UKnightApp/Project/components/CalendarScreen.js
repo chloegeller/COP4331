@@ -50,12 +50,12 @@ class CalendarScreen extends React.Component {
                         </View>
                     </View>
                     <View style={styles.body}>
-                    <TouchableOpacity
+                        <TouchableOpacity
                             style={styles.button}
                             onPress={() => WebBrowser.openBrowserAsync("https://events.ucf.edu/upcoming/")}>
                             <Text style={styles.buttonText}>Upcoming Events</Text>
                         </TouchableOpacity>
-                    <TouchableOpacity
+                        <TouchableOpacity
                             style={styles.button}
                             onPress={() => WebBrowser.openBrowserAsync("https://events.ucf.edu/this-week/")}>
                             <Text style={styles.buttonText}>Weekly Update</Text>
@@ -72,7 +72,8 @@ class CalendarScreen extends React.Component {
                         </TouchableOpacity>
                         <TouchableOpacity
                             style={styles.button}
-                            onPress={() => WebBrowser.openBrowserAsync("https://calendar.google.com/calendar/embed?src=9mkfnm5uoke1p1mkdkenuh7emk%40group.calendar.google.com&ctz=America%2FNew_York")}>
+                            onPress={() => WebBrowser.openBrowserAsync("https://calendar.google.com/calendar/embed?src=9mkfnm5uoke1p1mkdkenuh7emk%40grou" +
+                                "p.calendar.google.com&ctz=America%2FNew_York")}>
                             <Text style={styles.buttonText}>Discounts</Text>
                         </TouchableOpacity>
                     </View>
@@ -121,18 +122,17 @@ const styles = StyleSheet.create({
         height: 40
     },
     btnContainer: {
-        flexDirection: 'column',
+        flexDirection: 'column'
     },
     button: {
         // flex: 1,
         margin: 24,
-        padding: 24, 
+        padding: 24,
         alignItems: 'center',
         backgroundColor: '#4b5058',
         borderColor: '#f8c700',
         borderWidth: 0.5,
-        borderRadius: 12,
-    
+        borderRadius: 12
     },
     buttonText: {
         textAlign: 'center',

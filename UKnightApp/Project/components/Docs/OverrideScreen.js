@@ -62,12 +62,12 @@ class OverrideScreen extends React.Component {
 
 const styles = StyleSheet.create({
     header: {
-      flex: 1,
-      marginTop: Constants.statusBarHeight,
-      flexDirection: 'row',
-      justifyContent: 'space-around',
-      backgroundColor: '#292b2f',
-      alignItems: 'center'
+        flex: 1,
+        marginTop: Constants.statusBarHeight,
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        backgroundColor: '#292b2f',
+        alignItems: 'center'
     },
     menuButton: {
         flex: 1

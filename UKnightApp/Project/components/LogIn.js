@@ -35,7 +35,7 @@ class LogIn extends React.Component {
                 backgroundColor: '#292b2f'
             }}>
                 <View style={styles.container}>
-                    
+
                     <TextInput
                         style={styles.inputBox}
                         value={this.state.email}
@@ -43,8 +43,7 @@ class LogIn extends React.Component {
                         placeholder='Email'
                         placeholderTextColor="#eeeeee"
                         autoCapitalize='none'
-                        // color="#eeeeee"
-                        />
+                        color="#eeeeee"/>
                     <TextInput
                         style={styles.inputBox}
                         value={this.state.password}
@@ -52,8 +51,7 @@ class LogIn extends React.Component {
                         placeholder='Password'
                         placeholderTextColor="#eeeeee"
                         secureTextEntry={true}
-                        // color="#eeeeee"
-                        />
+                        color="#eeeeee"/>
                     <TouchableOpacity style={styles.button} onPress={this.handleLogIn}>
                         <Text style={styles.buttonText}>Login</Text>
                     </TouchableOpacity>
@@ -88,8 +86,7 @@ const styles = StyleSheet.create({
         paddingVertical: 5,
         alignItems: 'center',
         backgroundColor: '#f8c700',
-        //borderColor: '#F6820D',
-        //borderWidth: 1,
+        //borderColor: '#F6820D', borderWidth: 1,
         borderRadius: 10,
         width: 200
     },
