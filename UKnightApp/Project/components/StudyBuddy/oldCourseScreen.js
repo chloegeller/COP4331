@@ -14,63 +14,19 @@ import Firebase from '../../config/FireBase';
 
 class CourseScreen extends React.Component {
 
-
-    // My attempt to use an array for this ran me into fatal errors on this page, and so I opted for 7 separate variables.
-    // Maybe there is a way to do it with an array, and using an array would make expanding this much easier,
-    // but I don't kow enough about javascript it seems.
     state = {
-        colorCS1: "gray",
-        colorCS2: "gray",
-        colorOOP: "gray",
-        colorID: "gray",
-        colorSS: "gray",
-        colorPOOSD: "gray",
-        colorDCS: "gray"
+      color: "white",
     };
 
-    coursePress = (n) => {
-      if (n == 0) {
-        if (this.state.colorCS1 == "gray")
-          this.setState({colorCS1: "gold"})
-        else
-          this.setState({colorCS1: "gray"})
-      }
-      else if (n == 1) {
-        if (this.state.colorCS2 == "gray")
-          this.setState({colorCS2: "gold"})
-        else
-          this.setState({colorCS2: "gray"})
-      }
-      else if (n == 2) {
-        if (this.state.colorOOP == "gray")
-          this.setState({colorOOP: "gold"})
-        else
-          this.setState({colorOOP: "gray"})
-      }
-      else if (n == 3) {
-        if (this.state.colorID == "gray")
-          this.setState({colorID: "gold"})
-        else
-          this.setState({colorID: "gray"})
-      }
-      else if (n == 4) {
-        if (this.state.colorSS == "gray")
-          this.setState({colorSS: "gold"})
-        else
-          this.setState({colorSS: "gray"})
-      }
-      else if (n == 5) {
-        if (this.state.colorPOOSD == "gray")
-          this.setState({colorPOOSD: "gold"})
-        else
-          this.setState({colorPOOSD: "gray"})
-      }
-      else if (n == 6) {
-        if (this.state.colorDCS == "gray")
-          this.setState({colorDCS: "gold"})
-        else
-          this.setState({colorDCS: "gray"})
-      }
+    coursePress = () => {
+      if(this.state.color == "white")
+          this.setState({
+            color: "yellow"
+          })
+      else
+        this.setState({
+          color: "white"
+        })
     };
 
     render() {
@@ -116,48 +72,48 @@ class CourseScreen extends React.Component {
                             <TouchableOpacity
                                 style={styles.button}
                                 onPress={() => this.props.navigation.navigate('Courses')}>
-                                <View style={styles.buttonTextBack}>
-                                    <Text style={styles.buttonText}>Add Courses</Text>
-                                </View>
+                                  <View style={styles.buttonTextBack}>
+                                      <Text style={styles.buttonText}>Add Courses</Text>
+                                  </View>
                             </TouchableOpacity>
                         </View>
                         <View style={styles.list}>
                             <ScrollView>
                                 <Button
-                                    title="Computer Science I"
-                                    color={this.state.colorCS1}
-                                    onPress={() => this.coursePress(0)}>
-                                </Button>
+                                   title="Computer Science I"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
                                 <Button
-                                    title="Computer Science II"
-                                    color={this.state.colorCS2}
-                                    onPress={() => this.coursePress(1)}>
-                                </Button>
+                                   title="Computer Science II"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
                                 <Button
-                                    title="Object Oriented Programming"
-                                    color={this.state.colorOOP}
-                                    onPress={() => this.coursePress(2)}>
-                                </Button>
+                                   title="Object Oriented Programming"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
                                 <Button
-                                    title="Intro to Discrete"
-                                    color={this.state.colorID}
-                                    onPress={() => this.coursePress(3)}>
-                                </Button>
+                                   title="Intro to Discrete"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
                                 <Button
-                                    title="Systems Software"
-                                    color={this.state.colorSS}
-                                    onPress={() => this.coursePress(4)}>
-                                </Button>
+                                   title="Systems Software"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
                                 <Button
-                                    title="Processes for Object-Oriented Software Development"
-                                    color={this.state.colorPOOSD}
-                                    onPress={() => this.coursePress(5)}>
-                                </Button>
+                                   title="Processes for Object-Oriented Software Development"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
                                 <Button
-                                    title="Discrete Computational Structures"
-                                    color={this.state.colorDCS}
-                                    onPress={() => this.coursePress(6)}>
-                                </Button>
+                                   title="Discrete Computational Structures"
+                                   color={this.state.color}
+                                   onPress={this.coursePress}
+                                />
                             </ScrollView>
                         </View>
                     </View>
@@ -217,14 +173,15 @@ const styles = StyleSheet.create({
         backgroundColor: '#4b5058',
         paddingVertical: 5,
         paddingHorizontal: 5,
-        //borderWidth: 1, borderRadius: 5,
+        //borderWidth: 1,
+        //borderRadius: 5,
         width: '80%',
         //alignItems: 'center',
         borderColor: '#f8c700',
         //borderWidth: 1,
         borderRadius: 12,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
     buttonText: {
         color: '#eeeeee',
@@ -232,8 +189,8 @@ const styles = StyleSheet.create({
         fontWeight: 'bold'
     },
     list: {
-        alignItems: 'center'
-    }
+        alignItems: 'center',
+    },
 });
 
 export default CourseScreen;

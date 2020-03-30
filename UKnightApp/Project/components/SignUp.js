@@ -6,11 +6,12 @@ import {
     StyleSheet,
     TouchableOpacity,
     Text
-} from 'react-native';
-import FireBase from '../config/FireBase';
+} from 'react-native'
+import FireBase, { db } from '../config/FireBase';
 import {showMessage} from 'react-native-flash-message';
 import validateForm from '../tests/validation';
 import Constants from 'expo-constants';
+
 class Signup extends React.Component {
     state = {
         name: '',
@@ -64,6 +65,10 @@ class Signup extends React.Component {
             .createUserWithEmailAndPassword(email, password)
             .then(() => this.props.navigation.navigate('Home_LI'))
             .catch(error => console.log(error))
+
+        db.collection('users')
+          .doc(response.user.uid)
+          .set(user)
     }
 
     render() {
@@ -85,6 +90,9 @@ class Signup extends React.Component {
                         onChangeText={name => this.setState({name})}
                         placeholder='Full Name'
                         placeholderTextColor="#eeeeee"
+                        // color="#eeeeee"
+                        />
+
                         color="#eeeeee"
                         ref={(input) => {
                         this.nameInput = input;
