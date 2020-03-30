@@ -22,7 +22,6 @@ import DocScreen from './components/DocumentsScreen';
 import SetScreen from './components/SettingsScreen';
 import ProfileScreen from './components/ProfileScreen';
 import MessagingScreen from './components/Messages/MessagingScreen';
-//import MessagingScreen_LI from './components/Messages/MessagingScreen_LoggedIn';
 import Contacts from './components/Messages/Contacts';
 import ChatList from './components/Messages/ChatList';
 import Constants from 'expo-constants';
@@ -52,8 +51,7 @@ const AppNavigator = createSwitchNavigator({
   Docs: DocScreen,
   Settings: SetScreen,
   Profile: ProfileScreen,
-    Messaging: MessagingScreen,
-  //Messaging_LI,
+  Messaging: MessagingScreen,
   Flow: FlowchartScreen,
   Electives: ElectivesScreen,
   Brochure: BrochureScreen,

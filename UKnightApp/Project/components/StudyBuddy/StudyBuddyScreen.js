@@ -51,7 +51,7 @@ class StudyBuddyScreen extends React.Component {
                                 flex: 0.5
                             }}></View> */}
                             <View style={styles.loginButton}>
-                                <Button onPress={() => this.props.navigation.navigate('Settings')} title="Settings" color="#eeeeee" // justifyContent="space-around"
+                                <Button onPress={() => this.props.navigation.navigate('Profile')} title="Profile" color="#eeeeee" // justifyContent="space-around"
                                 />
                             </View>
                         </View>

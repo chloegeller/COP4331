@@ -57,8 +57,8 @@ class CourseScreen extends React.Component {
                             }}></View> */}
                             <View style={styles.loginButton}>
                                 <Button
-                                    onPress={() => this.props.navigation.navigate('Settings')}
-                                    title="Settings"
+                                    onPress={() => this.props.navigation.navigate('Profile')}
+                                    title="Profile"
                                     color="#eeeeee"/>
                             </View>
                         </View>
