@@ -1,5 +1,5 @@
-import * as React from 'react'
-import {StyleSheet, Text, View, Button, TouchableOpacity} from 'react-native'
+import React from 'react';
+import {StyleSheet, Text, View, Button, TouchableOpacity} from 'react-native';
 import PDFReader from 'rn-pdf-reader-js'
 
 class ElectivesScreen extends React.Component {
