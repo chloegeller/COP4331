@@ -57,7 +57,7 @@
     "react-navigation-stack": "^2.0.16",
     "rn-pdf-reader-js": "^0.7.2",
     "tween-functions": "^1.2.0",
-    "validator": "^13.0.0"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
